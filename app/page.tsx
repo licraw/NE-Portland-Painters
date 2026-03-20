@@ -1,65 +1,177 @@
-import Image from "next/image";
+const services = [
+  "Interior walls, ceilings, and trim",
+  "Exterior siding, doors, and decks",
+  "Cabinet refreshes and built-ins",
+  "Rental turnovers and punch-list work",
+];
 
-export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+const process = [
+  "Walk-through and clear written scope",
+  "Protection, prep, patching, and sanding",
+  "Clean lines, durable coatings, daily cleanup",
+  "Final review and touch-up list",
+];
+
+const highlights = [
+  "Built for local SEO and future service pages",
+  "Simple content structure that is easy to expand",
+  "Ready for quote forms, project galleries, and reviews",
+];
+
+type HomePageProps = {
+  searchParams: Promise<{
+    isadmin?: string;
+  }>;
+};
+
+export default async function Home({ searchParams }: HomePageProps) {
+  const { isadmin } = await searchParams;
+
+  if (isadmin !== "true") {
+    return (
+      <main>
+        <section className="site-shell">
+          <section className="section coming-soon">
+            <div className="stack-md">
+              <p className="eyebrow">NE Portland Painters</p>
+              <h1 className="hero-title">Coming soon.</h1>
+              <p className="hero-copy">
+                A new website for NE Portland Painters is on the way.
+              </p>
+            </div>
+          </section>
+        </section>
       </main>
-    </div>
+    );
+  }
+
+  return (
+    <main>
+      <section className="site-shell">
+        <header className="section header-row">
+          <a className="brand-mark" href="#top">
+            NE Portland Painters
+          </a>
+          <nav className="nav-links" aria-label="Primary">
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+
+        <section className="section hero-grid" id="top">
+          <div className="stack-lg">
+            <p className="eyebrow">Local painting company website skeleton</p>
+            <h1 className="hero-title">
+              Clean, durable paintwork for homes across Northeast Portland.
+            </h1>
+            <p className="hero-copy">
+              This starter strips out the boilerplate and gives you a solid base
+              for a painter site: strong headline, service blocks, a trust
+              section, and a quote CTA that can be wired into forms later.
+            </p>
+            <div className="cta-row">
+              <a className="button-primary" href="#contact">
+                Request a quote
+              </a>
+              <a className="button-secondary" href="#services">
+                View services
+              </a>
+            </div>
+          </div>
+
+          <aside className="hero-panel">
+            <p className="panel-label">Service area</p>
+            <p className="panel-value">Northeast Portland</p>
+            <p className="panel-copy">
+              Expand this block later with neighborhoods, licensing details,
+              review snippets, or a project gallery.
+            </p>
+            <div className="divider" />
+            <p className="panel-label">Typical work</p>
+            <ul className="detail-list">
+              <li>Occupied homes</li>
+              <li>Exterior repaints</li>
+              <li>Trim and detail work</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section className="section stack-md" id="services">
+          <div className="section-heading">
+            <p className="eyebrow">Services</p>
+            <h2>Start with the core offers people actually search for.</h2>
+          </div>
+          <div className="card-grid">
+            {services.map((service) => (
+              <article className="card" key={service}>
+                <p className="card-kicker">Painting</p>
+                <h3>{service}</h3>
+                <p>
+                  Keep these descriptions short for now, then turn each one into
+                  its own service page when you are ready to target more search
+                  terms.
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section split-section" id="process">
+          <div className="section-heading">
+            <p className="eyebrow">Process</p>
+            <h2>A simple structure for explaining how you work.</h2>
+            <p>
+              Home service sites convert better when the process is explicit.
+              This gives you a place to explain prep, communication, and finish
+              quality without writing a wall of text.
+            </p>
+          </div>
+
+          <div className="numbered-list">
+            {process.map((step, index) => (
+              <div className="numbered-item" key={step}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <p>{step}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="section stack-md">
+          <div className="section-heading">
+            <p className="eyebrow">Why this starter</p>
+            <h2>Lean now, expandable later.</h2>
+          </div>
+          <div className="highlight-grid">
+            {highlights.map((item) => (
+              <div className="highlight" key={item}>
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="section contact-banner" id="contact">
+          <div className="stack-sm">
+            <p className="eyebrow">Contact</p>
+            <h2>Ready for your real phone number, email, and lead form.</h2>
+            <p>
+              For now this is a clean placeholder CTA. Next steps are usually a
+              simple contact form, testimonial strip, and individual pages for
+              interior, exterior, and cabinet painting.
+            </p>
+          </div>
+          <a className="button-primary" href="#top">
+            Add contact details
+          </a>
+        </section>
+
+        <footer className="section footer-row">
+          <p>NE Portland Painters</p>
+          <p>Minimal Next.js starter for a local painting business</p>
+        </footer>
+      </section>
+    </main>
   );
 }
