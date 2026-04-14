@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-surface-subtle: #f1f5f9;
+
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  --color-text-muted: #334155;
+  --color-text-subtle: #64748b;
+  --color-text-faint: #94a3b8;
+  --color-heading: #0f172a;
+
+  /* 🔥 Primary Blue System */
+  --color-primary: #2563eb;         /* main blue */
+  --color-primary-hover: #1d4ed8;   /* darker hover */
+  --color-primary-soft: #eff6ff;    /* light background tint */
+  --color-primary-deep: #1e3a8a;    /* strong accent */
+
+  /* Footer (deep navy feel) */
+  --color-footer-bg: #020617;
+  --color-footer-surface: #0f172a;
+  --color-footer-border: #1e293b;
+  --color-footer-text-muted: #94a3b8;
+
+  --color-nav-text: rgba(15, 23, 42, 0.6);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light-green-bg {
+  background-color: var(--color-primary-soft);
+}
+
+@layer components {
+  .theme-page-badge {
+    @apply flex items-center space-x-3 rounded-full bg-theme-surface-subtle py-2 px-4 mb-4 max-w-fit;
+  }
+
+  .theme-page-badge-icon {
+    @apply flex h-6 w-8 items-center justify-center rounded-full bg-theme-surface;
+  }
+
+  .theme-page-badge-text {
+    @apply text-sm font-medium text-theme-text-subtle;
+  }
+
+  .theme-page-badge-link {
+    @apply ml-1 underline transition hover:no-underline hover:text-theme-text-muted;
+  }
+
+  .theme-form-shell {
+    @apply space-y-6 rounded-lg border border-theme-border bg-theme-surface p-10 shadow-2xl;
+  }
+
+  .theme-form-input {
+    @apply w-full rounded-lg border border-theme-border p-4 focus:outline-none focus:ring-2 focus:ring-theme-primary;
+  }
+
+  .theme-form-file-input {
+    @apply w-full rounded-lg border border-theme-border p-3 focus:outline-none focus:ring-2 focus:ring-theme-primary;
+  }
+
+  .theme-form-label {
+    @apply mb-2 block text-theme-text-muted;
+  }
+
+  .theme-form-heading {
+    @apply text-center text-4xl font-bold text-theme-primary-deep;
+  }
+
+  .theme-form-description {
+    @apply mb-6 text-center text-theme-text-muted;
+  }
+
+  .theme-form-status {
+    @apply mt-4 text-center text-theme-text-muted;
+  }
+
+  .theme-primary-button {
+    @apply bg-theme-primary text-white transition hover:bg-theme-primary-hover;
+  }
+
+  .theme-section-muted {
+    @apply bg-theme-surface-muted;
+  }
+}
