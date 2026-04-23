@@ -148,14 +148,16 @@ const About = () => {
           </SectionContent>
         </AboutRow>
 
-        <StatsContainer>
-          {siteConfig.about.stats.map((stat) => (
-            <StatCard key={stat.value}>
-              <h4>{stat.value}</h4>
-              <p>{stat.description}</p>
-            </StatCard>
-          ))}
-        </StatsContainer>
+        {siteConfig.about.stats.length > 0 ? (
+          <StatsContainer>
+            {siteConfig.about.stats.map((stat) => (
+              <StatCard key={stat.value}>
+                <h4>{stat.value}</h4>
+                <p>{stat.description}</p>
+              </StatCard>
+            ))}
+          </StatsContainer>
+        ) : null}
       </SectionBody>
     </PageSection>
   );

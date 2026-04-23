@@ -148,64 +148,6 @@ export default function HomePage() {
         </section>
 
         <section className="px-6 lg:px-20 py-12 lg:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <div className="relative w-full aspect-[16/11] rounded-2xl overflow-hidden border border-theme-border shadow-sm">
-                <Image
-                  src={siteConfig.home.teamImage}
-                  alt="Our team"
-                  fill
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div>
-              <h2 className="font-sans font-medium text-4xl lg:text-6xl leading-[1.15]">
-                {siteConfig.home.differenceHeading}
-              </h2>
-              <div className="pt-8 space-y-8">
-                {siteConfig.home.differenceItems.map((item) => (
-                  <div key={item.title}>
-                    <h3 className="text-2xl font-semibold">{item.title}</h3>
-                    <p className="pt-3 text-theme-text-muted">{item.body}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="pt-10">
-                <Link
-                  href="/about"
-                  className="inline-flex items-center rounded-full px-8 py-4 text-lg font-semibold theme-primary-button"
-                >
-                  More About Us
-                </Link>
-              </div>
-
-              <div className="pt-12 flex flex-wrap gap-6 items-center">
-                {siteConfig.home.badges.map((badge) => (
-                  <a
-                    key={badge.src}
-                    href={badge.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative h-16 w-28 lg:h-20 lg:w-32 hover:opacity-90 transition-opacity"
-                  >
-                    <Image
-                      src={badge.src}
-                      alt={badge.alt}
-                      fill
-                      sizes="160px"
-                      className="object-contain"
-                    />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="px-6 lg:px-20 py-12 lg:py-20">
           <h2 className="font-sans font-medium text-4xl lg:text-6xl leading-[1.15]">
             {siteConfig.home.latestPostsHeading}{" "}
             <span className="text-theme-text-muted text-2xl lg:text-3xl align-middle">
@@ -249,9 +191,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div id="reviews">
-          <ReviewsWidget title="Recent Testimonials" />
-        </div>
+        <ReviewsWidget title="Recent Testimonials" />
 
         <section className="px-6 lg:px-20 py-12 lg:py-20">
           <h2 className="font-sans font-medium text-4xl lg:text-6xl leading-[1.15]">
@@ -294,26 +234,28 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="px-6 lg:px-20 py-12 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {siteConfig.home.stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-2xl border border-theme-border bg-theme-surface p-10 text-center shadow-sm"
-              >
-                <div className="text-sm font-semibold tracking-wide text-theme-text-muted">
-                  {stat.prefix}
+        {siteConfig.home.stats.length > 0 ? (
+          <section className="px-6 lg:px-20 py-12 lg:py-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {siteConfig.home.stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl border border-theme-border bg-theme-surface p-10 text-center shadow-sm"
+                >
+                  <div className="text-sm font-semibold tracking-wide text-theme-text-muted">
+                    {stat.prefix}
+                  </div>
+                  <div className="pt-4 text-5xl font-bold text-theme-primary-deep">
+                    {stat.value}
+                  </div>
+                  <div className="pt-4 text-sm font-semibold tracking-wide text-theme-text-muted">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="pt-4 text-5xl font-bold text-theme-primary-deep">
-                  {stat.value}
-                </div>
-                <div className="pt-4 text-sm font-semibold tracking-wide text-theme-text-muted">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
     </>
   );

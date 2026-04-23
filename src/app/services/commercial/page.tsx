@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import CarouselGallery from "../../components/ImageGallery/CarouselGallery";
 import { interiorServiceGalleryOneImages } from "@/app/gallery/interior/galleryFiles";
-import ReviewsWidget from "../../components/ReviewsWidget";
 import { getBaseMetadata, siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = getBaseMetadata(
@@ -89,7 +88,6 @@ export default function CommercialPaintingPage() {
         </div>
       </div>
 
-      <ReviewsWidget title="Commercial Painting Testimonials" className="theme-section-muted" />
     </>
   );
 }

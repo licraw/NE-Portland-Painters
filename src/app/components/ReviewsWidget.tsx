@@ -11,7 +11,10 @@ export default function ReviewsWidget({
   limit = 3,
   className = "",
 }: ReviewsWidgetProps) {
+  if (!siteConfig.testimonials?.enabled) return null;
+
   const visibleReviews = siteConfig.testimonials.items.slice(0, limit);
+  if (visibleReviews.length === 0) return null;
 
   return (
     <section className={`p-8 pl-6 lg:pl-20 lg:pr-20 ${className}`.trim()}>

@@ -32,8 +32,8 @@ export const siteConfig = {
     topRatedHeadline: "Top-Rated Portland House Painters",
     topRatedDescription:
       "With customer happiness as our top priority, we’re committed to premium service and quality for Portland-area homes.",
-    topRatedCtaLabel: "Browse Recent Testimonials",
-    topRatedCtaHref: "#reviews",
+    topRatedCtaLabel: "Request a Free Estimate",
+    topRatedCtaHref: "/estimate",
     topRatedImage: "/sps/hero-exterior.jpg",
     servicesTiles: [
       {
@@ -214,32 +214,15 @@ export const siteConfig = {
     quoteFormDescription:
       "Fill out this form for a free quote for interior painting, exterior painting, or carpentry. We serve Portland and nearby cities.",
     teamImage: "/sps/photos/team.jpg",
-    stats: [
-      { prefix: "OVER", value: "10+", label: "YEARS IN BUSINESS" },
-      { prefix: "OVER", value: "100+", label: "LOCAL 5-STAR REVIEWS" },
-      { prefix: "OVER", value: "500+", label: "HOMES & BUSINESSES PAINTED" },
-    ],
+    stats: [] as Array<{ prefix: string; value: string; label: string }>,
   },
   about: {
     headline: "Reliable painters. Clear communication. Consistent results.",
     body: [
       "This reusable template is designed for residential and light commercial painting businesses that want a clean, credible web presence.",
-      "Update the company details, service areas, messaging, and testimonials in one place to tailor the site for a new business without reworking the UI.",
+      "Update the company details, service areas, and messaging in one place to tailor the site for a new business without reworking the UI.",
     ],
-    stats: [
-      {
-        value: "10+ Years",
-        description: "Replace with your company history or years in business.",
-      },
-      {
-        value: "5-Star Service",
-        description: "Use this slot for reputation, responsiveness, or quality proof.",
-      },
-      {
-        value: "500+ Projects",
-        description: "Swap in your own project volume or specialty metric.",
-      },
-    ],
+    stats: [] as Array<{ value: string; description: string }>,
   },
   services: [
     {
@@ -795,6 +778,7 @@ export const siteConfig = {
       "Share a few project details and your team can follow up with next steps.",
   },
   testimonials: {
+    enabled: false,
     sourceLabel: "Customer Feedback",
     summary: "Trusted by homeowners who value clear communication and clean results.",
     items: [
