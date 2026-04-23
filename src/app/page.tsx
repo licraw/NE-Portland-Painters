@@ -37,16 +37,9 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <h1
-                style={{
-                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
-                  fontWeight: 500,
-                  lineHeight: "1.2",
-                }}
-                className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
-              >
-                {siteConfig.hero.headline}
-              </h1>
+        <h1 className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]">
+          {siteConfig.hero.headline}
+        </h1>
 
               <h2 className="pt-6 text-xl lg:text-2xl text-theme-text-muted max-w-2xl">
                 {siteConfig.hero.description}

@@ -34,11 +34,6 @@ export default async function BlogPostPage({
       </Link>
 
       <h1
-        style={{
-          fontFamily: '"Helvetica Neue", Arial, sans-serif',
-          fontWeight: 500,
-          lineHeight: "1.2",
-        }}
         className="pt-6 font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
         dangerouslySetInnerHTML={{ __html: post.titleHtml }}
       />

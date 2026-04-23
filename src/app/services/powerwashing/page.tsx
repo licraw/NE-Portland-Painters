@@ -35,16 +35,11 @@ export default function PowerwashingPage() {
             </p>
           </div>
 
-          <h1
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              fontWeight: 500,
-              lineHeight: "1.2",
-            }}
-            className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
-          >
-            {siteConfig.powerwashingService.title}
-          </h1>
+        <h1
+          className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
+        >
+          {siteConfig.powerwashingService.title}
+        </h1>
 
           {siteConfig.powerwashingService.intro.map((paragraph) => (
             <p key={paragraph} className="pb-4 pt-4">

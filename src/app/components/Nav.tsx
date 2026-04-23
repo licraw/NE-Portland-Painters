@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -40,7 +41,8 @@ export default function Nav() {
     <>
       <style jsx>{`
         li {
-          font-family: "Helvetica Neue", Arial, sans-serif;
+          font-family: var(--font-geist-sans), ui-sans-serif, system-ui,
+            sans-serif;
           font-size: 18px;
           font-weight: 400;
           line-height: 25.2px;
@@ -57,7 +59,15 @@ export default function Nav() {
       {/* Top Nav Bar */}
       <nav className="relative z-50 bg-theme-surface">
         <div className="flex items-center justify-between px-8 lg:px-20 py-4">
-          <Link href="/" className="flex items-center space-x-4 py-2">
+          <Link href="/" className="flex items-center gap-3 py-2">
+            <Image
+              src="/favicon.png"
+              alt={`${siteConfig.siteName} logo`}
+              width={36}
+              height={36}
+              className="rounded-[8px]"
+              priority
+            />
             <span className="text-xl font-semibold text-theme-heading tracking-tight">
               {siteConfig.siteName}
             </span>

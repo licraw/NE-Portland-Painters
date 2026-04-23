@@ -22,7 +22,7 @@ export const SectionHeaderWrapper = styled.div`
 `;
 
 export const SectionHeader = styled.h2`
-  font-family: "Helvetica Neue";
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -53,7 +53,7 @@ const AboutRow = styled.div`
 `;
 
 export const SectionSubHeader = styled.h3`
-  font-family: "Helvetica Neue";
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -68,7 +68,7 @@ export const SectionSubHeader = styled.h3`
 `;
 
 export const SectionContent = styled.div`
-  font-family: "Helvetica Neue";
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -111,9 +111,10 @@ const StatCard = styled.div`
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  font-family: "Helvetica Neue";
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 
   h4 {
+    font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: var(--color-primary);

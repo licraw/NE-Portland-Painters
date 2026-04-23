@@ -16,11 +16,6 @@ export default function BlogIndexPage() {
   return (
     <div className="px-6 lg:px-20 py-12 lg:py-20">
       <h1
-        style={{
-          fontFamily: '"Helvetica Neue", Arial, sans-serif',
-          fontWeight: 500,
-          lineHeight: "1.2",
-        }}
         className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
       >
         {siteConfig.siteName} Blog

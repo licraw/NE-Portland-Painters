@@ -32,7 +32,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Helvetica Neue"', "Arial", "sans-serif"],
+        body: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       fontSize: {
         '36px': ['36px', { lineHeight: '1.2' }],

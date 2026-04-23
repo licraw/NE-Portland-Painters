@@ -35,14 +35,7 @@ export default function TurnoverPaintingPage() {
             </p>
           </div>
 
-          <h1
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              fontWeight: 500,
-              lineHeight: "1.2",
-            }}
-            className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
-          >
+          <h1 className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]">
             {siteConfig.turnoverPaintingService.title}
           </h1>
 

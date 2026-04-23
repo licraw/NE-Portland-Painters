@@ -64,14 +64,14 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: white;
 `;
 
 const Description = styled.p`
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: white;
