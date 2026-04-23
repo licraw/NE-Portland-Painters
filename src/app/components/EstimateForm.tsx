@@ -8,7 +8,11 @@ import { siteConfig } from "@/lib/siteConfig";
 const INSTAGRAM_OPTION = "Instagram";
 const UTM_SOURCE_STORAGE_KEY = "utm_source";
 
-export default function EstimateForm() {
+type EstimateFormProps = {
+  embedded?: boolean;
+};
+
+export default function EstimateForm({ embedded }: EstimateFormProps) {
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   const [fileInputKey, setFileInputKey] = useState(Date.now());
@@ -155,7 +159,7 @@ Promo Code: ${formData.promoCode || "None"}`;
   return (
     <form
       onSubmit={handleSubmit}
-      className="theme-form-shell max-w-4xl mx-auto my-12"
+      className={`theme-form-shell max-w-4xl mx-auto ${embedded ? "" : "my-12"}`}
     >
       <h2 className="theme-form-heading">
         {siteConfig.estimate.heading}

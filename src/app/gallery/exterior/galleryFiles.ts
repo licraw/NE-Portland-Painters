@@ -1,60 +1,31 @@
-const imageFiles = [
-    "/exterior-gallery/image-1.jpg",
-    "/exterior-gallery/image-10.jpg",
-    "/exterior-gallery/image-11.jpg",
-    "/exterior-gallery/image-12.jpg",
-    "/exterior-gallery/image-13.jpg",
-    "/exterior-gallery/image-14.jpg",
-    "/exterior-gallery/image-15.jpg",
-    "/exterior-gallery/image-16.jpg",
-    "/exterior-gallery/image-17.jpg",
-    "/exterior-gallery/image-18.jpg",
-    "/exterior-gallery/image-19.jpg",
-    "/exterior-gallery/image-2.jpg",
-    "/exterior-gallery/image-20.jpg",
-    "/exterior-gallery/image-21.jpg",
-    "/exterior-gallery/image-22.jpg",
-    "/exterior-gallery/image-23.jpg",
-    "/exterior-gallery/image-24.jpg",
-    "/exterior-gallery/image-25.jpg",
-    "/exterior-gallery/image-26.jpg",
-    "/exterior-gallery/image-27.jpg",
-    "/exterior-gallery/image-28.jpg",
-    "/exterior-gallery/image-29.jpg",
-    "/exterior-gallery/image-3.jpg",
-    "/exterior-gallery/image-30.jpg",
-    "/exterior-gallery/image-31.jpg",
-    "/exterior-gallery/image-32.jpg",
-    "/exterior-gallery/image-33.jpg",
-    "/exterior-gallery/image-34.jpg",
-    "/exterior-gallery/image-35.jpg",
-    "/exterior-gallery/image-36.jpg",
-    "/exterior-gallery/image-37.jpg",
-    "/exterior-gallery/image-38.jpg",
-    "/exterior-gallery/image-39.jpg",
-    "/exterior-gallery/image-4.jpg",
-    "/exterior-gallery/image-40.jpg",
-    "/exterior-gallery/image-41.jpg",
-    "/exterior-gallery/image-42.jpg",
-    "/exterior-gallery/image-43.jpg",
-    "/exterior-gallery/image-44.jpg",
-    "/exterior-gallery/image-45.jpg",
-    "/exterior-gallery/image-46.jpg",
-    "/exterior-gallery/image-47.jpg",
-    "/exterior-gallery/image-48.jpg",
-    "/exterior-gallery/image-49.jpg",
-    "/exterior-gallery/image-5.jpg",
-    "/exterior-gallery/image-50.jpg",
-    "/exterior-gallery/image-51.jpg",
-    "/exterior-gallery/image-52.jpg",
-    "/exterior-gallery/image-53.jpg",
-    "/exterior-gallery/image-54.jpg",
-    "/exterior-gallery/image-55.jpg",
-    "/exterior-gallery/image-56.jpg",
-    "/exterior-gallery/image-6.jpg",
-    "/exterior-gallery/image-7.jpg",
-    "/exterior-gallery/image-8.jpg",
-    "/exterior-gallery/image-9.jpg"
-]
+import fs from "node:fs";
+import path from "node:path";
 
-export default imageFiles;
+const PLACEHOLDER_IMAGES = [
+  "/placeholders/exterior-1.svg",
+  "/placeholders/exterior-2.svg",
+  "/placeholders/exterior-3.svg",
+  "/placeholders/exterior-1.svg",
+  "/placeholders/exterior-2.svg",
+  "/placeholders/exterior-3.svg",
+];
+
+function isImageFile(filename: string) {
+  return /\.(png|jpe?g|webp|gif)$/i.test(filename);
+}
+
+export function getExteriorGalleryImages() {
+  const dir = path.join(process.cwd(), "public", "gallery", "exterior");
+  if (!fs.existsSync(dir)) return PLACEHOLDER_IMAGES;
+
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => !f.startsWith("."))
+    .filter(isImageFile)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+  if (files.length === 0) return PLACEHOLDER_IMAGES;
+  return files.map((f) => `/gallery/exterior/${f}`);
+}
+
+export default getExteriorGalleryImages();

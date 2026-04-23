@@ -93,8 +93,8 @@ export default function Footer() {
         <div className="border-b border-theme-footer-border pb-6 mb-6">
           <h3 className="text-xl font-semibold">{siteConfig.siteName}</h3>
           <p className="text-theme-footer-text-muted mt-2 text-sm leading-relaxed">
-            Replace this paragraph with your company overview, licensing details,
-            service standards, and warranty language.
+            Portland-area painting and carpentry with a focus on clear
+            communication, thorough prep, and clean finishes.
           </p>
         </div>
 
@@ -103,13 +103,23 @@ export default function Footer() {
             <h4 className="font-semibold">Services</h4>
             <ul className="mt-2 space-y-1 text-theme-footer-text-muted">
               <li>
-                <Link href="/painting/interior" className="hover:text-white">
+                <Link href="/services/interior" className="hover:text-white">
                   Interior Painting
                 </Link>
               </li>
               <li>
-                <Link href="/painting/exterior" className="hover:text-white">
+                <Link href="/services/exterior" className="hover:text-white">
                   Exterior Painting
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/commercial" className="hover:text-white">
+                  Commercial Painting
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/carpentry" className="hover:text-white">
+                  Carpentry
                 </Link>
               </li>
             </ul>

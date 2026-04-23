@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Color consultation placeholder image</title>
+  <desc id="desc">Temporary placeholder artwork for interior painting gallery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b3b2f"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1050" fill="url(#bg)"/>
+  <rect x="120" y="150" width="1160" height="750" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)"/>
+  <g>
+    <rect x="210" y="300" width="220" height="220" rx="18" fill="#f7d56a" opacity="0.95"/>
+    <rect x="460" y="300" width="220" height="220" rx="18" fill="#a7f3d0" opacity="0.95"/>
+    <rect x="710" y="300" width="220" height="220" rx="18" fill="#93c5fd" opacity="0.95"/>
+    <rect x="960" y="300" width="220" height="220" rx="18" fill="#c4b5fd" opacity="0.95"/>
+  </g>
+  <g fill="#ffffff" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" text-anchor="middle">
+    <text x="700" y="620" font-size="42" font-weight="650">Color & Finish</text>
+    <text x="700" y="675" font-size="20" opacity="0.85">Temporary placeholder</text>
+  </g>
+</svg>
+

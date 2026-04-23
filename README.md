@@ -1,4 +1,4 @@
-# Painting Company Template
+# NE Portland Painters
 
 Reusable Next.js template for a painting company website.
 

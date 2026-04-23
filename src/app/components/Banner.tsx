@@ -17,6 +17,7 @@ export default function Banner({
   description,
   ctaLink,
 }: BannerProps) {
+  const unoptimized = imagePath.endsWith(".svg");
   return (
     <div className="relative w-full h-[260px] sm:h-[360px] lg:h-[500px]">
       {/* Hero Image */}
@@ -27,6 +28,7 @@ export default function Banner({
         sizes="100vw"
         className="object-cover"
         priority
+        unoptimized={unoptimized}
       />
 
       {/* Overlay */}

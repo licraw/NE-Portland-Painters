@@ -39,8 +39,74 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+[data-image-placeholders="true"] img[data-placeholderized="true"] {
+  background-color: var(--img-placeholder-bg);
+  box-shadow: inset 0 0 0 1px var(--img-placeholder-border);
+}
+
+[data-image-placeholders="true"] [data-bg-placeholderized="true"] {
+  background-color: var(--bg-placeholder-bg) !important;
+  box-shadow: inset 0 0 0 1px var(--bg-placeholder-border);
+}
+
 .light-green-bg {
   background-color: var(--color-primary-soft);
+}
+
+/* Blog content styling for imported WordPress HTML */
+.blog-content {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.blog-content > * + * {
+  margin-top: 1rem;
+}
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  color: var(--color-heading);
+  line-height: 1.25;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.blog-content h2 {
+  font-size: 28px;
+}
+
+.blog-content h3 {
+  font-size: 22px;
+}
+
+.blog-content a {
+  color: var(--color-primary-deep);
+  text-decoration: underline;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.25rem;
+}
+
+.blog-content li + li {
+  margin-top: 0.5rem;
+}
+
+.blog-content img {
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid var(--color-border-strong);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--color-text-subtle);
 }
 
 @layer components {

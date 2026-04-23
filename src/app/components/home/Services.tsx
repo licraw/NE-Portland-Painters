@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Section from "../PageSection";
 import styled from "styled-components";
 import {
@@ -13,27 +12,23 @@ import ServiceCard from "./ServiceCard";
 import { siteConfig } from "@/lib/siteConfig";
 
 const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
   gap: 16px;
 
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
   @media (min-width: 1024px) {
-    flex-direction: row;
-    align-items: stretch;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
   }
 `;
 
 const Services = () => {
-  const [activeCard, setActiveCard] = useState(siteConfig.services[0].title);
-
-  function handleCardClick(e: { currentTarget: any; }) {
-    const card = e.currentTarget;
-    const title = card.querySelector("h2")?.textContent || "";
-    setActiveCard(title);
-  }
-
   return (
     <Section bgcolor="var(--color-primary-soft)">
       <SectionHeaderWrapper>
@@ -44,20 +39,17 @@ const Services = () => {
       </SectionHeaderWrapper>
       <SectionBody>
         <SectionSubHeader>
-          Flexible service cards for any painting company
+          Painting and carpentry services across the Portland area
         </SectionSubHeader>
         <SectionContent>
           <CardContainer>
             {siteConfig.services.map((service) => (
               <ServiceCard
                 key={service.key}
-                isactive={activeCard === service.title}
                 title={service.title}
                 description={service.description}
                 image={service.image}
-                secondImage={"secondImage" in service ? service.secondImage : undefined}
                 href={service.href}
-                handleCardClick={handleCardClick}
               />
             ))}
           </CardContainer>

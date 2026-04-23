@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Interior painting placeholder image</title>
+  <desc id="desc">Temporary placeholder artwork for interior painting gallery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7d56a"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1050" fill="url(#bg)"/>
+  <rect x="110" y="110" width="1180" height="830" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)"/>
+  <rect x="110" y="870" width="1180" height="32" rx="16" fill="url(#stripe)" opacity="0.9"/>
+  <g fill="#ffffff" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" text-anchor="middle">
+    <text x="700" y="510" font-size="46" font-weight="650">Interior Painting</text>
+    <text x="700" y="565" font-size="20" opacity="0.85">Placeholder image</text>
+  </g>
+</svg>
+

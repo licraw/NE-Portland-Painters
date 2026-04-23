@@ -8,8 +8,12 @@ const staticRoutes = [
   "/estimate",
   "/contact",
   "/about",
-  "/painting/interior",
-  "/painting/exterior",
+  "/services/interior",
+  "/services/exterior",
+  "/services/powerwashing",
+  "/services/turnover",
+  "/services/commercial",
+  "/services/carpentry",
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

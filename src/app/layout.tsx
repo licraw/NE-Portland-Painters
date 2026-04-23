@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import PencilBanner from "./components/PencilBanner";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import ImagePlaceholderMode from "./components/ImagePlaceholderMode";
 import GoogleCaptchaWrapper from "./api/verifyRecaptcha/GoogleCaptchaWrapper";
 import { getBaseMetadata } from "@/lib/siteConfig";
 
@@ -27,11 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-image-placeholders="false">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <GoogleCaptchaWrapper>
+          <ImagePlaceholderMode />
           <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
             <Header>
               <PencilBanner ctaAction="/estimate" />

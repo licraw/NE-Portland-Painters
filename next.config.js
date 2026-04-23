@@ -3,6 +3,12 @@ module.exports = {
   images: {
     domains: [],
   },
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.cache = false;
+    }
+    return config;
+  },
   experimental:{
     serverActions: {
       bodySizeLimit: '10mb',
@@ -16,6 +22,16 @@ module.exports = {
   },
   async redirects() {
     return [
+      {
+        source: '/painting/:path*',
+        destination: '/services/:path*',
+        permanent: true,
+      },
+      {
+        source: '/favicon.ico',
+        destination: '/favicon.png',
+        permanent: true,
+      },
       {
         source: '/green-and-safe',
         destination: '/about',
@@ -48,27 +64,27 @@ module.exports = {
       },
       {
         source: '/carpentry',
-        destination: '/painting/interior',
+        destination: '/services/carpentry',
         permanent: true,
       },
       {
         source: '/carpentry-example',
-        destination: '/painting/interior',
+        destination: '/services/carpentry',
         permanent: true,
       },
       {
         source: '/restoration',
-        destination: '/painting/exterior',
+        destination: '/services/exterior',
         permanent: true,
       },
       {
         source: '/commercial',
-        destination: '/painting/exterior',
+        destination: '/services/commercial',
         permanent: true,
       },
       {
         source: '/hoa',
-        destination: '/painting/exterior',
+        destination: '/services/exterior',
         permanent: true,
       },
     ]

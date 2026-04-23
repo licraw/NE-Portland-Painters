@@ -1,20 +1,15 @@
 "use client";
-import { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import Image from "next/image";
 
 interface ServiceCardProps {
   title: string;
   description?: string;
   image?: string;
-  isactive?: boolean;
-  secondImage?: string;
-  href: string | { interior: string; exterior: string };
-  handleCardClick?: (e: any) => void;
+  href: string;
 }
 
-type CardProps = Pick<ServiceCardProps, "isactive" | "image">;
+type CardProps = Pick<ServiceCardProps, "image">;
 
 const toCssImageUrl = (image?: string) => {
   if (!image) return "none";
@@ -22,7 +17,7 @@ const toCssImageUrl = (image?: string) => {
 };
 
 const Card = styled.div.withConfig({
-  shouldForwardProp: (prop) => prop !== "isactive",
+  shouldForwardProp: (prop) => prop !== "image",
 })<CardProps>`
   display: flex;
   flex-direction: column;
@@ -41,18 +36,22 @@ const Card = styled.div.withConfig({
     ${(props) => toCssImageUrl(props.image)} center/cover no-repeat;
 
   @media (min-width: 1024px) {
-    flex: ${({ isactive }) => (isactive ? "2" : "1")};
-    min-width: ${({ isactive }) => (isactive ? "50%" : "15%")};
-    opacity: ${({ isactive }) => (isactive ? "1" : "0.7")};
-    width: 100%;
+    opacity: 1;
   }
 
   @media (max-width: 1023px) {
-    flex: 1;
     width: 100%;
     transform: none;
     opacity: 1;
   }
+`;
+
+const CardLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 `;
 
 const ContentWrapper = styled.div`
@@ -80,65 +79,9 @@ const Description = styled.p`
   max-width: 600px;
 `;
 
-const BottomRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+const ViewServiceCta = styled.span`
+  align-self: flex-start;
   margin-top: 16px;
-  align-items: center;
-
-  /* Stack vertically on mobile */
-  @media (max-width: 1023px) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-`;
-
-const ToggleGroup = styled.div`
-  display: flex;
-  align-items: center;
-  background: black;
-  border-radius: 24px;
-  padding: 4px;
-  position: relative;
-  height: 40px;
-
-  /* Stretch full width on mobile */
-  @media (max-width: 1023px) {
-    width: 100%;
-    justify-content: space-between;
-  }
-`;
-
-const ToggleButton = styled.button<{ selected: boolean }>`
-  flex: 1;
-  padding: 12px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  background: transparent;
-  color: ${({ selected }) => (selected ? "white" : "rgba(255, 255, 255, 0.6)")};
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 2;
-`;
-
-const ToggleSlider = styled.div<{ activeindex: number }>`
-  position: absolute;
-  top: 4px;
-  left: ${({ activeindex }) => (activeindex === 0 ? "4px" : "50%")};
-  width: calc(50% - 4px);
-  height: 80%;
-  background: var(--color-primary);
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  z-index: 1;
-`;
-
-const ViewServiceLink = styled(Link)`
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 500;
@@ -146,117 +89,29 @@ const ViewServiceLink = styled(Link)`
   border: 1px solid white;
   color: black;
   background: white;
-  text-decoration: none;
   transition: all 0.3s ease;
 
-  &:hover {
+  ${CardLink}:hover & {
     background: rgba(255, 255, 255, 0.2);
     color: white;
   }
-
-  /* Stretch full width on mobile */
-  @media (max-width: 1023px) {
-    width: 100%;
-    text-align: center;
-  }
-`;
-
-const ArrowButtonWrapper = styled.div`
-  display: flex;
-  height: 48px;
-  padding: 10px 12px;
-  justify-content: center;
-  align-self: flex-start;
-  margin-top: 16px;
-  gap: 8px;
-  border-radius: 48px;
-  background: rgba(7, 7, 7, 0.3);
-  backdrop-filter: blur(10px);
 `;
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   image,
-  isactive,
-  secondImage,
   href,
-  handleCardClick,
 }) => {
-  const [paintingOption, setPaintingOption] = useState<"interior" | "exterior">(
-    "interior"
-  );
-  const supportsToggle =
-    typeof href !== "string" &&
-    "interior" in href &&
-    "exterior" in href &&
-    secondImage;
-  const resolvedHref =
-    typeof href === "string" ? href : href[paintingOption];
-
   return (
-    <Card
-      isactive={isactive}
-      title={title}
-      image={
-        !supportsToggle
-          ? image
-          : paintingOption === "interior"
-          ? image
-          : secondImage
-      }
-      onClick={handleCardClick}
-    >
-      <ContentWrapper>
-        <Title>{title}</Title>
-        {isactive ? (
-          <>
-            <Description>{description}</Description>
-            <BottomRow>
-              {supportsToggle ? (
-                <ToggleGroup>
-                  <ToggleSlider
-                    activeindex={paintingOption === "interior" ? 0 : 1}
-                  />
-                  <ToggleButton
-                    className={
-                      paintingOption === "interior"
-                        ? "interiorActive"
-                        : "exteriorActive"
-                    }
-                    selected={paintingOption === "interior"}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setPaintingOption("interior");
-                    }}
-                  >
-                    Interior
-                  </ToggleButton>
-                  <ToggleButton
-                    selected={paintingOption === "exterior"}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setPaintingOption("exterior");
-                    }}
-                  >
-                    Exterior
-                  </ToggleButton>
-                </ToggleGroup>
-              ) : (
-                <div></div>
-              )}
-
-              <ViewServiceLink href={resolvedHref}>
-                View Service
-              </ViewServiceLink>
-            </BottomRow>
-          </>
-        ) : (
-          <ArrowButtonWrapper>
-            <Image src="/arrow.svg" alt="Arrow Icon" width={24} height={24} />
-          </ArrowButtonWrapper>
-        )}
-      </ContentWrapper>
+    <Card title={title} image={image}>
+      <CardLink href={href}>
+        <ContentWrapper>
+          <Title>{title}</Title>
+          {description ? <Description>{description}</Description> : null}
+          <ViewServiceCta>View Service</ViewServiceCta>
+        </ContentWrapper>
+      </CardLink>
     </Card>
   );
 };

@@ -7,8 +7,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { siteConfig } from "@/lib/siteConfig";
 
 const navItems = [
-  { href: "/painting/interior", label: "Interior Painting" },
-  { href: "/painting/exterior", label: "Exterior Painting" },
+  { href: "/services/interior", label: "Interior Painting" },
+  { href: "/services/exterior", label: "Exterior Painting" },
+  { href: "/services/turnover", label: "Turnover Painting" },
+  { href: "/services/commercial", label: "Commercial Painting" },
+  { href: "/services/powerwashing", label: "Power Washing" },
+  { href: "/services/carpentry", label: "Carpentry & Repairs" },
 ] as const;
 
 export default function Nav() {
