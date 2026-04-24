@@ -180,7 +180,7 @@ cover_image: "/blog/the-cost-of-neglecting-paint-maintenance/down-net_http202406
 
 
 
-<p>Regular paint maintenance is an investment in your home’s longevity and value. By staying proactive you can not only avoid costly repairs, but also maintain your homes beauty for years to come. NE Portland Painters offers free quotes for homes in the greater Seattle area &#8211; <a href="https://www.soundpaintingsolutions.com/contact-us/">Schedule a free quote today!</a></p>
+<p>Regular paint maintenance is an investment in your home’s longevity and value. By staying proactive you can not only avoid costly repairs, but also maintain your homes beauty for years to come. NE Portland Painters offers free quotes for homes in the greater Seattle area &#8211; <a href="/contact">Schedule a free quote today!</a></p>
 
 
 

@@ -1,0 +1,17 @@
+---
+date: "2014-02-25T23:09:26"
+source_url: "https://www.soundpaintingsolutions.com/mallory-paint-feature/"
+title_html: "NE Portland Painters featured on Mallory Paint"
+excerpt_html: "<p>Mallory Paint Store is NE Portland Painters’ choice for quality paints in the Puget Sound, selling the full line of Benjamin Moore Paints. We frequently work with their Color Experts to help us evaluate paint colors for our clients and match colors as well. We are honored to be a featured contractor on their website! Thanks, Mallory Paint! Read the &#8230;</p>\n"
+cover_image: "/blog/mallory-paint-feature/owner-picture.jpg"
+---
+<p>Mallory Paint Store is NE Portland Painters’ choice for quality paints in the Puget Sound, selling the full line of Benjamin Moore Paints. We frequently work with their Color Experts to help us evaluate paint colors for our clients and match colors as well. We are honored to be a featured contractor on their website! Thanks, Mallory Paint!</p>
+<p>Read the full article below and at <a href="http://mallorypaint.com/customer-spotlight-sound-painting-solutions/" target="_blank" rel="noopener">MalloryPaint.com</a>:</p>
+<blockquote>
+<p><div id="attachment_922" style="width: 164px" class="wp-caption alignleft"><a href="/blog/mallory-paint-feature/owner-picture.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-922" class="  wp-image-922" src="/blog/mallory-paint-feature/owner-picture.jpg" alt="A portrait of Jeff DuPont - Owner of NE Portland Painters" width="154" height="171" srcset="/blog/mallory-paint-feature/owner-picture.jpg 388w, /blog/mallory-paint-feature/owner-picture-269x300.jpg 269w, /blog/mallory-paint-feature/owner-picture-323x360.jpg 323w" sizes="auto, (max-width: 154px) 100vw, 154px" /></a><p id="caption-attachment-922" class="wp-caption-text">Jeff DuPont</p></div></p>
+<p>NE Portland Painters has been serving customers in the greater Seattle area and a Mallory Paint Store customer for the past two years. Jeff DuPont, owner of NE Portland Painters, has more than twelve years’ experience painting professionally.</p>
+<p>The one thing that NE Portland Painters focuses on more than anything else is their customer service. Jeff’s focus is on every single detail of the relationship: the level of customer service, professionalism, that they never cut corners, and keep detailed well written contracts. They put 100% into everything they do.</p>
+<p><div style="width: 209px" class="wp-caption alignright"><a href="http://mallorypaint.com/wp-content/uploads/2014/02/exterior.jpg"><img loading="lazy" decoding="async" src="http://mallorypaint.com/wp-content/uploads/2014/02/exterior-249x300.jpg" alt="Home Exterior Paint Project" width="199" height="240" /></a><p class="wp-caption-text">Exterior Painting Project</p></div></p>
+<p>NE Portland Painters has a history of interesting jobs, though, the one that stood out the most was fully stripping and repainting of a Normandy Park home exterior. The jobs they look forward to the most are residential interiors and exteriors repainting.</p>
+<p>Jeff turns to Mallory Paint Store as their supplier for many reasons. First and foremost, they carry the Benjamin Moore paint line and quality of the paint. He has also used Mallory Paint’s worksite delivery service several times. He knows and trusts Mallory Paint to be good to his clients. He can trust that any client he sends to the store will receive expert advice and great service.</p>
+<p><a href="/" target="_blank" rel="noopener">/</a></p></blockquote>

@@ -122,7 +122,7 @@ cover_image: "/blog/bedroom-paint-color-ideas/275598567_2135458586606108_3738650
 
 
 
-<p>Benjamin Moore&#8217;s Blue Nova is a rich and inviting shade that adds depth and character to any bedroom. Blue Nova was actually deemed Benjamin Moore&#8217;s <a href="https://www.soundpaintingsolutions.com/2024-colors-of-the-year/">2024 color of the year</a> due to its popularity. This deep blue color is just enough warmth to create a cozy, enveloping atmosphere. Blue Nova works beautifully as an accent wall or as the main color in a bedroom, offering a perfect backdrop for a variety of decor styles from classic to contemporary. Its hue pairs well with metallic accents, neutral tones, and natural textures, making it the perfect choice for anyone looking to make a bold yet refined statement.</p>
+<p>Benjamin Moore&#8217;s Blue Nova is a rich and inviting shade that adds depth and character to any bedroom. Blue Nova was actually deemed Benjamin Moore&#8217;s <a href="/blog/2024-colors-of-the-year">2024 color of the year</a> due to its popularity. This deep blue color is just enough warmth to create a cozy, enveloping atmosphere. Blue Nova works beautifully as an accent wall or as the main color in a bedroom, offering a perfect backdrop for a variety of decor styles from classic to contemporary. Its hue pairs well with metallic accents, neutral tones, and natural textures, making it the perfect choice for anyone looking to make a bold yet refined statement.</p>
 
 
 
@@ -146,4 +146,4 @@ cover_image: "/blog/bedroom-paint-color-ideas/275598567_2135458586606108_3738650
 
 
 
-<p><a href="https://www.soundpaintingsolutions.com/">Contact us</a> today to schedule your free painting or carpentry quote in Seattle. </p>
+<p><a href="/">Contact us</a> today to schedule your free painting or carpentry quote in Seattle. </p>

@@ -17,6 +17,46 @@ function stripHtml(html: string) {
   return html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 }
 
+function normalizeImageKey(url: string) {
+  const clean = String(url ?? "").split("?")[0].trim();
+  if (!clean) return "";
+  const fileName = clean.split("/").pop() ?? "";
+  return fileName.replace(/-\d+x\d+(?=\.)/g, "").toLowerCase();
+}
+
+function stripLeadingDuplicateCoverImage(contentHtml: string, coverImage?: string) {
+  if (!coverImage) return contentHtml;
+
+  const coverKey = normalizeImageKey(coverImage);
+  if (!coverKey) return contentHtml;
+
+  const trimmed = contentHtml.trimStart();
+  const head = trimmed.slice(0, 4000);
+  const firstImgMatch = head.match(/<img\b[^>]*\bsrc="([^"]+)"/i);
+  if (!firstImgMatch) return contentHtml;
+
+  const firstImgKey = normalizeImageKey(firstImgMatch[1]);
+  if (!firstImgKey || firstImgKey !== coverKey) return contentHtml;
+
+  const leadingBlocks: RegExp[] = [
+    /^\s*<div\b[^>]*wp-block-image[^>]*>[\s\S]*?<\/div>\s*/i,
+    /^\s*(?:<p[^>]*>\s*)?<figure\b[\s\S]*?<\/figure>\s*(?:<\/p>)?\s*/i,
+    /^\s*<p[^>]*>\s*<img\b[\s\S]*?<\/p>\s*/i,
+  ];
+
+  for (const re of leadingBlocks) {
+    const m = trimmed.match(re);
+    if (!m) continue;
+    const block = m[0];
+    const blockImgMatch = block.match(/<img\b[^>]*\bsrc="([^"]+)"/i);
+    if (!blockImgMatch) continue;
+    if (normalizeImageKey(blockImgMatch[1]) !== coverKey) continue;
+    return trimmed.slice(block.length).trimStart();
+  }
+
+  return contentHtml;
+}
+
 export function getAllPosts(): BlogPost[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
 
@@ -43,6 +83,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
   const excerptHtml = String(parsed.data.excerpt_html ?? "");
   const date = String(parsed.data.date ?? "");
   const coverImage = parsed.data.cover_image ? String(parsed.data.cover_image) : undefined;
+  const contentHtml = stripLeadingDuplicateCoverImage(parsed.content.trim(), coverImage);
 
   return {
     slug,
@@ -50,11 +91,10 @@ export function getPostBySlug(slug: string): BlogPost | null {
     excerptHtml,
     date,
     coverImage,
-    contentHtml: parsed.content.trim(),
+    contentHtml,
   };
 }
 
 export function getPostTitleText(post: Pick<BlogPost, "titleHtml">) {
   return stripHtml(post.titleHtml);
 }
-

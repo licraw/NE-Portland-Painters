@@ -18,17 +18,17 @@ export const siteConfig = {
     googleAds: "",
     googleAnalytics: "",
   },
-  domain: "https://example.com",
+  domain: "https://www.neportlandpainters.com",
   hero: {
     badge: "Get a free quote",
     badgeLinkText: "here!",
     headline: "NE Portland Painters",
     description:
-      "Whether your needs are interior painting, exterior painting, or carpentry, our team of friendly, expert craftspeople is ready to help!",
+      "No project is too small. Your neighbors are here to help with interior painting, exterior painting, carpentry, and more.",
     ctaLabel: "Get a Free Quote",
   },
   home: {
-    heroImage: "/sps/hero-interior.jpg",
+    heroImage: "/gallery/exterior/689b8422deaa37a01160e077-row-163.jpeg",
     topRatedHeadline: "Top-Rated Portland House Painters",
     topRatedDescription:
       "With customer happiness as our top priority, we’re committed to premium service and quality for Portland-area homes.",
@@ -45,7 +45,7 @@ export const siteConfig = {
           "Our friendly and professional house painters treat your home with the care and respect it deserves.",
         href: "/services/interior",
         ctaLabel: "Interior Page",
-        image: "/sps/hero-interior.jpg",
+        image: "/gallery/interior/689ba98cb4b844028ac8b380-row-269.jpeg",
       },
       {
         key: "exterior",
@@ -56,7 +56,7 @@ export const siteConfig = {
           "We handle the prep and coating systems common to Portland-area homes for a finish that lasts.",
         href: "/services/exterior",
         ctaLabel: "Exterior Page",
-        image: "/sps/hero-exterior.jpg",
+        image: "/gallery/exterior/689b83802971e94fb2f87317-row-162.jpeg",
       },
       {
         key: "commercial",
@@ -67,7 +67,7 @@ export const siteConfig = {
           "From offices to retail and multi-family common areas, we plan around access and timelines.",
         href: "/services/commercial",
         ctaLabel: "Commercial Page",
-        image: "/sps/hero-exterior.jpg",
+        image: "/gallery/commercial/commercial-painting.jpg",
       },
       {
         key: "turnover",
@@ -78,7 +78,7 @@ export const siteConfig = {
           "Patch, paint, and punch lists for apartments and rentals with scheduling options that keep move-ins on track.",
         href: "/services/turnover",
         ctaLabel: "Turnover Page",
-        image: "/sps/hero-interior.jpg",
+        image: "/gallery/turn-over/turn-over-1.jpg",
       },
       {
         key: "carpentry",
@@ -89,7 +89,7 @@ export const siteConfig = {
           "Carpentry is the perfect complement to painting. Let us be a one-stop shop for your home projects.",
         href: "/services/carpentry",
         ctaLabel: "Carpentry Page",
-        image: "/gallery/carpentry/68911bc1a3352641ba537c10-665a50ff258e51c7ed389af5-20210610-105537.jpeg",
+        image: "/gallery/carpentry/68911bc22e7a5128a8dd05b0-66611cd1e78703c64d53b723-image-20from-20ios-20-2.jpeg",
       },
       {
         key: "powerwashing",
@@ -100,7 +100,7 @@ export const siteConfig = {
           "Siding, patios, walkways, decks, and paint-prep washes with safe methods for the surface.",
         href: "/services/powerwashing",
         ctaLabel: "Power Washing Page",
-        image: "/gallery/powerwashing/pressure-washing.jpg",
+        image: "/gallery/powerwashing/pressure-wash.jpg",
       },
     ],
     differenceHeading: "NE Portland Painters: Our Difference",

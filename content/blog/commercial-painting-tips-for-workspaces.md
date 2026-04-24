@@ -254,4 +254,4 @@ cover_image: "/blog/commercial-painting-tips-for-workspaces/coworking-macherzent
 </div>
 
 
-<p><strong>Ready to transform your workspace?</strong> Contact <a href="https://soundpaintingsolutions.com/"><strong>NE Portland Painters</strong></a> today for a free consultation and discover how the right painting approach can elevate your business environment.</p>
+<p><strong>Ready to transform your workspace?</strong> Contact <a href="/"><strong>NE Portland Painters</strong></a> today for a free consultation and discover how the right painting approach can elevate your business environment.</p>

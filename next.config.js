@@ -3,12 +3,6 @@ module.exports = {
   images: {
     domains: [],
   },
-  webpack: (config, { dev }) => {
-    if (dev) {
-      config.cache = false;
-    }
-    return config;
-  },
   experimental:{
     serverActions: {
       bodySizeLimit: '10mb',

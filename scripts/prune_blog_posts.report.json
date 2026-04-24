@@ -1,0 +1,750 @@
+{
+  "dry_run": false,
+  "keep_count": 73,
+  "remove_count": 49,
+  "remove": [
+    {
+      "slug": "15-things-to-do-while-social-distancing",
+      "title": "15 Things to Do While Social Distancing",
+      "reasons": [
+        "non_trade"
+      ],
+      "markdown_path": "content/blog/15-things-to-do-while-social-distancing.md",
+      "assets_dir": "public/blog/15-things-to-do-while-social-distancing"
+    },
+    {
+      "slug": "2014-exterior-west-seattle",
+      "title": "Recent Exterior Project in West Seattle",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/2014-exterior-west-seattle.md",
+      "assets_dir": "public/blog/2014-exterior-west-seattle"
+    },
+    {
+      "slug": "2020-in-hindsight",
+      "title": "2020 in Hindsight",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/2020-in-hindsight.md",
+      "assets_dir": "public/blog/2020-in-hindsight"
+    },
+    {
+      "slug": "2022-company-updates",
+      "title": "2022 Company Updates",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/2022-company-updates.md",
+      "assets_dir": "public/blog/2022-company-updates"
+    },
+    {
+      "slug": "2022-project-highlights",
+      "title": "2022 Project Highlights",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/2022-project-highlights.md",
+      "assets_dir": "public/blog/2022-project-highlights"
+    },
+    {
+      "slug": "2023-projects-highlights",
+      "title": "2023 Projects Highlights",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/2023-projects-highlights.md",
+      "assets_dir": "public/blog/2023-projects-highlights"
+    },
+    {
+      "slug": "2023-seattle-home-show",
+      "title": "2023 Seattle Home Show",
+      "reasons": [
+        "company",
+        "location"
+      ],
+      "markdown_path": "content/blog/2023-seattle-home-show.md",
+      "assets_dir": "public/blog/2023-seattle-home-show"
+    },
+    {
+      "slug": "2024-project-highlights",
+      "title": "2024 Project Highlights",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/2024-project-highlights.md",
+      "assets_dir": "public/blog/2024-project-highlights"
+    },
+    {
+      "slug": "2024-spirit-of-service-award",
+      "title": "2024 Spirit Of Service Award",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/2024-spirit-of-service-award.md",
+      "assets_dir": "public/blog/2024-spirit-of-service-award"
+    },
+    {
+      "slug": "2024-spring-exterior-project-highlights",
+      "title": "2024 Spring Exterior Project Highlights",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/2024-spring-exterior-project-highlights.md",
+      "assets_dir": "public/blog/2024-spring-exterior-project-highlights"
+    },
+    {
+      "slug": "a-pool-house-in-seattle-yes-we-can-paint-that",
+      "title": "A Pool House in Seattle? Yes, We Can Paint That!",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/a-pool-house-in-seattle-yes-we-can-paint-that.md",
+      "assets_dir": "public/blog/a-pool-house-in-seattle-yes-we-can-paint-that"
+    },
+    {
+      "slug": "bellevue-commercial-painting-job",
+      "title": "Bellevue Commercial Painting Job",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/bellevue-commercial-painting-job.md",
+      "assets_dir": "public/blog/bellevue-commercial-painting-job"
+    },
+    {
+      "slug": "best-of-houzz-2014",
+      "title": "NE Portland Painters Receives \u201cBest of Houzz\u201d Award",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/best-of-houzz-2014.md",
+      "assets_dir": "public/blog/best-of-houzz-2014"
+    },
+    {
+      "slug": "best-of-houzz-2015-award",
+      "title": "NE Portland Painters Receives Best of Houzz 2015 Award",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/best-of-houzz-2015-award.md",
+      "assets_dir": "public/blog/best-of-houzz-2015-award"
+    },
+    {
+      "slug": "capitol-hill-exterior-painting-job",
+      "title": "Capitol Hill Exterior Painting Job",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/capitol-hill-exterior-painting-job.md",
+      "assets_dir": "public/blog/capitol-hill-exterior-painting-job"
+    },
+    {
+      "slug": "composite-deck-project-in-seattle",
+      "title": "Composite Deck Project in Seattle",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/composite-deck-project-in-seattle.md",
+      "assets_dir": "public/blog/composite-deck-project-in-seattle"
+    },
+    {
+      "slug": "exterior-painting-project-in-seattle",
+      "title": "Exterior Painting Project in Seattle",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/exterior-painting-project-in-seattle.md",
+      "assets_dir": "public/blog/exterior-painting-project-in-seattle"
+    },
+    {
+      "slug": "exterior-painting-video-summer2013",
+      "title": "Seattle Exterior Painting Video",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/exterior-painting-video-summer2013.md",
+      "assets_dir": "public/blog/exterior-painting-video-summer2013"
+    },
+    {
+      "slug": "favorite-projects-of-2020",
+      "title": "Favorite Projects of 2020",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/favorite-projects-of-2020.md",
+      "assets_dir": "public/blog/favorite-projects-of-2020"
+    },
+    {
+      "slug": "greenwood-interior-painting-job",
+      "title": "Greenwood Interior Painting Job",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/greenwood-interior-painting-job.md",
+      "assets_dir": "public/blog/greenwood-interior-painting-job"
+    },
+    {
+      "slug": "handling-home-improvement-during-covid-19",
+      "title": "Handling Home Improvement during COVID-19",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/handling-home-improvement-during-covid-19.md",
+      "assets_dir": "public/blog/handling-home-improvement-during-covid-19"
+    },
+    {
+      "slug": "hire-vets",
+      "title": "Hiring Vets and Military Appreciation Month",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/hire-vets.md",
+      "assets_dir": "public/blog/hire-vets"
+    },
+    {
+      "slug": "holiday-gift-guide-new-homeowners",
+      "title": "The Holiday Gift Guide for New Homeowners",
+      "reasons": [
+        "non_trade"
+      ],
+      "markdown_path": "content/blog/holiday-gift-guide-new-homeowners.md",
+      "assets_dir": "public/blog/holiday-gift-guide-new-homeowners"
+    },
+    {
+      "slug": "house-painting-video-1213",
+      "title": "Seattle House Painting in 2013 (Video)",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/house-painting-video-1213.md",
+      "assets_dir": "public/blog/house-painting-video-1213"
+    },
+    {
+      "slug": "how-much-paint-interior-seattle",
+      "title": "How much does it cost to paint the interior of a house in Seattle? More than you might think.",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/how-much-paint-interior-seattle.md",
+      "assets_dir": "public/blog/how-much-paint-interior-seattle"
+    },
+    {
+      "slug": "how-to-recycle-paint-in-seattle",
+      "title": "How to Recycle Paint in Seattle",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/how-to-recycle-paint-in-seattle.md",
+      "assets_dir": "public/blog/how-to-recycle-paint-in-seattle"
+    },
+    {
+      "slug": "interior-work-covid-19",
+      "title": "Interior Work During the COVID-19 Pandemic",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/interior-work-covid-19.md",
+      "assets_dir": "public/blog/interior-work-covid-19"
+    },
+    {
+      "slug": "octobers-spooky-deals",
+      "title": "October\u2019s Spooky Deals",
+      "reasons": [
+        "non_trade"
+      ],
+      "markdown_path": "content/blog/octobers-spooky-deals.md",
+      "assets_dir": "public/blog/octobers-spooky-deals"
+    },
+    {
+      "slug": "painter-for-a-day-special",
+      "title": "Painter for a Day Winter Special",
+      "reasons": [
+        "promo"
+      ],
+      "markdown_path": "content/blog/painter-for-a-day-special.md",
+      "assets_dir": "public/blog/painter-for-a-day-special"
+    },
+    {
+      "slug": "painter-for-a-day-special2024",
+      "title": "Painter for a Day Winter Special",
+      "reasons": [
+        "promo"
+      ],
+      "markdown_path": "content/blog/painter-for-a-day-special2024.md",
+      "assets_dir": "public/blog/painter-for-a-day-special2024"
+    },
+    {
+      "slug": "preventing-wood-rot-in-seattle",
+      "title": "Preventing Wood Rot in Seattle",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/preventing-wood-rot-in-seattle.md",
+      "assets_dir": "public/blog/preventing-wood-rot-in-seattle"
+    },
+    {
+      "slug": "project-highlights-of-2021",
+      "title": "Project Highlights of 2021",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/project-highlights-of-2021.md",
+      "assets_dir": "public/blog/project-highlights-of-2021"
+    },
+    {
+      "slug": "queen-anne-exterior-stain-job",
+      "title": "Queen Anne Exterior Stain Job",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/queen-anne-exterior-stain-job.md",
+      "assets_dir": "public/blog/queen-anne-exterior-stain-job"
+    },
+    {
+      "slug": "recent-capitol-hill-project",
+      "title": "Recent Capitol Hill Project",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/recent-capitol-hill-project.md",
+      "assets_dir": "public/blog/recent-capitol-hill-project"
+    },
+    {
+      "slug": "recent-job-belltown-2014",
+      "title": "Recent Job in Belltown",
+      "reasons": [
+        "location",
+        "project"
+      ],
+      "markdown_path": "content/blog/recent-job-belltown-2014.md",
+      "assets_dir": "public/blog/recent-job-belltown-2014"
+    },
+    {
+      "slug": "recent-lead-renovation-job",
+      "title": "Recent Lead Renovation Job",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/recent-lead-renovation-job.md",
+      "assets_dir": "public/blog/recent-lead-renovation-job"
+    },
+    {
+      "slug": "remodel-for-reason-project",
+      "title": "Remodel for Reason Project",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/remodel-for-reason-project.md",
+      "assets_dir": "public/blog/remodel-for-reason-project"
+    },
+    {
+      "slug": "remodel-for-reason-winner",
+      "title": "Remodel for Reason Winner!",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/remodel-for-reason-winner.md",
+      "assets_dir": "public/blog/remodel-for-reason-winner"
+    },
+    {
+      "slug": "seattle-exterior-painting-conditions",
+      "title": "Seattle Exterior Painting Conditions",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/seattle-exterior-painting-conditions.md",
+      "assets_dir": "public/blog/seattle-exterior-painting-conditions"
+    },
+    {
+      "slug": "sound-painting-covid-19-response",
+      "title": "A message to our customers about COVID-19",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/sound-painting-covid-19-response.md",
+      "assets_dir": "public/blog/sound-painting-covid-19-response"
+    },
+    {
+      "slug": "sound-painting-employee-profile-james",
+      "title": "Sound Painting Employee Profile \u2013 James",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/sound-painting-employee-profile-james.md",
+      "assets_dir": "public/blog/sound-painting-employee-profile-james"
+    },
+    {
+      "slug": "sound-painting-employee-profile-katrina-gonzalez",
+      "title": "Sound Painting Employee Spotlight \u2013 Katrina",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/sound-painting-employee-profile-katrina-gonzalez.md",
+      "assets_dir": "public/blog/sound-painting-employee-profile-katrina-gonzalez"
+    },
+    {
+      "slug": "sound-painting-employee-profile-kevin",
+      "title": "Sound Painting Employee Profile \u2013 Kevin",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/sound-painting-employee-profile-kevin.md",
+      "assets_dir": "public/blog/sound-painting-employee-profile-kevin"
+    },
+    {
+      "slug": "sound-painting-employee-profile-victor-torres",
+      "title": "Sound Painting Employee Profile \u2013 Victor",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/sound-painting-employee-profile-victor-torres.md",
+      "assets_dir": "public/blog/sound-painting-employee-profile-victor-torres"
+    },
+    {
+      "slug": "sound-painting-employee-spotlight-connor-forbeck",
+      "title": "Sound Painting Employee Spotlight \u2013 Connor",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/sound-painting-employee-spotlight-connor-forbeck.md",
+      "assets_dir": "public/blog/sound-painting-employee-spotlight-connor-forbeck"
+    },
+    {
+      "slug": "transitioning-to-an-electric-fleet",
+      "title": "Transitioning to Electric Vehicles",
+      "reasons": [
+        "company"
+      ],
+      "markdown_path": "content/blog/transitioning-to-an-electric-fleet.md",
+      "assets_dir": "public/blog/transitioning-to-an-electric-fleet"
+    },
+    {
+      "slug": "volunteer-library-box-painting",
+      "title": "Volunteer Library Box Painting",
+      "reasons": [
+        "project"
+      ],
+      "markdown_path": "content/blog/volunteer-library-box-painting.md",
+      "assets_dir": "public/blog/volunteer-library-box-painting"
+    },
+    {
+      "slug": "what-questions-should-i-ask-a-seattle-painting-company-before-hiring-them",
+      "title": "What Questions Should I Ask a Seattle Painting Company Before Hiring Them?",
+      "reasons": [
+        "location"
+      ],
+      "markdown_path": "content/blog/what-questions-should-i-ask-a-seattle-painting-company-before-hiring-them.md",
+      "assets_dir": "public/blog/what-questions-should-i-ask-a-seattle-painting-company-before-hiring-them"
+    },
+    {
+      "slug": "what-to-binge-watch-during-quarantine",
+      "title": "What to Binge-Watch During Quarantine",
+      "reasons": [
+        "non_trade"
+      ],
+      "markdown_path": "content/blog/what-to-binge-watch-during-quarantine.md",
+      "assets_dir": "public/blog/what-to-binge-watch-during-quarantine"
+    }
+  ],
+  "keep": [
+    {
+      "slug": "2021-color-trends",
+      "title": "2021 Color Trends"
+    },
+    {
+      "slug": "2023-colors-of-the-year",
+      "title": "2023 Colors of the Year"
+    },
+    {
+      "slug": "2024-colors-of-the-year",
+      "title": "2024 Colors of the Year"
+    },
+    {
+      "slug": "2026-colors-of-the-year-beige-makes-a-comeback",
+      "title": "2026 Colors of the Year: Beige Makes a Comeback"
+    },
+    {
+      "slug": "3-ways-to-choose-a-paint-color",
+      "title": "3 Ways to Choose the Perfect Paint Color"
+    },
+    {
+      "slug": "about-paint-sheens",
+      "title": "Get the Lowdown on Paint Sheens"
+    },
+    {
+      "slug": "accent-walls-2",
+      "title": "Accent Walls"
+    },
+    {
+      "slug": "accent-walls-vs-full-room-color-which-works-best-for-your-space",
+      "title": "Accent Walls vs. Full-Room Color: Which Works Best for Your Space?"
+    },
+    {
+      "slug": "accent-walls",
+      "title": "Should You Paint An Accent Wall?"
+    },
+    {
+      "slug": "add-value-to-your-home-by-painting",
+      "title": "Add Value to Your Home by Painting"
+    },
+    {
+      "slug": "back-brushing",
+      "title": "What is Back-Brushing?"
+    },
+    {
+      "slug": "bedroom-paint-color-ideas",
+      "title": "Bedroom Paint Color Ideas"
+    },
+    {
+      "slug": "best-of-houzz-service-2017",
+      "title": "NE Portland Painters Awarded Best of Houzz 2017"
+    },
+    {
+      "slug": "boosting-home-value-through-pre-sale-painting",
+      "title": "Boosting Home Value Through Pre-Sale Painting"
+    },
+    {
+      "slug": "cabinet-painting-cost",
+      "title": "What Does Cabinet Painting Really Cost?"
+    },
+    {
+      "slug": "cheap-ways-to-upgrade-your-interior",
+      "title": "Inexpensive Ways to Upgrade Your Interior"
+    },
+    {
+      "slug": "christmas-in-july",
+      "title": "Christmas Came Early This Year!"
+    },
+    {
+      "slug": "commercial-painting-tips-for-workspaces",
+      "title": "Commercial Painting Tips for Workspaces"
+    },
+    {
+      "slug": "dealing-with-the-2021-paint-shortage",
+      "title": "Dealing With the 2021 Paint Shortages"
+    },
+    {
+      "slug": "deck-staining-and-restoration",
+      "title": "Deck Staining and Restoration"
+    },
+    {
+      "slug": "deck-staining-semi-transparent-vs-solid",
+      "title": "Deck Staining: Semi-Transparent vs Solid"
+    },
+    {
+      "slug": "diy-painting",
+      "title": "DIY Painting"
+    },
+    {
+      "slug": "enhance-your-outdoor-space-with-composite-decking",
+      "title": "Enhance Your Outdoor Space with Composite Decking"
+    },
+    {
+      "slug": "enhance-your-property-with-expert-fencing-services-from-sound-painting-solutions",
+      "title": "Transform Your Property with Expert Fencing Services from NE Portland Painters"
+    },
+    {
+      "slug": "exterior-color-combos",
+      "title": "Exterior Color Combos"
+    },
+    {
+      "slug": "exterior-paint-sheens",
+      "title": "Exterior Paint Sheens"
+    },
+    {
+      "slug": "exterior-preparation-checklist",
+      "title": "Exterior Painting Prep Checklist"
+    },
+    {
+      "slug": "get-ready-holidays",
+      "title": "Get Ready for the Holidays!"
+    },
+    {
+      "slug": "gift-guide",
+      "title": "10 Unique Gifts for Your Handyman!"
+    },
+    {
+      "slug": "high-demand-for-home-services",
+      "title": "High Demand for Home Services"
+    },
+    {
+      "slug": "hiring-painting-contractor-how-useful-are-online-reviews",
+      "title": "Hiring a Painting Contractor: How Useful are Online Reviews?"
+    },
+    {
+      "slug": "home-siding-types-pros-cons",
+      "title": "Home Siding Types: Pros & Cons"
+    },
+    {
+      "slug": "how-many-coats-paint",
+      "title": "How Many Coats of Paint?"
+    },
+    {
+      "slug": "how-to-prepare-interior",
+      "title": "How To: Prepare For Interior Painting"
+    },
+    {
+      "slug": "how-to-screen-your-painting-contractor",
+      "title": "How to Screen Your Painting Contractor"
+    },
+    {
+      "slug": "inspiration-for-your-interior",
+      "title": "Inspiration for Your Interior"
+    },
+    {
+      "slug": "interior-paint-colors-mood",
+      "title": "Paint Colors & Mood"
+    },
+    {
+      "slug": "interior-painting-bidding-process",
+      "title": "Interior Painting Bidding Process"
+    },
+    {
+      "slug": "june-2024-volunteer-project",
+      "title": "June 2024 Volunteer Project"
+    },
+    {
+      "slug": "lead-based-paint-home",
+      "title": "Lead-Based Paint in Your Home"
+    },
+    {
+      "slug": "low-and-no-voc-paint",
+      "title": "Low and No VOC Paint"
+    },
+    {
+      "slug": "maintaining-exterior-paint-job",
+      "title": "Exterior Paint Job Maintenance"
+    },
+    {
+      "slug": "mallory-paint-feature",
+      "title": "NE Portland Painters featured on Mallory Paint"
+    },
+    {
+      "slug": "november-2024-volunteer-project",
+      "title": "November 2024 Volunteer Project"
+    },
+    {
+      "slug": "paint-colors-of-the-year",
+      "title": "Paint Colors of the Year"
+    },
+    {
+      "slug": "paint-incompatibility",
+      "title": "How to: Paint Over Oil-Based Paint"
+    },
+    {
+      "slug": "painting-cabinets",
+      "title": "Painting Cabinets"
+    },
+    {
+      "slug": "painting-tip-cleaner-lines",
+      "title": "Painting Tip: Cleaner Lines with Tape"
+    },
+    {
+      "slug": "planning-for-your-next-project",
+      "title": "Planning for Your Next Project"
+    },
+    {
+      "slug": "prep-home-wet-winter",
+      "title": "How to Prep Your Home for a Wet Winter Now That Summer Is Over"
+    },
+    {
+      "slug": "prepare-home-winter",
+      "title": "Prepare Your Home for Winter"
+    },
+    {
+      "slug": "pressure-washing-your-home",
+      "title": "Pressure Washing Your Home"
+    },
+    {
+      "slug": "proper-paint-storage",
+      "title": "Proper Paint Storage"
+    },
+    {
+      "slug": "save-time-with-virtual-painting-quotes",
+      "title": "Save Time With Virtual Painting Quotes"
+    },
+    {
+      "slug": "selecting-a-painting-contractor-in-2024",
+      "title": "How To Choose a Painting Contractor in 2024"
+    },
+    {
+      "slug": "sherwin-williams-color-tool-tutorial",
+      "title": "Sherwin Williams Color Tool Tutorial"
+    },
+    {
+      "slug": "should-i-buy-my-own-paint",
+      "title": "Should I Buy My Own Paint?"
+    },
+    {
+      "slug": "small-paint-projects-that-make-a-big-impact-without-a-full-remodel",
+      "title": "Small Paint Projects That Make a Big Impact Without a Full Remodel"
+    },
+    {
+      "slug": "sound-painting-solutions-awarded-best-of-houzz-2016",
+      "title": "NE Portland Painters Awarded Best of Houzz 2016"
+    },
+    {
+      "slug": "the-cost-of-neglecting-paint-maintenance",
+      "title": "The Cost of Neglecting Paint Maintenance"
+    },
+    {
+      "slug": "the-difference-between-paint-finishes-and-when-to-use-each",
+      "title": "The Difference Between Paint Finishes and When to Use Each"
+    },
+    {
+      "slug": "the-impact-of-paint-colors-on-mood-and-room-perception",
+      "title": "The Impact of Paint Colors on Mood and Room Perception"
+    },
+    {
+      "slug": "tips-painting-metals",
+      "title": "Tips for Painting Metals"
+    },
+    {
+      "slug": "touch-interior-paint-job",
+      "title": "How to: Touch-up Your Interior Paint Job"
+    },
+    {
+      "slug": "touching-up-home-exterior",
+      "title": "Touching up Your Home\u2019s Exterior"
+    },
+    {
+      "slug": "unique-interior-paint-ideas-that-show-personality",
+      "title": "Unique Interior Paint Ideas That Show Personality"
+    },
+    {
+      "slug": "use-primer",
+      "title": "Why Use Primer?"
+    },
+    {
+      "slug": "whats-can-paint",
+      "title": "What\u2019s in a Can of Paint?"
+    },
+    {
+      "slug": "whats-the-difference-between-a-carpenter-and-a-finish-carpenter",
+      "title": "What\u2019s the Difference Between a Carpenter and a Finish Carpenter?"
+    },
+    {
+      "slug": "when-is-exterior-season",
+      "title": "When is Exterior Painting Season?"
+    },
+    {
+      "slug": "when-to-get-exterior-quotes",
+      "title": "When to Get Exterior Painting Quotes"
+    },
+    {
+      "slug": "why-do-painters-wear-white-a-deep-dive-into-the-classic-painters-uniform",
+      "title": "Why Do Painters Wear White? A Deep Dive Into the Classic Painter\u2019s Uniform"
+    },
+    {
+      "slug": "winter-paint-maintenance-protecting-your-homes-exterior-in-cold-weather",
+      "title": "Winter Paint Maintenance: Protecting Your Home\u2019s Exterior in Cold Weather"
+    }
+  ]
+}

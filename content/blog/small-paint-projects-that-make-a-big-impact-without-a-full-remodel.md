@@ -130,7 +130,7 @@ cover_image: "/blog/small-paint-projects-that-make-a-big-impact-without-a-full-r
 
 
 
-<p>At <a href="https://www.soundpaintingsolutions.com/?utm_source=google&amp;utm_medium=organic"><strong>NE Portland Painters</strong></a>, we’ve worked with homeowners throughout Seattle and the greater Seattle area to bring their spaces to life. Whether you&#8217;re refreshing a single room or prepping your home for sale, our experienced crew provides:</p>
+<p>At <a href="/?utm_source=google&amp;utm_medium=organic"><strong>NE Portland Painters</strong></a>, we’ve worked with homeowners throughout Seattle and the greater Seattle area to bring their spaces to life. Whether you&#8217;re refreshing a single room or prepping your home for sale, our experienced crew provides:</p>
 
 
 
@@ -160,7 +160,7 @@ cover_image: "/blog/small-paint-projects-that-make-a-big-impact-without-a-full-r
 
 
 
-<p>Small paint projects can make a big difference, especially when done right. Whether you&#8217;re craving a quick style update or preparing to list your home, a few coats of paint might be all you need to fall in love with your space again.Visit <a href="https://www.soundpaintingsolutions.com/"><strong>soundpaintingsolutions.com</strong></a> to get a free estimate, see our portfolio, and discover how we can help you bring your vision to life.</p>
+<p>Small paint projects can make a big difference, especially when done right. Whether you&#8217;re craving a quick style update or preparing to list your home, a few coats of paint might be all you need to fall in love with your space again.Visit <a href="/"><strong>soundpaintingsolutions.com</strong></a> to get a free estimate, see our portfolio, and discover how we can help you bring your vision to life.</p>
 
 
 

@@ -133,7 +133,7 @@ const About = () => {
     <PageSection bgcolor="white">
       <SectionHeaderWrapper>
         <SectionHeader>
-          <span className="sectionNumber">02/</span> About Us
+          About Us
         </SectionHeader>
         <hr />
       </SectionHeaderWrapper>

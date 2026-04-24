@@ -62,12 +62,12 @@ cover_image: "/blog/june-2024-volunteer-project/down-net_http20240624-96-lx3cyt.
 
 
 
-<p><a href="https://www.soundpaintingsolutions.com/community/">NE Portland Painters Community Involvement </a></p>
+<p><a href="/community">NE Portland Painters Community Involvement </a></p>
 
 
 
-<p><a href="https://www.soundpaintingsolutions.com/volunteer-library-box-painting/">Volunteer Grievers Library Box Painting</a></p>
+<p><a href="/blog/volunteer-library-box-painting">Volunteer Grievers Library Box Painting</a></p>
 
 
 
-<p><a href="https://www.soundpaintingsolutions.com/remodel-for-reason-winner/">NE Portland Painters Remodel for a Reason</a></p>
+<p><a href="/blog/remodel-for-reason-winner">NE Portland Painters Remodel for a Reason</a></p>

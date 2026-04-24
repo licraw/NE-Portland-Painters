@@ -66,8 +66,8 @@ cover_image: "/blog/november-2024-volunteer-project/down-net_http20241111-66-rjr
 
 
 
-<p>Since our founding in 2012 it&#8217;s been important for us to give back to our community. Each year we work on multiple volunteer projects and are always looking for new organizations that we can donate our services to. If you know of a nonprofit that could use our help, <a href="https://www.soundpaintingsolutions.com/community/">please reach out</a>—we’d love to be part of their story. </p>
+<p>Since our founding in 2012 it&#8217;s been important for us to give back to our community. Each year we work on multiple volunteer projects and are always looking for new organizations that we can donate our services to. If you know of a nonprofit that could use our help, <a href="/community">please reach out</a>—we’d love to be part of their story. </p>
 
 
 
-<p>If you&#8217;re in the greater Seattle area and looking for a painting quote for your commercial or residential property, <a href="https://www.soundpaintingsolutions.com/contact-us/">contact us today for a free quote!</a></p>
+<p>If you&#8217;re in the greater Seattle area and looking for a painting quote for your commercial or residential property, <a href="/contact">contact us today for a free quote!</a></p>

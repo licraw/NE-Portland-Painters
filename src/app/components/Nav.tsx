@@ -60,16 +60,16 @@ export default function Nav() {
       <nav className="relative z-50 bg-theme-surface">
         <div className="flex items-center justify-between px-8 lg:px-20 py-4">
           <Link href="/" className="flex items-center gap-3 py-2">
-            <Image
-              src="/favicon.png"
-              alt={`${siteConfig.siteName} logo`}
-              width={36}
-              height={36}
-              className="rounded-[8px]"
-              priority
-            />
-            <span className="text-xl font-semibold text-theme-heading tracking-tight">
-              {siteConfig.siteName}
+            <span className="inline-flex rounded-xl bg-theme-heading px-3 py-2">
+              <Image
+                src="/logos/main-white-logo.png"
+                alt={`${siteConfig.siteName} logo`}
+                width={210}
+                height={70}
+                sizes="210px"
+                className="w-[160px] sm:w-[190px] lg:w-[210px] h-auto"
+                priority
+              />
             </span>
           </Link>
 

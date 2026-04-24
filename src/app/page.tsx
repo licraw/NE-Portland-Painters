@@ -16,30 +16,15 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="w-full">
-        <section className="px-6 lg:px-20 py-12 lg:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <div className="theme-page-badge">
-                <div className="theme-page-badge-icon">
-                  <Image
-                    src="/gallery/leaf.svg"
-                    alt={`${siteConfig.siteName} accent icon`}
-                    width={16}
-                    height={16}
-                  />
-                </div>
-                <p className="theme-page-badge-text">
-                  {siteConfig.hero.badge}
-                  <Link href="/estimate" className="theme-page-badge-link">
-                    {siteConfig.hero.badgeLinkText}
-                  </Link>
-                </p>
-              </div>
+	      <div className="w-full">
+	        <section className="px-6 lg:px-20 py-12 lg:py-20">
+	          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+	            <div>
+	            
 
-        <h1 className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]">
-          {siteConfig.hero.headline}
-        </h1>
+	              <h1 className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]">
+	                {siteConfig.hero.headline}
+	              </h1>
 
               <h2 className="pt-6 text-xl lg:text-2xl text-theme-text-muted max-w-2xl">
                 {siteConfig.hero.description}
@@ -58,49 +43,19 @@ export default function HomePage() {
             <div className="relative w-full aspect-[16/11] rounded-2xl overflow-hidden border border-theme-border shadow-sm">
               <Image
                 src={siteConfig.home.heroImage}
-                alt="Interior painting project"
+                alt="Residential painting project"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
                 priority
               />
             </div>
-          </div>
-        </section>
+	          </div>
+	        </section>
 
-        <section className="px-6 lg:px-20 py-12 lg:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div className="order-2 lg:order-1 relative w-full aspect-[16/11] rounded-2xl overflow-hidden border border-theme-border shadow-sm">
-              <Image
-                src={siteConfig.home.topRatedImage}
-                alt="Exterior painting project"
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="font-sans font-medium text-4xl lg:text-6xl leading-[1.15]">
-                {siteConfig.home.topRatedHeadline}
-              </h2>
-              <p className="pt-6 text-xl text-theme-text-muted max-w-2xl">
-                {siteConfig.home.topRatedDescription}
-              </p>
-              <div className="pt-10">
-                <Link
-                  href={siteConfig.home.topRatedCtaHref}
-                  className="inline-flex items-center rounded-full px-8 py-4 text-lg font-semibold theme-primary-button"
-                >
-                  {siteConfig.home.topRatedCtaLabel}
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="px-6 lg:px-20 py-12 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {siteConfig.home.servicesTiles.map((tile) => (
+	        <section className="px-6 lg:px-20 py-12 lg:py-20">
+	          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+	            {siteConfig.home.servicesTiles.map((tile) => (
               <Link
                 key={tile.key}
                 href={tile.href}

@@ -1,0 +1,24 @@
+---
+date: "2015-07-01T19:12:59"
+source_url: "https://www.soundpaintingsolutions.com/pressure-washing-your-home/"
+title_html: "Pressure Washing Your Home"
+excerpt_html: "<p>Your home is exposed to the elements all the time, and that takes its toll. Pressure washing helps remove all of the built-up dirt and grime on your house, and it&#8217;s one of the most important steps to take when preparing for a new paint job. Different pressure washers have varying levels of effectiveness. For example, electric pressure washers are generally only suited for &#8230;</p>\n"
+cover_image: "/blog/pressure-washing-your-home/imagejpeg_1a.jpg"
+---
+<p>Your home is exposed to the elements all the time, and that takes its toll. Pressure washing helps remove all of the built-up dirt and grime on your house, and it&#8217;s one of the most important steps to take when preparing for a new paint job.</p>
+<p><div id="attachment_1417" style="width: 232px" class="wp-caption alignright"><a href="/blog/pressure-washing-your-home/imagejpeg_1a.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-1417" class="wp-image-1417" src="/blog/pressure-washing-your-home/imagejpeg_1a.jpg" alt="NE Portland Painters Crew Leader, Bobby, pressure washes a client's home." width="222" height="330" srcset="/blog/pressure-washing-your-home/imagejpeg_1a.jpg 576w, /blog/pressure-washing-your-home/imagejpeg_1a-202x300.jpg 202w, /blog/pressure-washing-your-home/imagejpeg_1a-100x149.jpg 100w" sizes="auto, (max-width: 222px) 100vw, 222px" /></a><p id="caption-attachment-1417" class="wp-caption-text">NE Portland Painters Crew Leader, Bobby, pressure washes a client&#8217;s home.</p></div></p>
+<p>Different pressure washers have varying levels of effectiveness. For example, electric pressure washers are generally only suited for cleaning cars, boats, or perhaps very small homes (or houses that are not very dirty). For most jobs, a gas-powered machine is appropriate. This is the best option if you are considering buying or renting a machine.</p>
+<p>An added cleaning solution may be needed for particularly dirty areas. It is important that your pressure washer is able to dispense cleaner along with water for the best possible job. In fact, you might be surprised at the results you can achieve from a good cleaning alone.</p>
+<p>Here are some brief pressure washing tips to help you clean your home!</p>
+<h5>Use the Right Setting</h5>
+<p>Use the proper setting depending on which area you are cleaning. The higher settings may not always be a appropriate. When starting out pressure washing your house, it is best to use a nozzle with a wide, fan pattern to avoid damaging the surfaces.</p>
+<p>If you have a troublesome stain, use caution before attempting to forcefully wash it away. Even the highest setting might not be adequate to remove the stain, and you may end up damaging the surface from the force of the water. In such situations, a stain-blocking primer and fresh coat of paint may be the ideal remedy.</p>
+<h5>What about Decks?</h5>
+<p>Actually, we don&#8217;t recommend pressure washing your deck at all! The risk of damaging the surface is much too high; the sheer force of pressure washing can create gaps in the wood that allow moisture and the sun to damage the deck. For this reason, we typically wash our clients&#8217; decks with a hose, scrub-brush, and good cleaning solution, like <a href="http://www.benjaminmoore.com/en-us/for-your-home/paint-products/exterior-stain-prep-products">Benjamin Moore CLEAN</a>.</p>
+<h5>Safety Tips</h5>
+<p>Only pressure wash using a level of force you are comfortable with. Turn off outdoor power outlets and cover with tape to protect them from water. Make sure all of your windows and doors and shut and tightly sealed to prevent water from coming into your home. Keep the water spray away from power sources and power lines. Do not spray the water toward people, animals, or plants. The high pressure water blast can cause damage or injury.</p>
+<p>We also recommend wearing waterproof boots, pants, long-sleeves, gloves, and eye protection. This  is for your comfort as well as to protect you from contact with the cleaning solution or water.</p>
+<h5>We&#8217;ll do it for you!</h5>
+<p>For large jobs or more complicated jobs, call a professional to avoid injury or damage to your surfaces. Roofs, in particular are easy to damage and tougher to wash. For more in-depth look at how to pressure wash, here is a <a href="http://www.familyhandyman.com/tools/how-to-use-a-pressure-washer/">very informative article from Family Handyman</a>.</p>
+<hr />
+<h6>For both pressure washing and exterior painting services in Seattle and the Eastside, give NE Portland Painters a call! Call <a href="tel:+12062586676">(206) 258-6676</a> or email us at <a href="mailto:info@soundpaintingsolutions.com">info@soundpaintingsolutions.com</a>.</h6>

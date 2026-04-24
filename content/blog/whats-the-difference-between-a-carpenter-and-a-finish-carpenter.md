@@ -150,7 +150,7 @@ cover_image: "/blog/whats-the-difference-between-a-carpenter-and-a-finish-carpen
 
 
 
-<p>If you are planning an update and want it done thoroughly, cleanly, and correctly,&nbsp;<a href="https://www.soundpaintingsolutions.com/contact-us/">reach out for a free quote</a>. We are happy to take a look and point you in the right direction.</p>
+<p>If you are planning an update and want it done thoroughly, cleanly, and correctly,&nbsp;<a href="/contact">reach out for a free quote</a>. We are happy to take a look and point you in the right direction.</p>
 
 
 

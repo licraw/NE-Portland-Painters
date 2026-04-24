@@ -142,7 +142,7 @@ cover_image: "/blog/enhance-your-outdoor-space-with-composite-decking/c8768e49-1
 
 
 
-<p>Ready to upgrade your outdoor space with composite decking? Contact NE Portland Painters today for a free quote and let us bring your vision to life. Visit our website at <a href="https://www.soundpaintingsolutions.com/?utm_source=google&amp;utm_medium=organic">NE Portland Painters</a> to learn more about our services and schedule your decking project.&nbsp;</p>
+<p>Ready to upgrade your outdoor space with composite decking? Contact NE Portland Painters today for a free quote and let us bring your vision to life. Visit our website at <a href="/?utm_source=google&amp;utm_medium=organic">NE Portland Painters</a> to learn more about our services and schedule your decking project.&nbsp;</p>
 
 
 

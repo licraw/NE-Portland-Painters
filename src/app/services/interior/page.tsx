@@ -1,5 +1,4 @@
 import CarouselGallery from "../../components/ImageGallery/CarouselGallery";
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import {
@@ -20,25 +19,6 @@ export default function InteriorPaintingPage() {
     <>
       <div>
         <div className="p-8 pl-6 lg:pl-20 lg:pr-20">
-          <div className="theme-page-badge">
-            <div className="theme-page-badge-icon">
-              <Image
-                src="/gallery/leaf.svg"
-                alt={`${siteConfig.siteName} accent icon`}
-                width={16}
-                height={16}
-              />
-            </div>
-            <p className="theme-page-badge-text">
-              {siteConfig.hero.badge}
-              <Link
-                href="/estimate"
-                className="theme-page-badge-link"
-              >
-                {siteConfig.hero.badgeLinkText}
-              </Link>
-            </p>
-          </div>
         <h1
           className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]"
         >
