@@ -155,59 +155,8 @@ export const siteConfig = {
     ],
     latestPostsHeading: "House Painting Blog",
     latestPostsCtaLabel: "More Tips, News, and Recent Paint Jobs",
-    latestPostsCtaHref: "https://www.soundpaintingsolutions.com/blog/",
-    latestPosts: [
-      {
-        title: "What’s the Difference Between a Carpenter and a Finish Carpenter?",
-        dateLabel: "March 18, 2026",
-        href: "https://www.soundpaintingsolutions.com/whats-the-difference-between-a-carpenter-and-a-finish-carpenter/",
-      },
-      {
-        title: "What Questions Should I Ask a Seattle Painting Company Before Hiring Them?",
-        dateLabel: "January 8, 2026",
-        href: "https://www.soundpaintingsolutions.com/what-questions-should-i-ask-a-seattle-painting-company-before-hiring-them/",
-      },
-      {
-        title: "2026 Colors of the Year: Beige Makes a Comeback",
-        dateLabel: "December 11, 2025",
-        href: "https://www.soundpaintingsolutions.com/2026-colors-of-the-year-beige-makes-a-comeback/",
-      },
-      {
-        title: "Commercial Painting Tips for Workspaces",
-        dateLabel: "September 29, 2025",
-        href: "https://www.soundpaintingsolutions.com/commercial-painting-tips-for-workspaces/",
-      },
-      {
-        title: "Accent Walls vs. Full-Room Color: Which Works Best for Your Space?",
-        dateLabel: "August 26, 2025",
-        href: "https://www.soundpaintingsolutions.com/accent-walls-vs-full-room-color-which-works-best-for-your-space/",
-      },
-      {
-        title: "Small Paint Projects That Make a Big Impact Without a Full Remodel",
-        dateLabel: "July 15, 2025",
-        href: "https://www.soundpaintingsolutions.com/small-paint-projects-that-make-a-big-impact-without-a-full-remodel/",
-      },
-      {
-        title: "The Difference Between Paint Finishes and When to Use Each",
-        dateLabel: "June 20, 2025",
-        href: "https://www.soundpaintingsolutions.com/the-difference-between-paint-finishes-and-when-to-use-each/",
-      },
-      {
-        title: "Why Do Painters Wear White? A Deep Dive Into the Classic Painter’s Uniform",
-        dateLabel: "April 30, 2025",
-        href: "https://www.soundpaintingsolutions.com/why-do-painters-wear-white-a-deep-dive-into-the-classic-painters-uniform/",
-      },
-      {
-        title: "Paint Colors of the Year",
-        dateLabel: "March 26, 2025",
-        href: "https://www.soundpaintingsolutions.com/paint-colors-of-the-year/",
-      },
-      {
-        title: "Transform Your Property with Expert Fencing Services from NE Portland Painters",
-        dateLabel: "March 13, 2025",
-        href: "https://www.soundpaintingsolutions.com/enhance-your-property-with-expert-fencing-services-from-sound-painting-solutions/",
-      },
-    ],
+    latestPostsCtaHref: "/blog",
+    latestPosts: [],
     contactHeading: "Contact Us",
     contactSubheading: "Request a Quote",
     quoteFormHeading: "Free Painting Quotes",
@@ -217,10 +166,11 @@ export const siteConfig = {
     stats: [] as Array<{ prefix: string; value: string; label: string }>,
   },
   about: {
-    headline: "Reliable painters. Clear communication. Consistent results.",
+    headline: "A family painting company for Portland neighbors",
     body: [
-      "This reusable template is designed for residential and light commercial painting businesses that want a clean, credible web presence.",
-      "Update the company details, service areas, and messaging in one place to tailor the site for a new business without reworking the UI.",
+      "NE Portland Painters is a family business run by a father and his two sons. We take pride in doing honest work, showing up when we say we will, and treating your home or jobsite with care.",
+      "No job is too small. We are here to help our neighbors maintain their homes and businesses with clear communication, practical guidance, and clean, durable finishes.",
+      "Whether you need interior painting, exterior painting, or repairs, we will walk you through the scope, prep, and product choices so you know exactly what you are getting.",
     ],
     stats: [] as Array<{ value: string; description: string }>,
   },
@@ -811,11 +761,6 @@ export const siteConfig = {
     "Other",
   ],
 } as const;
-
-export function getFullAddress() {
-  const { street, city, region, postalCode } = siteConfig.address;
-  return `${street}, ${city}, ${region} ${postalCode}`;
-}
 
 export function getBaseMetadata(
   title?: string,

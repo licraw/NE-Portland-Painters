@@ -179,7 +179,7 @@ export default function Nav() {
             </button>
           </div>
 
-          <ul className="flex-1 overflow-y-auto px-4 py-6 space-y-4 text-lg">
+          <ul className="flex-1 overflow-y-auto px-4 py-6 text-lg flex flex-col justify-evenly">
             <li>
               <Link
                 href="/"

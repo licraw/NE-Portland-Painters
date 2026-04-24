@@ -4,7 +4,7 @@ import { getBaseMetadata } from "@/lib/siteConfig";
 
 export const metadata: Metadata = getBaseMetadata(
   "About",
-  "Generic about page placeholder copy for a reusable painting company template.",
+  "NE Portland Painters is a family-run painting company serving Portland area homeowners and small businesses.",
   "/about"
 );
 

@@ -62,7 +62,7 @@ cover_image: "/blog/june-2024-volunteer-project/down-net_http20240624-96-lx3cyt.
 
 
 
-<p><a href="/community">NE Portland Painters Community Involvement </a></p>
+<p><a href="/contact">NE Portland Painters Community Involvement </a></p>
 
 
 

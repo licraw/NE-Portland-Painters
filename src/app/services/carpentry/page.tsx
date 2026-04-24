@@ -32,12 +32,6 @@ export default function CarpentryPage() {
           <div className="pt-6">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
-                href={siteConfig.carpentryService.ctaHref}
-                className="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold theme-primary-button"
-              >
-                {siteConfig.carpentryService.ctaLabel}
-              </Link>
-              <Link
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold border border-theme-border bg-white/70 hover:bg-white transition-colors"
               >
@@ -86,14 +80,6 @@ export default function CarpentryPage() {
             </ul>
           </details>
         </div>
-        <div className="pt-8 flex justify-center">
-          <Link
-            href={siteConfig.carpentryService.ctaHref}
-            className="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold theme-primary-button"
-          >
-            {siteConfig.carpentryService.ctaLabel}
-          </Link>
-        </div>
       </div>
 
       <div className="p-8 pl-6 lg:pl-20 lg:pr-20">
@@ -105,14 +91,6 @@ export default function CarpentryPage() {
           <li>We confirm scope, materials, and finish goals.</li>
           <li>You get a clear scope and schedule options.</li>
         </ol>
-        <div className="pt-6">
-          <Link
-            href={siteConfig.carpentryService.ctaHref}
-            className="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold theme-primary-button"
-          >
-            Request an Estimate
-          </Link>
-        </div>
       </div>
 
       <CarouselGallery images={imageSet} />

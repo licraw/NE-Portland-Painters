@@ -30,13 +30,6 @@ export default function CommercialPaintingPage() {
           minimal disruption by planning the work around your operating hours
           and access needs.
         </p>
-
-        <Link
-          href="/estimate"
-          className="inline-flex items-center rounded-full px-6 py-3 font-semibold theme-primary-button"
-        >
-          Get a Free Quote
-        </Link>
       </div>
 
       <CarouselGallery images={imageSet} />
@@ -60,6 +53,26 @@ export default function CommercialPaintingPage() {
               Flexible scheduling to reduce downtime
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="p-8 pl-6 lg:pl-20 lg:pr-20">
+        <div className="rounded-2xl border border-theme-border bg-theme-surface-muted p-8 text-center">
+          <h2 className="text-2xl lg:text-3xl font-semibold">
+            Request a commercial estimate
+          </h2>
+          <p className="pt-3 text-theme-text-muted max-w-2xl mx-auto">
+            Send the address, timeline, access details, and any hours we should work around.
+            We’ll reply with a clear scope and scheduling options.
+          </p>
+          <div className="pt-6 flex justify-center">
+            <Link
+              href="/estimate"
+              className="inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold theme-primary-button"
+            >
+              Get a Free Quote
+            </Link>
+          </div>
         </div>
       </div>
 

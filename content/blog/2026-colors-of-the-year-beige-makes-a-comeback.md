@@ -130,7 +130,7 @@ cover_image: "/blog/2026-colors-of-the-year-beige-makes-a-comeback/image.jpeg"
 
 
 
-<p><a href="/interior-painting">Contact us for a free quote on your interior painting project</a>! Whether your project involves walls, ceilings, trim, doors, cabinetry, or all of the above, it would be our pleasure to bring your vision to life. NE Portland Painters serves Seattle, WA and surrounding areas. </p>
+<p><a href="/services/interior">Contact us for a free quote on your interior painting project</a>! Whether your project involves walls, ceilings, trim, doors, cabinetry, or all of the above, it would be our pleasure to bring your vision to life. NE Portland Painters serves Seattle, WA and surrounding areas. </p>
 
 
 

@@ -5,6 +5,10 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
 
 export default function StickyReviewsWidget() {
+  if (!siteConfig.testimonials.enabled) {
+    return null;
+  }
+
   const [isVisible, setIsVisible] = useState(true);
   const storageKey = "sticky_reviews_widget_dismissed_v1";
 

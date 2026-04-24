@@ -17,43 +17,73 @@ export default function HomePage() {
   return (
     <>
 	      <div className="w-full">
-	        <section className="px-6 lg:px-20 py-12 lg:py-20">
-	          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-	            <div>
-	            
-
-	              <h1 className="font-sans font-medium text-4xl lg:text-7xl leading-[1.2]">
-	                {siteConfig.hero.headline}
-	              </h1>
-
-              <h2 className="pt-6 text-xl lg:text-2xl text-theme-text-muted max-w-2xl">
-                {siteConfig.hero.description}
-              </h2>
-
-              <div className="pt-10">
-                <Link
-                  href="/estimate"
-                  className="inline-flex items-center rounded-full px-8 py-4 text-lg font-semibold theme-primary-button"
-                >
-                  {siteConfig.hero.ctaLabel}
-                </Link>
+	        <section className="px-6 lg:px-20 pt-8 pb-6 lg:pt-16 lg:pb-10">
+            {/* Mobile hero: image card with overlay for tighter spacing */}
+            <div className="lg:hidden">
+              <div className="relative w-full h-[460px] sm:h-[420px] rounded-2xl overflow-hidden border border-theme-border shadow-sm">
+                <Image
+                  src={siteConfig.home.heroImage}
+                  alt="Residential painting project"
+                  fill
+                  sizes="100vw"
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/5" />
+                <div className="absolute inset-0 p-5 flex flex-col justify-evenly text-white">
+                  <h1 className="font-sans font-semibold text-3xl py-1">
+                    {siteConfig.hero.headline}
+                  </h1>
+                  <p className="pt-3 text-white/90 leading-relaxed">
+                    {siteConfig.hero.description}
+                  </p>
+                  <div className="pt-5">
+                    <Link
+                      href="/estimate"
+                      className="inline-flex items-center rounded-full px-6 py-3 text-base font-semibold theme-primary-button"
+                    >
+                      {siteConfig.hero.ctaLabel}
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="relative w-full aspect-[16/11] rounded-2xl overflow-hidden border border-theme-border shadow-sm">
-              <Image
-                src={siteConfig.home.heroImage}
-                alt="Residential painting project"
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
-                priority
-              />
+            {/* Desktop hero: split layout */}
+            <div className="hidden lg:grid grid-cols-2 gap-10 items-center">
+              <div>
+                <h1 className="font-sans font-medium text-7xl leading-[1.2]">
+                  {siteConfig.hero.headline}
+                </h1>
+
+                <h2 className="pt-6 text-2xl text-theme-text-muted max-w-2xl">
+                  {siteConfig.hero.description}
+                </h2>
+
+                <div className="pt-10">
+                  <Link
+                    href="/estimate"
+                    className="inline-flex items-center rounded-full px-8 py-4 text-lg font-semibold theme-primary-button"
+                  >
+                    {siteConfig.hero.ctaLabel}
+                  </Link>
+                </div>
+              </div>
+
+              <div className="relative w-full aspect-[16/11] rounded-2xl overflow-hidden border border-theme-border shadow-sm">
+                <Image
+                  src={siteConfig.home.heroImage}
+                  alt="Residential painting project"
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
-	          </div>
 	        </section>
 
-	        <section className="px-6 lg:px-20 py-12 lg:py-20">
+	        <section className="px-6 lg:px-20 pt-6 pb-12 lg:pt-10 lg:pb-16">
 	          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 	            {siteConfig.home.servicesTiles.map((tile) => (
               <Link
@@ -61,7 +91,7 @@ export default function HomePage() {
                 href={tile.href}
                 className="group relative overflow-hidden rounded-2xl border border-theme-border bg-theme-surface shadow-sm"
               >
-                <div className="relative h-64">
+                <div className="relative h-80 sm:h-72 lg:h-64">
                   <Image
                     src={tile.image}
                     alt={tile.kicker}
@@ -70,20 +100,20 @@ export default function HomePage() {
                     className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-black/40" />
-                  <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
-                    <p className="text-sm font-semibold tracking-wide uppercase opacity-90">
-                      {tile.kicker}{" "}
-                      <span className="font-normal normal-case opacity-90">
+                  <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-evenly text-white">
+                    <p className="text-xs sm:text-sm tracking-wide opacity-90 leading-snug">
+                      <span className="font-semibold uppercase">{tile.kicker}</span>
+                      <span className="mt-1 block font-normal normal-case opacity-90 line-clamp-2">
                         {tile.blurb}
                       </span>
                     </p>
-                    <h3 className="pt-3 text-2xl lg:text-3xl font-semibold">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
                       {tile.title}
                     </h3>
-                    <p className="pt-3 text-white/90">
+                    <p className="text-sm sm:text-base text-white/90 line-clamp-2">
                       {tile.subtitle}
                     </p>
-                    <div className="pt-6">
+                    <div>
                       <span className="inline-flex items-center rounded-full bg-white text-black px-4 py-2 text-sm font-semibold transition group-hover:bg-white/80">
                         {tile.ctaLabel}
                       </span>
@@ -162,12 +192,12 @@ export default function HomePage() {
                 </a>
               </p>
               <p className="pt-6 text-lg">{siteConfig.businessHours}</p>
-              <p className="pt-6 text-lg">
-                {siteConfig.address.street}
-                <br />
-                {siteConfig.address.city}, {siteConfig.address.region}{" "}
-                {siteConfig.address.postalCode}
-              </p>
+              <div className="pt-6 text-lg">
+                <p className="font-semibold text-theme-heading">Service area</p>
+                <p className="pt-2 text-theme-text-muted">
+                  {siteConfig.serviceAreas.join(", ")}
+                </p>
+              </div>
 
               <h3 className="pt-12 text-2xl font-semibold text-theme-heading">
                 {siteConfig.home.quoteFormHeading}

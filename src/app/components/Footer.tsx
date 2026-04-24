@@ -3,7 +3,7 @@ import axios from "axios";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import React, { useState } from "react";
 import Link from "next/link";
-import { getFullAddress, siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/lib/siteConfig";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -150,7 +150,7 @@ export default function Footer() {
                 {siteConfig.email}
               </a>
               <br />
-              {getFullAddress()}
+              Serving {siteConfig.serviceAreas.join(", ")}
             </p>
           </div>
         </div>

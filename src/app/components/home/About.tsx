@@ -2,7 +2,6 @@
 
 import styled from "styled-components";
 import PageSection from "../PageSection";
-import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
 
 export const SectionHeaderWrapper = styled.div`
@@ -76,24 +75,6 @@ export const SectionContent = styled.div`
   max-width: 600px;
 `;
 
-const AboutLink = styled(Link)`
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 48px;
-  border: 1px solid black;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  margin-top: 16px;
-
-  &:hover {
-    background: black;
-    color: white;
-  }
-`;
-
 const StatsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -145,7 +126,6 @@ const About = () => {
             {siteConfig.about.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
-            <AboutLink href="/about">About Us</AboutLink>
           </SectionContent>
         </AboutRow>
 

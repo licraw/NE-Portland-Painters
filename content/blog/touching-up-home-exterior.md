@@ -22,7 +22,7 @@ cover_image: "/blog/touching-up-home-exterior/Greenlake-exterior-1-1-scaled.jpeg
 
 
 
-<p>When conducting your walk-through, inspect all areas of your exterior for failing/peeling paint or cracked caulking. If your paint job is still under warranty, bring these areas to your painter&#8217;s attention. They should be able to fix the problem areas for you, depending upon the terms of your warranty. When you hire NE Portland Painters for your exterior paint job, you will receive the peace of mind that comes with a <a title="Our Warranty" href="/warranty">four-year warranty</a> to correct conditions such as this, should they appear.</p>
+<p>When conducting your walk-through, inspect all areas of your exterior for failing/peeling paint or cracked caulking. If your paint job is still under warranty, bring these areas to your painter&#8217;s attention. They should be able to fix the problem areas for you, depending upon the terms of your warranty. When you hire NE Portland Painters for your exterior paint job, you will receive the peace of mind that comes with a <a title="Our Warranty" href="/contact">four-year warranty</a> to correct conditions such as this, should they appear.</p>
 
 
 

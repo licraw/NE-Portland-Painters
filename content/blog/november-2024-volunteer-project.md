@@ -66,7 +66,7 @@ cover_image: "/blog/november-2024-volunteer-project/down-net_http20241111-66-rjr
 
 
 
-<p>Since our founding in 2012 it&#8217;s been important for us to give back to our community. Each year we work on multiple volunteer projects and are always looking for new organizations that we can donate our services to. If you know of a nonprofit that could use our help, <a href="/community">please reach out</a>—we’d love to be part of their story. </p>
+<p>Since our founding in 2012 it&#8217;s been important for us to give back to our community. Each year we work on multiple volunteer projects and are always looking for new organizations that we can donate our services to. If you know of a nonprofit that could use our help, <a href="/contact">please reach out</a>—we’d love to be part of their story. </p>
 
 
 

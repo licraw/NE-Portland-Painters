@@ -19,13 +19,39 @@ URL_IN_TEXT_RE = re.compile(
     re.IGNORECASE,
 )
 
+HREF_RE = re.compile(r'href="(?P<path>/[^"#\s]+)(?P<rest>[^"]*)"', re.IGNORECASE)
+MD_LINK_RE = re.compile(r"\]\((?P<path>/[^\s)]+)\)")
 
 PATH_REWRITES = {
-  "/contact-us/": "/contact",
-  "/contact-us": "/contact",
-  "/blog/": "/blog",
-  "/blog": "/blog",
-  "/": "/",
+    "/contact-us/": "/contact",
+    "/contact-us": "/contact",
+    "/interior-painting/": "/services/interior",
+    "/interior-painting": "/services/interior",
+    "/exterior-painting/": "/services/exterior",
+    "/exterior-painting": "/services/exterior",
+    "/carpentry/": "/services/carpentry",
+    "/carpentry": "/services/carpentry",
+    "/commercial-painting/": "/services/commercial",
+    "/commercial-painting": "/services/commercial",
+    "/turnover-painting/": "/services/turnover",
+    "/turnover-painting": "/services/turnover",
+    "/power-washing/": "/services/powerwashing",
+    "/power-washing": "/services/powerwashing",
+    "/pressure-washing/": "/services/powerwashing",
+    "/pressure-washing": "/services/powerwashing",
+    "/virtual-quotes/": "/estimate",
+    "/virtual-quotes": "/estimate",
+    "/community/": "/contact",
+    "/community": "/contact",
+    "/warranty/": "/contact",
+    "/warranty": "/contact",
+    "/epa-lead-safe-practices/": "/blog/lead-based-paint-home",
+    "/epa-lead-safe-practices": "/blog/lead-based-paint-home",
+    "/privacy-policy/": "/contact",
+    "/privacy-policy": "/contact",
+    "/blog/": "/blog",
+    "/blog": "/blog",
+    "/": "/",
 }
 
 def download_to(path: Path, url: str) -> None:
@@ -96,6 +122,14 @@ def rewrite_sps_url(url: str, slugs: set[str], current_slug: str, download_asset
     # Fallback: keep the path on our domain (strip the host).
     return urlunparse(ParseResult("", "", normalize_path(path), "", query, fragment))
 
+def rewrite_internal_path(path: str) -> str:
+    # Keep blog asset links untouched.
+    if path.startswith("/blog/"):
+        return path
+
+    norm = normalize_path(path)
+    return PATH_REWRITES.get(norm, PATH_REWRITES.get(norm + "/", norm))
+
 
 def main() -> int:
     if not BLOG_DIR.exists():
@@ -124,6 +158,20 @@ def main() -> int:
             return rewrite_sps_url(match.group(0), slugs, slug, download_assets)
 
         new_text = URL_IN_TEXT_RE.sub(repl, text)
+
+        # Rewrite old WP-style internal paths to current Next routes.
+        def href_repl(match: re.Match[str]) -> str:
+            p = match.group("path")
+            rest = match.group("rest") or ""
+            return f'href="{rewrite_internal_path(p)}{rest}"'
+
+        new_text = HREF_RE.sub(href_repl, new_text)
+
+        def md_link_repl(match: re.Match[str]) -> str:
+            p = match.group("path")
+            return f"]({rewrite_internal_path(p)})"
+
+        new_text = MD_LINK_RE.sub(md_link_repl, new_text)
 
         if new_text != text:
             md_path.write_text(new_text, encoding="utf-8")

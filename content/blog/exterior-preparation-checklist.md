@@ -18,7 +18,7 @@ cover_image: ""
 
 
 
-<p>It may sound obvious, but it&#8217;s important! Prior to painting a house, there are several factors that must be considered. &nbsp;Is there any rot / damage? If so, wood repair may need to be worked into your painting bid. Was your home built before 1978? If so, <a title="EPA Lead-Safe Practices" href="/epa-lead-safe-practices">your home&#8217;s exterior may contain lead-based paint</a>, and will require extra care in the preparation steps.</p>
+<p>It may sound obvious, but it&#8217;s important! Prior to painting a house, there are several factors that must be considered. &nbsp;Is there any rot / damage? If so, wood repair may need to be worked into your painting bid. Was your home built before 1978? If so, <a title="EPA Lead-Safe Practices" href="/blog/lead-based-paint-home">your home&#8217;s exterior may contain lead-based paint</a>, and will require extra care in the preparation steps.</p>
 
 
 
@@ -46,7 +46,7 @@ cover_image: ""
 
 
 
-<p>Site protection involves covering&nbsp;landscaping, flowers, walkways, etc. It also involves trapping the paint chips that fall when scraping. Trapping paint chips is especially&nbsp;important on jobs where lead paint is present, as exposure to lead-based paints can be harmful and should be avoided. If your home was built before 1978, your house likely contains lead-based paint. Only contractors certified by the EPA or the state&#8217;s&nbsp;Renovation, Repair, and Painting program are permitted to work on homes containing lead. <a title="EPA Lead-Safe Practices" href="/epa-lead-safe-practices">Read more about lead-based paint here</a>.</p>
+<p>Site protection involves covering&nbsp;landscaping, flowers, walkways, etc. It also involves trapping the paint chips that fall when scraping. Trapping paint chips is especially&nbsp;important on jobs where lead paint is present, as exposure to lead-based paints can be harmful and should be avoided. If your home was built before 1978, your house likely contains lead-based paint. Only contractors certified by the EPA or the state&#8217;s&nbsp;Renovation, Repair, and Painting program are permitted to work on homes containing lead. <a title="EPA Lead-Safe Practices" href="/blog/lead-based-paint-home">Read more about lead-based paint here</a>.</p>
 
 
 
@@ -62,7 +62,7 @@ cover_image: ""
 
 
 
-<p>All failing paint, including peeling&nbsp;and bubbling areas should be scraped from the substrate. &nbsp;Removing the loose&nbsp;paint exposes the bare surface and allows for better adherence of the new paint. This process can include scraping with a putty knife or sanding. Again, extra precautions are necessary if your home contains <a title="EPA Lead-Safe Practices" href="/epa-lead-safe-practices">lead-based paint</a>.</p>
+<p>All failing paint, including peeling&nbsp;and bubbling areas should be scraped from the substrate. &nbsp;Removing the loose&nbsp;paint exposes the bare surface and allows for better adherence of the new paint. This process can include scraping with a putty knife or sanding. Again, extra precautions are necessary if your home contains <a title="EPA Lead-Safe Practices" href="/blog/lead-based-paint-home">lead-based paint</a>.</p>
 
 
 
