@@ -1,13 +1,13 @@
 /**
  * POST /api/createRequest
- * Creates an Asana task for “estimate” or “contact” forms.
+ * Creates a Trello card for “estimate” or “contact” forms.
  *
  * Expects JSON in the request body — no photos.
  * Photos should be uploaded separately to /api/uploadPhoto?taskId=...
  */
 
-const Asana = require("asana");
 const { NextRequest } = require("next/server");
+import { trelloJson } from "@/lib/trello";
 
 export const runtime = "nodejs";
 
@@ -29,101 +29,102 @@ export async function POST(req = new NextRequest()) {
       constructionAndRestoration,
     } = payload;
 
-    /* 2️⃣  initialise Asana client */
-    const client = Asana.ApiClient.instance;
-    const token = client.authentications["token"];
-    token.accessToken = process.env.ASANA_TOKEN;
+    const requireTrello = process.env.REQUIRE_TRELLO?.trim() === "1";
 
-    if (!token.accessToken) {
-      console.error("ASANA_TOKEN is missing");
-      return new Response(
-        JSON.stringify({ error: "ASANA_TOKEN not configured" }),
-        { status: 500 }
-      );
-    }
+    let listId = process.env.TRELLO_LIST_ID?.trim();
+    if (!listId) {
+      const board = process.env.TRELLO_BOARD?.trim(); // board id or shortlink (e.g. WVPptPYI)
+      const listName = process.env.TRELLO_LIST_NAME?.trim();
+      if (!board || !listName) {
+        const details = "Set TRELLO_LIST_ID or set both TRELLO_BOARD and TRELLO_LIST_NAME";
+        if (requireTrello) {
+          console.error("Trello misconfigured (blocking)", details);
+          return new Response(JSON.stringify({ error: "Trello list not configured", details }), {
+            status: 500,
+          });
+        }
+        console.warn("Trello misconfigured (non-blocking)", details);
+        return new Response(
+          JSON.stringify({
+            taskId: null,
+            cardUrl: null,
+            warning: "trello_not_configured",
+            details,
+          }),
+          { status: 200 }
+        );
+      }
 
-    /* 3️⃣  create API instances */
-    const tasksApiInstance = new Asana.TasksApi();
-    const projectsApiInstance = new Asana.ProjectsApi();
-
-    /* 4️⃣ (optional) verify project exists / grab custom‑field settings */
-    const projectId = "9865446660987";
-    try {
-      await projectsApiInstance.getProject(projectId, {
-        opt_fields: "workspace,custom_field_settings.custom_field",
+      const lists = await trelloJson<Array<{ id: string; name: string }>>(`boards/${board}/lists`, {
+        query: { fields: "name" },
       });
-    } catch (err) {
-      console.error("Failed to fetch project metadata", err);
+      const match = lists.find((l) => l.name.trim().toLowerCase() === listName.trim().toLowerCase());
+      if (!match) {
+        const details = `No list named "${listName}" on board "${board}"`;
+        if (requireTrello) {
+          return new Response(JSON.stringify({ error: "Trello list not found", details }), {
+            status: 500,
+          });
+        }
+        console.warn("Trello list not found (non-blocking)", details);
+        return new Response(
+          JSON.stringify({ taskId: null, cardUrl: null, warning: "trello_list_not_found", details }),
+          { status: 200 }
+        );
+      }
+      listId = match.id;
     }
 
-    /* 5️⃣  build task data */
-    const due_on = new Date().toISOString().split("T")[0];
-    const taskData =
+    const title =
       formType === "homeLead"
-        ? {
-            workspace: "9802913355207",
-            name: `New Home Lead Request from ${name}`,
-            notes: `**Email**: ${email}
-**Phone**: ${phone}
-**Address**: ${address}
-**Zip Code**: ${zipCode}
-**Painting & Stain**: ${paintingAndStain}
-**Construction & Restoration**: ${constructionAndRestoration}`,
-            due_on,
-            projects: [projectId],
-            tags: ["1209503778924319"],
-          }
-        : {
-            workspace: "9802913355207",
-            name: `New ${formType === "estimate" ? "Estimate" : "Contact"} Request from ${name}`,
-            notes: `**Email**: ${email}
-**Phone**: ${phone}
-**Address**: ${address}
-**Zip Code**: ${zipCode}
-**Overview**: ${overview}
-**Promo Code**: ${promoCode}`,
-            due_on,
-            projects: [projectId],
-            custom_fields: {
-              "1208441371887522": "1208441371887523",
-              "1208441371887529": "1208441371887530",
-              "1209143077541096": promoCode,
-              "1212483327157301": howDidYouFindUs,
-            },
-          };
+        ? `New Home Lead Request from ${name}`
+        : `New ${formType === "estimate" ? "Estimate" : "Contact"} Request from ${name}`;
 
-    /* 6️⃣  create task */
-    const { data: task } = await tasksApiInstance.createTask({ data: taskData }, {});
+    const desc =
+      formType === "homeLead"
+        ? `Email: ${email}
+Phone: ${phone}
+Address: ${address}
+Zip Code: ${zipCode}
+Painting & Stain: ${paintingAndStain}
+Construction & Restoration: ${constructionAndRestoration}`
+        : `Email: ${email}
+Phone: ${phone}
+Address: ${address}
+Zip Code: ${zipCode}
+Overview: ${overview}
+Promo Code: ${promoCode}
+How did you find us: ${howDidYouFindUs || ""}`.trim();
 
-    /* 7️⃣  respond with taskId so the client can POST photos later */
-    return new Response(JSON.stringify({ taskId: task.gid }), { status: 200 });
-  } catch (err: unknown) {
-    const error = err as {
-      status?: number;
-      response?: { status?: number; statusCode?: number; res?: { statusCode?: number }; body?: unknown };
-      body?: unknown;
-      message?: string;
-    };
+    const labelIds = (process.env.TRELLO_LABEL_IDS ?? "")
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .join(",");
 
-    const asanaStatus =
-      error.status ??
-      error.response?.status ??
-      error.response?.statusCode ??
-      error.response?.res?.statusCode;
-    const asanaBody = error.response?.body ?? error.body;
-    const asanaErrors = Array.isArray((asanaBody as { errors?: unknown[] })?.errors)
-      ? (asanaBody as { errors: unknown[] }).errors
-      : undefined;
-
-    console.error("createRequest error", {
-      message: error.message,
-      status: asanaStatus,
-      asanaErrors,
-      asanaBody,
+    const card = await trelloJson<{ id: string; shortUrl?: string }>("cards", {
+      method: "POST",
+      query: {
+        idList: listId,
+        name: title,
+        desc,
+        ...(labelIds ? { idLabels: labelIds } : {}),
+      },
     });
 
-    const status = typeof asanaStatus === "number" && asanaStatus >= 400 ? asanaStatus : 500;
-    const details = asanaErrors || asanaBody || error.message || "Unknown Asana error";
-    return new Response(JSON.stringify({ error: "Task creation failed", details }), { status });
+    return new Response(JSON.stringify({ taskId: card.id, cardUrl: card.shortUrl ?? null }), {
+      status: 200,
+    });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "Unknown error";
+    const hint = message.includes("Trello API error 401: invalid key")
+      ? "Check TRELLO_API_KEY. It must be the API key from your Trello Power-Up API Key tab, not the token or secret."
+      : message.includes("Trello API error 401")
+      ? "Regenerate TRELLO_API_TOKEN with Trello authorization scope=read,write."
+      : undefined;
+    console.error("createRequest error", err);
+    return new Response(JSON.stringify({ error: "Card creation failed", details: message, hint }), {
+      status: 500,
+    });
   }
 }

@@ -2,7 +2,15 @@ import { NextResponse } from "next/server";
 import axios from "axios";
 
 export async function POST(request: Request) {
+    if (process.env.RECAPTCHA_BYPASS?.trim() === "1") {
+        return NextResponse.json({ success: true, score: 1, bypass: true });
+    }
+
     const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+    if (!secretKey) {
+        console.error("RECAPTCHA_SECRET_KEY is missing");
+        return NextResponse.json({ success: false, error: "missing_secret" }, { status: 500 });
+    }
 
     const postData = await request.json();
 
@@ -24,7 +32,8 @@ export async function POST(request: Request) {
         );
 
     } catch (e) {
-        return NextResponse.json({ success: false })
+        console.error("recaptcha verify error", e);
+        return NextResponse.json({ success: false, error: "verify_failed" }, { status: 500 })
     }
 
     if (res && res.data?.success && res.data?.score > 0.5) {
@@ -35,6 +44,7 @@ export async function POST(request: Request) {
             score: res.data.score,
         });
     } else {
-        return NextResponse.json({ success: false });
+        console.warn("recaptcha failed", { ok: res?.data?.success, score: res?.data?.score, reasons: res?.data?.["error-codes"] });
+        return NextResponse.json({ success: false, score: res?.data?.score ?? null, reasons: res?.data?.["error-codes"] ?? null });
     }
 }

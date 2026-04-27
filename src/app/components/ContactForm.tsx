@@ -8,8 +8,18 @@ import { siteConfig } from "@/lib/siteConfig";
 const INSTAGRAM_OPTION = "Instagram";
 const UTM_SOURCE_STORAGE_KEY = "utm_source";
 
+type CreateRequestResponse = {
+  taskId?: string | null;
+  cardUrl?: string | null;
+  warning?: string;
+  error?: string;
+  details?: string;
+  hint?: string;
+};
+
 export default function ContactForm() {
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const recaptchaBypass = process.env.NEXT_PUBLIC_RECAPTCHA_BYPASS === "1";
 
   const [fileInputKey, setFileInputKey] = useState(Date.now());
   const [status, setStatus] = useState("");
@@ -23,7 +33,6 @@ export default function ContactForm() {
     overview: "",
     promoCode: "",
     zipCode: "",
-    subscribeToMailchimp: true,
     howDidYouFindUs: "",
     formType: "contact",
     photos: [] as File[],
@@ -63,37 +72,51 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("Sending Please Don't Close…");
 
-    if (!executeRecaptcha) {
-      setStatus("Recaptcha not ready. Try again.");
-      return;
-    }
-    const token = await executeRecaptcha("contact_form");
-    const recRes = await axios.post("/api/verifyRecaptcha", { gRecaptchaToken: token });
-    if (!recRes.data?.success) {
-      setStatus("Recaptcha failed.");
-      return;
+    if (!recaptchaBypass) {
+      if (!executeRecaptcha) {
+        setStatus("Recaptcha not ready. Try again.");
+        return;
+      }
+      const token = await executeRecaptcha("contact_form");
+      const recRes = await axios.post("/api/verifyRecaptcha", { gRecaptchaToken: token });
+      if (!recRes.data?.success) {
+        console.warn("recaptcha failed", recRes.data);
+        setStatus("Recaptcha failed.");
+        return;
+      }
     }
 
     try {
-      const { photos, subscribeToMailchimp, ...jsonPayload } = formData;
+      const { photos, ...jsonPayload } = formData;
       if (isInstagramAttribution && !jsonPayload.howDidYouFindUs) {
         jsonPayload.howDidYouFindUs = INSTAGRAM_OPTION;
       }
-      const createRes = await fetch("/api/createRequest", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(jsonPayload),
-      }).then((r) => r.json());
-
-      if (!createRes.taskId) throw new Error("Task creation failed");
-
-      for (const file of photos) {
-        const fd = new FormData();
-        fd.append("photo", file);
-        await fetch(`/api/uploadPhoto?taskId=${createRes.taskId}`, {
+      let createRes: CreateRequestResponse = {};
+      try {
+        const createRequestRes = await fetch("/api/createRequest", {
           method: "POST",
-          body: fd,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(jsonPayload),
         });
+        createRes = await createRequestRes.json();
+        if (!createRequestRes.ok || createRes.error || createRes.warning) {
+          console.warn("createRequest did not create a Trello card", createRes);
+        }
+      } catch (e) {
+        console.warn("createRequest failed (continuing)", e);
+      }
+
+      if (createRes.taskId) {
+        for (const file of photos) {
+          const fd = new FormData();
+          fd.append("photo", file);
+          await fetch(`/api/uploadPhoto?taskId=${createRes.taskId}`, {
+            method: "POST",
+            body: fd,
+          });
+        }
+      } else if (photos.length) {
+        console.warn("Skipping photo upload because no Trello card was created.");
       }
 
       const bodyText = `Name: ${formData.name}
@@ -106,26 +129,20 @@ Message: ${formData.overview}`;
       emailFd.append("email", formData.email);
       emailFd.append("formType", formData.formType);
       emailFd.append("bodyText", bodyText);
-      emailFd.append("asanaTaskId", createRes.taskId);
+      if (createRes.taskId) emailFd.append("asanaTaskId", String(createRes.taskId));
+      if (createRes.cardUrl) emailFd.append("trelloCardUrl", createRes.cardUrl);
       photos.forEach((p) => {
         if (p.size <= 2 * 1024 * 1024) emailFd.append("photos", p);
       });
 
-      await fetch("/api/sendEmail", {
+      const emailRes = await fetch("/api/sendEmail", {
         method: "POST",
         body: emailFd,
       });
-
-      if (subscribeToMailchimp) {
-        await fetch("/api/subscribe", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: formData.email,
-            firstName: formData.name.split(" ")[0],
-            lastName: formData.name.split(" ")[1] || "",
-          }),
-        });
+      if (!emailRes.ok) {
+        const text = await emailRes.text().catch(() => "");
+        console.error("sendEmail failed", { status: emailRes.status, text });
+        throw new Error("sendEmail failed");
       }
 
       setStatus("Message sent successfully!");
@@ -137,7 +154,6 @@ Message: ${formData.overview}`;
         overview: "",
         promoCode: "",
         zipCode: "",
-        subscribeToMailchimp: true,
         howDidYouFindUs: isInstagramAttribution ? INSTAGRAM_OPTION : "",
         formType: "contact",
         photos: [],

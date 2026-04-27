@@ -1,95 +1,12 @@
 "use client";
-import axios from "axios";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("");
-  const { executeRecaptcha } = useGoogleReCaptcha();
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("Sending...");
-
-    if (!executeRecaptcha) {
-      return;
-    }
-
-    // 1) Get reCAPTCHA token
-    const gRecaptchaToken = await executeRecaptcha("contact_form");
-
-    // 2) Verify reCAPTCHA token
-    const response = await axios.post("/api/verifyRecaptcha", {
-      gRecaptchaToken
-    });
-
-    if (response?.data?.success !== true) {
-      console.error(`reCAPTCHA validation failed with score: ${response?.data?.score}`);
-      setStatus("Failed reCAPTCHA. 😢");
-      return;
-    }
-
-    // 3) Handle subscription
-    const subscribeResponse = await fetch("/api/subscribe", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email })
-    });
-
-    if (subscribeResponse.status === 200) {
-      setStatus("Success! 🎉");
-      setEmail("");
-      setTimeout(() => {
-        setStatus("");
-      }, 5000);
-    } else {
-      setStatus("Failed to subscribe. 😢");
-    }
-  };
-
   return (
     <footer className="bg-theme-footer-bg text-white py-10">
       <div className="mx-auto px-6 lg:px-20">
-        {/* Top: Newsletter Signup */}
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between border-b border-theme-footer-border pb-6 mb-6 gap-6">
-          {/* Left side: Text */}
-          <div className="lg:w-1/2">
-            <h3 className="text-xl font-semibold">Stay in the loop</h3>
-            <p className="text-theme-footer-text-muted text-sm mt-2">
-              Use this area for email updates, promotions, or seasonal service reminders.
-              <br />
-              The copy is now generic and ready to customize.
-            </p>
-          </div>
-          {/* Right side: Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row sm:items-center gap-3 lg:gap-4 lg:w-1/2"
-          >
-            <input
-              onChange={handleChange}
-              type="email"
-              value={email}
-              placeholder="Email address"
-              className="p-2 w-full sm:w-auto flex-grow rounded-lg bg-theme-footer-surface text-white border border-theme-footer-border focus:outline-none focus:ring-2 focus:ring-theme-primary"
-            />
-            <button
-              type="submit"
-              className="theme-primary-button px-4 py-2 rounded-lg"
-            >
-              Submit
-            </button>
-            {status && <p className="text-sm text-theme-footer-text-muted">{status}</p>}
-          </form>
-        </div>
-
         <div className="border-b border-theme-footer-border pb-6 mb-6">
           <h3 className="text-xl font-semibold">{siteConfig.siteName}</h3>
           <p className="text-theme-footer-text-muted mt-2 text-sm leading-relaxed">
