@@ -59,15 +59,15 @@ export default function Nav() {
       {/* Top Nav Bar */}
       <nav className="relative z-50 bg-theme-surface">
         <div className="flex items-center justify-between px-8 lg:px-20 py-4">
-          <Link href="/" className="flex items-center gap-3 py-2">
-            <span className="inline-flex rounded-xl bg-theme-heading px-3 py-2">
+          <Link href="/" className="flex items-center gap-3 py-2 -ml-4">
+            <span className="inline-flex rounded-xl bg-theme-heading">
               <Image
                 src="/logos/main-white-logo.png"
                 alt={`${siteConfig.siteName} logo`}
                 width={210}
                 height={70}
                 sizes="210px"
-                className="w-[160px] sm:w-[190px] lg:w-[210px] h-auto"
+                className="w-[160px] sm:w-[190px] lg:w-[210px] h-auto mix-blend-plus-lighter"
                 priority
               />
             </span>
