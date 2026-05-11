@@ -168,7 +168,7 @@ Message: ${formData.overview}`;
   return (
     <form
       onSubmit={handleSubmit}
-      className="theme-form-shell max-w-4xl mx-auto"
+      className="theme-form-shell theme-soft-form-shell w-full max-w-4xl mx-auto"
     >
       <h2 className="theme-form-heading">
         {siteConfig.contact.heading}
