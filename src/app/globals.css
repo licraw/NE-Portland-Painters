@@ -33,9 +33,18 @@
   --color-nav-text: rgba(15, 23, 42, 0.6);
 }
 
+html,
+body {
+  background: var(--background);
+}
+
+html {
+  min-height: 100%;
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  min-height: 100%;
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
