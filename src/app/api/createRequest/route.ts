@@ -118,9 +118,9 @@ How did you find us: ${howDidYouFindUs || ""}`.trim();
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Unknown error";
     const hint = message.includes("Trello API error 401: invalid key")
-      ? "Check TRELLO_API_KEY. It must be the API key from your Trello Power-Up API Key tab, not the token or secret."
+      ? "Check Trello credentials. TRELLO_API_KEY must be the Power-Up API key, and TRELLO_API_TOKEN must be an authorized member token, not the Power-Up secret."
       : message.includes("Trello API error 401")
-      ? "Regenerate TRELLO_API_TOKEN with Trello authorization scope=read,write."
+      ? "Regenerate TRELLO_API_TOKEN from the Trello authorize URL with scope=read,write. Do not use the Power-Up secret."
       : undefined;
     console.error("createRequest error", err);
     return new Response(JSON.stringify({ error: "Card creation failed", details: message, hint }), {
