@@ -58,8 +58,8 @@ export default function Nav() {
 
       {/* Top Nav Bar */}
       <nav className="relative z-50 border-b border-theme-border bg-theme-surface">
-        <div className="flex items-center justify-between px-5 sm:px-8 lg:px-20 py-2 lg:py-3">
-          <Link href="/" className="flex items-center gap-3 -ml-2 sm:-ml-4">
+        <div className="flex items-center justify-between px-6 lg:px-20 py-2 lg:py-3">
+          <Link href="/" className="flex items-center gap-3">
             <span className="inline-flex">
               <Image
                 src="/logos/main-logo-nav.png"
@@ -67,7 +67,7 @@ export default function Nav() {
                 width={1800}
                 height={326}
                 sizes="(min-width: 1024px) 240px, (min-width: 640px) 220px, 205px"
-                className="w-[205px] sm:w-[220px] lg:w-[240px] h-auto"
+                className="-translate-x-1.5 w-[205px] sm:w-[220px] lg:w-[240px] h-auto"
                 priority
               />
             </span>
@@ -93,7 +93,7 @@ export default function Nav() {
                 }`}
               >
                 Services
-                <span className="ml-1 text-sm">▾</span>
+                <span className="ml-2 inline-flex h-5 w-5 items-center justify-center text-lg leading-none">▾</span>
               </Link>
               <div className="hidden group-hover:block absolute top-full left-0 w-56 bg-theme-surface shadow-xl rounded-xl p-2 mt-0 border border-theme-border z-20">
                 {navItems.map((item) => (
@@ -200,7 +200,9 @@ export default function Nav() {
                 }`}
               >
                 <span>Services</span>
-                <span className="ml-2 text-sm">{servicesOpen ? "▴" : "▾"}</span>
+                <span className="ml-3 inline-flex h-6 w-6 items-center justify-center text-xl leading-none">
+                  {servicesOpen ? "▴" : "▾"}
+                </span>
               </button>
               <ul
                 className={`mt-2 ml-4 space-y-2 overflow-hidden transition-all duration-300 ${

@@ -10,9 +10,9 @@ type PencilBannerProps = {
 
 export default function PencilBanner({ ctaAction }: PencilBannerProps) {
   return (
-    <div className="border-b border-theme-border bg-theme-primary-soft px-5 py-1.5 text-xs font-medium text-theme-primary-deep sm:px-8 lg:px-20">
+    <div className="border-b border-theme-border bg-theme-primary-soft px-6 py-1.5 text-xs font-medium text-theme-primary-deep lg:px-20">
       <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-1 -ml-2 sm:-ml-4">
+        <div className="flex items-center gap-1">
           <span className="block sm:hidden">FREE QUOTE</span>
           <span className="hidden sm:block">
             Request a free quote for your next painting project
