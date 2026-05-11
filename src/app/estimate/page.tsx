@@ -10,7 +10,7 @@ export const metadata: Metadata = getBaseMetadata(
 
 export default function Estimate() {
   return (
-    <div className="min-h-screen flex flex-col items-center">
+    <div className="min-h-screen flex flex-col items-center px-6">
       <EstimateForm />
     </div>
   );
