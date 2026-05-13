@@ -33,9 +33,18 @@
   --color-nav-text: rgba(15, 23, 42, 0.6);
 }
 
+html,
+body {
+  background: var(--background);
+}
+
+html {
+  min-height: 100%;
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  min-height: 100%;
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -112,6 +121,28 @@ body {
 @layer components {
   .theme-form-shell {
     @apply space-y-6 rounded-lg border border-theme-border bg-theme-surface p-10 shadow-2xl;
+  }
+
+  .theme-soft-form-shell {
+    @apply rounded-2xl border-theme-border-strong p-6 shadow-sm sm:p-8 lg:p-10;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(248, 250, 252, 0.6) 100%);
+  }
+
+  .theme-soft-form-shell .theme-form-heading {
+    @apply text-left text-3xl font-semibold text-theme-heading lg:text-4xl;
+  }
+
+  .theme-soft-form-shell .theme-form-description {
+    @apply mb-8 text-left text-theme-text-muted;
+  }
+
+  .theme-soft-form-shell .theme-form-input,
+  .theme-soft-form-shell .theme-form-file-input {
+    @apply rounded-md bg-white shadow-none focus:border-theme-primary focus:ring-theme-primary-soft;
+  }
+
+  .theme-soft-form-shell .theme-form-label {
+    @apply text-sm font-medium text-theme-text-muted;
   }
 
   .theme-form-input {

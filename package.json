@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "check:trello": "node scripts/check-trello.js",
     "start": "next start",
     "lint": "next lint"
   },

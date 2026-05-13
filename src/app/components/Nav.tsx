@@ -43,13 +43,13 @@ export default function Nav() {
         li {
           font-family: var(--font-geist-sans), ui-sans-serif, system-ui,
             sans-serif;
-          font-size: 18px;
+          font-size: inherit;
           font-weight: 400;
-          line-height: 25.2px;
+          line-height: inherit;
           text-align: left;
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
-          color: var(--color-nav-text);
+          color: inherit;
         }
         li:active {
           color: black;
@@ -57,28 +57,28 @@ export default function Nav() {
       `}</style>
 
       {/* Top Nav Bar */}
-      <nav className="relative z-50 bg-theme-surface">
-        <div className="flex items-center justify-between px-8 lg:px-20 py-4">
-          <Link href="/" className="flex items-center gap-3 py-2 -ml-4">
-            <span className="inline-flex rounded-xl bg-theme-heading">
+      <nav className="relative z-50 border-b border-theme-border bg-theme-surface">
+        <div className="flex items-center justify-between px-6 lg:px-20 py-2 lg:py-3">
+          <Link href="/" className="flex items-center gap-3">
+            <span className="inline-flex">
               <Image
-                src="/logos/main-white-logo.png"
+                src="/logos/main-logo-nav.png"
                 alt={`${siteConfig.siteName} logo`}
-                width={210}
-                height={70}
-                sizes="210px"
-                className="w-[160px] sm:w-[190px] lg:w-[210px] h-auto mix-blend-plus-lighter"
+                width={1800}
+                height={326}
+                sizes="(min-width: 1024px) 240px, (min-width: 640px) 220px, 205px"
+                className="-translate-x-1.5 w-[205px] sm:w-[220px] lg:w-[240px] h-auto"
                 priority
               />
             </span>
           </Link>
 
-          <ul className="hidden lg:flex items-center space-x-6 text-base font-medium">
+          <ul className="hidden lg:flex items-center gap-1 text-sm font-medium text-theme-text-muted">
             <li>
               <Link
                 href="/"
-                className={`transition hover:text-theme-heading ${
-                  pathname === "/" ? "text-theme-heading" : ""
+                className={`rounded-full px-3 py-2 transition hover:bg-theme-primary-soft hover:text-theme-primary-deep ${
+                  pathname === "/" ? "font-semibold text-theme-primary-deep" : ""
                 }`}
               >
                 Home
@@ -88,20 +88,20 @@ export default function Nav() {
             <li className="group relative">
               <Link
                 href="#"
-                className={`transition hover:text-theme-heading flex items-center ${
-                  isServicesActive ? "text-theme-heading" : ""
+                className={`flex items-center rounded-full px-3 py-2 transition hover:bg-theme-primary-soft hover:text-theme-primary-deep ${
+                  isServicesActive ? "font-semibold text-theme-primary-deep" : ""
                 }`}
               >
                 Services
-                <span className="ml-1 text-sm">▾</span>
+                <span className="ml-2 inline-flex h-5 w-5 items-center justify-center text-lg leading-none">▾</span>
               </Link>
-              <div className="hidden group-hover:block absolute top-full left-0 w-48 bg-theme-surface shadow-md rounded-md p-2 mt-0 border border-theme-border z-20">
+              <div className="hidden group-hover:block absolute top-full left-0 w-56 bg-theme-surface shadow-xl rounded-xl p-2 mt-0 border border-theme-border z-20">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`block px-4 py-2 hover:bg-theme-surface-subtle rounded-md transition ${
-                      pathname === item.href ? "text-theme-heading" : ""
+                    className={`block rounded-lg px-3 py-2.5 text-sm transition hover:bg-theme-surface-subtle hover:text-theme-primary-deep ${
+                      pathname === item.href ? "font-semibold text-theme-primary-deep" : ""
                     }`}
                   >
                     {item.label}
@@ -113,8 +113,8 @@ export default function Nav() {
             <li>
               <Link
                 href="/about"
-                className={`transition hover:text-theme-heading ${
-                  isAboutActive ? "text-theme-heading" : ""
+                className={`rounded-full px-3 py-2 transition hover:bg-theme-primary-soft hover:text-theme-primary-deep ${
+                  isAboutActive ? "font-semibold text-theme-primary-deep" : ""
                 }`}
               >
                 About
@@ -124,7 +124,7 @@ export default function Nav() {
             <li>
               <Link
                 href="/contact"
-                className={`transition hover:text-theme-heading ${pathname === "/contact" ? "text-theme-heading" : ""
+                className={`rounded-full px-3 py-2 transition hover:bg-theme-primary-soft hover:text-theme-primary-deep ${pathname === "/contact" ? "font-semibold text-theme-primary-deep" : ""
                   }`}
               >
                 Contact
@@ -134,7 +134,7 @@ export default function Nav() {
 
           <div className="hidden lg:flex items-center space-x-2">
             <Link href="/estimate">
-              <button className="theme-primary-button px-4 py-2 rounded-full">
+              <button className="theme-primary-button rounded-lg px-5 py-2 text-sm font-semibold">
                 Get Estimate
               </button>
             </Link>
@@ -142,7 +142,7 @@ export default function Nav() {
 
           <button
             onClick={toggleMenu}
-            className="lg:hidden text-theme-primary focus:outline-none"
+            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-theme-border bg-theme-surface-subtle text-theme-primary focus:outline-none"
             aria-label="Toggle Navigation Menu"
           >
             {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -200,7 +200,9 @@ export default function Nav() {
                 }`}
               >
                 <span>Services</span>
-                <span className="ml-2 text-sm">{servicesOpen ? "▴" : "▾"}</span>
+                <span className="ml-3 inline-flex h-6 w-6 items-center justify-center text-xl leading-none">
+                  {servicesOpen ? "▴" : "▾"}
+                </span>
               </button>
               <ul
                 className={`mt-2 ml-4 space-y-2 overflow-hidden transition-all duration-300 ${

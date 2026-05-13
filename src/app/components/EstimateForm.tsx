@@ -174,7 +174,7 @@ Promo Code: ${formData.promoCode || "None"}`;
   return (
     <form
       onSubmit={handleSubmit}
-      className={`theme-form-shell max-w-4xl mx-auto ${embedded ? "" : "my-12"}`}
+      className={`theme-form-shell theme-soft-form-shell w-full max-w-4xl mx-auto ${embedded ? "" : "my-12"}`}
     >
       <h2 className="theme-form-heading">
         {siteConfig.estimate.heading}
