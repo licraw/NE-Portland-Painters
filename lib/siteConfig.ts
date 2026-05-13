@@ -777,6 +777,9 @@ export function getBaseMetadata(
     icons: {
       icon: [{ url: "/favicon.png", type: "image/png" }],
     },
+    verification: {
+      google: "tnx0gDZ0LQ5BDzrN9msiOQG3nzEQL3k8qMooPWVeLAw",
+    },
     alternates: {
       canonical: url,
     },
