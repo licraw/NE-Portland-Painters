@@ -68,15 +68,11 @@ export default async function OfficeProjectPage({
   const internalRationale = project.documents.find(
     (document) => document.id === "internal-estimating-rationale"
   );
-  const qaReconciliation = project.documents.find(
-    (document) => document.id === "qa-reconciliation-report"
-  );
   const researchDocuments = project.documents.filter(
     (document) =>
       ![
         "customer-facing-estimate",
         "internal-estimating-rationale",
-        "qa-reconciliation-report",
       ].includes(document.id)
   );
 
@@ -171,33 +167,6 @@ export default async function OfficeProjectPage({
                 )}
               </div>
             </div>
-
-            {qaReconciliation ? (
-              <Link
-                href={documentHref(project.slug, qaReconciliation.id)}
-                className="block rounded-lg border border-theme-border-strong bg-theme-surface-subtle p-6 transition hover:bg-theme-primary-soft"
-              >
-                <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-wide text-theme-primary-deep">
-                      QA reconciliation
-                    </p>
-                    <h3 className="pt-3 text-xl font-semibold text-theme-heading">
-                      {qaReconciliation.title}
-                    </h3>
-                    <p className="pt-3 max-w-3xl text-sm leading-6 text-theme-text-muted">
-                      {qaReconciliation.description}
-                    </p>
-                  </div>
-                  <div className="flex shrink-0 items-center gap-3 text-sm font-semibold text-theme-heading">
-                    <span className="rounded-full border border-theme-border-strong px-2.5 py-1">
-                      {qaReconciliation.type}
-                    </span>
-                    <span>Open</span>
-                  </div>
-                </div>
-              </Link>
-            ) : null}
 
             <details className="group rounded-lg border border-theme-border bg-theme-surface">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5">
