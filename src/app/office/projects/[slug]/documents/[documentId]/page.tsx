@@ -3,6 +3,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
@@ -19,12 +20,86 @@ const REPORTS_DIR = path.join(
   "reports"
 );
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function isTableSeparator(line: string) {
+  return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
+}
+
+function parseTableRow(line: string) {
+  return line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+}
+
+function tableBlockToHtml(lines: string[]) {
+  const [headerLine, , ...bodyLines] = lines;
+  const headers = parseTableRow(headerLine);
+
+  const headerHtml = headers
+    .map((header) => `<th>${escapeHtml(header)}</th>`)
+    .join("");
+
+  const bodyHtml = bodyLines
+    .map((line) => {
+      const cells = parseTableRow(line);
+      return `<tr>${cells
+        .map((cell) => `<td>${escapeHtml(cell)}</td>`)
+        .join("")}</tr>`;
+    })
+    .join("");
+
+  return `<table><thead><tr>${headerHtml}</tr></thead><tbody>${bodyHtml}</tbody></table>`;
+}
+
+function renderMarkdownTables(source: string) {
+  const lines = source.split("\n");
+  const output: string[] = [];
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const currentLine = lines[index];
+    const nextLine = lines[index + 1];
+
+    if (
+      currentLine?.trim().startsWith("|") &&
+      nextLine &&
+      isTableSeparator(nextLine)
+    ) {
+      const tableLines = [currentLine, nextLine];
+      index += 2;
+
+      while (index < lines.length && lines[index].trim().startsWith("|")) {
+        tableLines.push(lines[index]);
+        index += 1;
+      }
+
+      output.push(tableBlockToHtml(tableLines));
+      index -= 1;
+      continue;
+    }
+
+    output.push(currentLine);
+  }
+
+  return output.join("\n");
+}
+
 async function renderMarkdown(source: string) {
   const file = await unified()
     .use(remarkParse)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
     .use(rehypeStringify)
-    .process(source);
+    .process(renderMarkdownTables(source));
 
   return String(file);
 }
