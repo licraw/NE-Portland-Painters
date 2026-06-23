@@ -146,7 +146,7 @@ export default async function OfficeProjectPage({
           <h2 className="text-2xl font-semibold text-theme-heading">
             Image Gallery
           </h2>
-          <div className="mt-5">
+          <div className="mt-5 mb-28 lg:mb-0">
             <ImageGallery images={galleryImages} />
           </div>
 
