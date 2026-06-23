@@ -1,10 +1,15 @@
-import { createHash } from "crypto";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-
-const OFFICE_COOKIE_NAME = "office_access";
-const OFFICE_SESSION_SECONDS = 60 * 60 * 8;
+import {
+  getOfficePassword,
+  getOfficeToken,
+  isOfficeAuthenticated,
+  OFFICE_COOKIE_NAME,
+  OFFICE_SESSION_SECONDS,
+} from "./_lib/auth";
+import { officeProjects } from "./projects/projectData";
 
 export const dynamic = "force-dynamic";
 
@@ -15,22 +20,6 @@ export const metadata: Metadata = {
     follow: false,
   },
 };
-
-function getOfficePassword() {
-  return process.env.OFFICE_PASSWORD?.trim() ?? "";
-}
-
-function getOfficeToken() {
-  const password = getOfficePassword();
-  const tokenSeed = password || "office-development-password";
-
-  return createHash("sha256").update(`office:${tokenSeed}`).digest("hex");
-}
-
-async function isOfficeAuthenticated() {
-  const cookieStore = await cookies();
-  return cookieStore.get(OFFICE_COOKIE_NAME)?.value === getOfficeToken();
-}
 
 async function logInToOffice(formData: FormData) {
   "use server";
@@ -143,20 +132,39 @@ function OfficeDashboard() {
           </p>
         </div>
 
-        <div className="grid gap-4 pt-8 md:grid-cols-3">
-          {["Requests", "Estimates", "Projects"].map((label) => (
-            <div
-              key={label}
-              className="rounded-lg border border-theme-border bg-theme-surface p-6"
-            >
-              <h2 className="text-lg font-semibold text-theme-heading">
-                {label}
-              </h2>
-              <p className="pt-2 text-sm text-theme-text-muted">
-                Coming soon.
-              </p>
-            </div>
-          ))}
+        <div className="pt-10">
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-2xl font-semibold text-theme-heading">
+              Projects
+            </h2>
+          </div>
+
+          <div className="mt-5 grid gap-4">
+            {officeProjects.map((project) => (
+              <Link
+                key={project.slug}
+                href={`/office/projects/${project.slug}`}
+                className="block rounded-lg border border-theme-border bg-theme-surface p-6 transition hover:bg-theme-surface-subtle"
+              >
+                <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                  <div>
+                    <h3 className="text-xl font-semibold text-theme-heading">
+                      {project.title}
+                    </h3>
+                    <p className="pt-2 text-theme-text-muted">
+                      {project.address}
+                    </p>
+                    <p className="pt-3 text-sm text-theme-text-subtle">
+                      {project.summary}
+                    </p>
+                  </div>
+                  <span className="inline-flex w-fit rounded-full bg-theme-primary-soft px-3 py-1 text-sm font-semibold text-theme-primary-deep">
+                    {project.status}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
