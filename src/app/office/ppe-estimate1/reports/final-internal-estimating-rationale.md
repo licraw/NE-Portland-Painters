@@ -11,11 +11,11 @@
 |---|---:|---|---|
 | Front width | 27 ft | High | Reconciled field/satellite value |
 | Rear width | 33 ft | High | Includes rear bump-out/projection width |
-| Right side depth | 25 ft | Medium | Field estimate, should be verified |
-| Left side depth | 25 ft + approx. 3 ft bump-out | Medium | Use 28 ft working side length |
+| Right side depth | 25 ft | High | Field-measured building depth |
+| Left side depth | 25 ft + approx. 3 ft bump-out | Medium | 25 ft field-measured depth plus estimated 3 ft kickout |
 | Rear bump-out | Approx. 6 ft x 6 ft | Medium | Used as return/projection allowance |
-| Eave height | 9 ft | High | Reconciled field value |
-| Ridge height | Approx. 21 ft | High | Public height 21.7 ft supports this |
+| Eave height | 9 ft | Medium | Estimated; not field-measured |
+| Ridge height | Approx. 21 ft | Medium | Estimated; public height 21.7 ft supports this |
 | Side gable height above eave | 8 to 12 ft range | Medium | Key difference between SER and MCR |
 | Porch ceiling | Approx. 18 ft x 6 ft = 108 SF | Low-Medium | Could be up to 162 SF if full width |
 | Chimney | Approx. 4 ft x 14 ft = 56 SF deducted | Medium | Brick, excluded from painting |
@@ -84,7 +84,7 @@ Manual total:
 
 ### Higher Segmented Model Cross-Check
 
-The segmented wall model uses confirmed 21 ft ridge and 9 ft eave, giving a 12 ft side-gable height:
+The segmented wall model uses an estimated 21 ft ridge and estimated 9 ft eave, giving a 12 ft side-gable height:
 
 ```text
 Left side gable adjustment: (25 ft x (12 - 8) ft) / 2 = +50 SF
@@ -99,7 +99,7 @@ This explains why the segmented wall method lands near 1,200 SF.
 ```text
 Low defensible case: approx. 1,100 SF
 Central/reconciled case: approx. 1,150 SF
-High confirmed-dimension case: approx. 1,200 to 1,250 SF
+High measured/estimated-dimension case: approx. 1,200 to 1,250 SF
 Public record high cross-check: 1,285 SF
 Final pricing input: 1,150 SF net paintable body siding
 ```
@@ -248,7 +248,7 @@ Material cost is held constant at **$1,025**. Gross margin is held constant at *
 - Property type: single 1.5-story bungalow/cape-cod form.
 - Front width: 27 ft.
 - Rear width: 33 ft.
-- Eave height: approximately 9 ft.
+- Building depth: 25 ft.
 - Brick chimney excluded from paint scope.
 - Existing painted trim, fascia, soffits, window trim, door trim, and porch posts are in scope.
 - Porch ceiling has severe paint failure.
@@ -256,7 +256,8 @@ Material cost is held constant at **$1,025**. Gross margin is held constant at *
 ### Medium Confidence
 
 - Net body siding area of 1,150 SF.
-- Side depth of 25 ft.
+- Eave height: approximately 9 ft.
+- Ridge height: approximately 21 ft.
 - Left-side 3 ft bump-out allowance.
 - Rear bump-out/return modeling.
 - Window and door opening deductions.
@@ -266,7 +267,8 @@ Material cost is held constant at **$1,025**. Gross margin is held constant at *
 ### Remaining Unknowns Requiring Field Verification
 
 - Confirm all siding surfaces are aluminum, including board-and-batten/gable areas.
-- Verify side depth and bump-out dimensions.
+- Verify the estimated 3 ft bump-out/kickout depth.
+- Verify eave and ridge heights if higher precision is needed.
 - Confirm front gable shape and paintable upper-front area.
 - Count and grade window sill failures before production.
 - Measure porch ceiling actual width and determine if moisture source is active.

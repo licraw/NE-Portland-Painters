@@ -54,8 +54,8 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 | Item | PRR | SER (Amended) | Agreement | Confidence | Reason |
 |---|---|---|---|---|---|
 | Building type | Detached residential | Detached residential | ✓ Full | High | Both sources consistent |
-| Roof / ridge height | 21.7 ft (6.6 m mapped) | Ridge 21 ft (confirmed: 9 ft eave + 12 ft gable) | ✓ Strong | High | SER and PRR are within 0.7 ft of each other. OSM mapped height and estimator-confirmed ridge height are effectively the same value. |
-| Bungalow wall height (eave) | 8.5–9.5 ft assumed | 9 ft (estimator-confirmed) | ✓ Full | High | Both agree on 9 ft eave. Estimator confirmed explicitly. |
+| Roof / ridge height | 21.7 ft (6.6 m mapped) | Ridge ~21 ft estimated (9 ft eave + 12 ft gable) | ✓ Directional | Medium | SER estimate and PRR mapped height are within 0.7 ft of each other, but ridge height was not field-measured. |
+| Bungalow wall height (eave) | 8.5–9.5 ft assumed | ~9 ft estimated | ✓ Directional | Medium | Both support a 9 ft working eave height, but it was not field-measured. |
 | Single-structure building | "Detached residential," 1 mapped level | Single 1.5-story bungalow | ✓ Full | High | Now agree — PRR's 1-level tag was not wrong; the SER's prior "two-structure" model was wrong. |
 | Footprint shape | "Irregular" with jogs | Mostly rectangular with small NW bump-out | ✓ Directional | Medium | PRR acknowledges irregularity; SER models it explicitly. |
 | Siding type (assumed) | Assumed lap/wood/composite | Horizontal lap (front/rear) + B&B (gable ends) | ✓ Directional | Medium | PRR guessed lap on the main faces correctly. B&B on gable ends was not identified by PRR. |
@@ -73,14 +73,14 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 | Likely / calculated | **1,285 SF** | **~1,200 SF** | **1,107 SF** |
 | Low | 1,150 SF | ~1,100 SF | — |
 | High | 1,550 SF | ~1,325 SF | — |
-| Method | Perimeter × height + gable % | Wall-by-wall segments, confirmed dimensions | Elevation-by-elevation, field widths |
+| Method | Perimeter × height + gable % | Wall-by-wall segments, measured/estimated dimensions | Elevation-by-elevation, field widths |
 | Gap vs. SER | +85 SF (+7%) | — | −93 SF (−8%) |
 
 **PRR vs. SER (85 SF gap):** Small — within margin of error. Explained primarily by OSM perimeter overcount. Both arrive in the 1,100–1,325 SF band. Consistent cross-check.
 
-**SER vs. MCR (93 SF gap):** Narrow — within 8%. After updating MCR to the confirmed 9 ft eave height, the gap is now explained almost entirely by the side gable height difference (MCR uses 8 ft above eave vs. SER's confirmed 12 ft). The MCR is a useful conservative floor; the SER remains the preferred working model.
+**SER vs. MCR (93 SF gap):** Narrow — within 8%. After updating MCR to the 9 ft working eave height, the gap is now explained almost entirely by the side gable height difference (MCR uses 8 ft above eave vs. SER's estimated 12 ft). The MCR is a useful conservative floor; the SER remains the preferred working model.
 
-**All three sources ranked by confidence:** SER > MCR > PRR. SER is grounded in confirmed dimensions (ridge 21 ft, eave 9 ft, front width 27 ft) and itemized wall segments. MCR uses field-confirmed widths and confirmed 9 ft eave; the gable height above eave is the one remaining difference. PRR is OSM-derived with no photo access.
+**All three sources ranked by confidence:** SER > MCR > PRR. SER is grounded in measured/confirmed footprint inputs (front width 27 ft, depth 25 ft, max width 33 ft), estimated height inputs, and itemized wall segments. MCR uses field-confirmed widths and the 9 ft working eave; the gable height above eave is the one remaining difference. PRR is OSM-derived with no photo access.
 
 ### 2.2 Perimeter
 
@@ -89,7 +89,7 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 | Conclusion | ~145 lin. ft (OSM polygon) | ~122 lin. ft (calculated from corrected footprint) |
 | Gap | 23 ft (19%) |
 | Potential cause | OSM polygon perimeters are frequently inflated for residential buildings — polygon nodes may trace around overhangs, porches, or roof edges rather than the wall footprint. The 6 ft porch roof overhang (not enclosed) may have inflated the OSM polygon. Additionally, the OSM bounding box (40 × 32 ft) does not match the estimator-confirmed dimensions (27 × 25 ft), suggesting the OSM polygon is mis-scaled. |
-| Stronger conclusion | **SER 122 ft.** Derived from estimator-confirmed measurements (27 ft front, 25 ft depth, 6 + 3 ft bump-out). The OSM perimeter is the primary driver of the PRR's relatively high area estimate despite the single-story model. |
+| Stronger conclusion | **SER 122 ft.** Derived from estimator-confirmed/measured footprint inputs (27 ft front, 25 ft depth, 6 ft bump-out width) plus estimated 3 ft kickout depth. The OSM perimeter is the primary driver of the PRR's relatively high area estimate despite the single-story model. |
 
 ### 2.3 Front Width
 
@@ -107,8 +107,8 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 | Conclusion | 2 gables (default assumption) | 2 exterior paintable gables (left + right) |
 | Gable area | 180 SF (2 × ½ × 30 × 6) | 300 SF (2 × ½ × 25 × 12) |
 | Gap | 120 SF |
-| Cause | PRR used correct count (2 gables) but different base (30 ft vs. 25 ft) and height (6 ft vs. 12 ft). PRR's 30 ft base is from OSM bounding box (not building wall). SER's 12 ft gable height is derived from the confirmed ridge height (21 ft) minus confirmed eave height (9 ft). |
-| Stronger conclusion | **SER.** Gable height is now confirmed (21 ft ridge − 9 ft eave = 12 ft), not estimated. PRR's 6 ft gable assumption is a 50% undercount. |
+| Cause | PRR used correct count (2 gables) but different base (30 ft vs. 25 ft) and height (6 ft vs. 12 ft). PRR's 30 ft base is from OSM bounding box (not building wall). SER's 12 ft gable height is derived from the estimated ridge height (21 ft) minus estimated eave height (9 ft). |
+| Stronger conclusion | **SER.** Gable height is estimated at 12 ft (21 ft ridge − 9 ft eave), not field-measured. PRR's 6 ft gable assumption is likely a 50% undercount. |
 
 ### 2.5 Front Upper Area
 
@@ -133,8 +133,8 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 |---|---|---|
 | Eave height used | 9 ft | **9 ft** (updated) |
 | Area impact | — | MCR updated; eave height now consistent across all three sources |
-| Source | Estimator-confirmed ("same wall height about 9") | Updated to match confirmed 9 ft |
-| Conclusion | **RESOLVED.** Both SER and MCR now use the confirmed 9 ft eave height. This conflict is closed. The remaining SER/MCR gap (~93 SF) is attributable solely to the side gable height difference (§2.9: MCR uses 8 ft above eave vs. SER's confirmed 12 ft). |
+| Source | Estimated; not field-measured | Updated to match 9 ft working eave height |
+| Conclusion | **RESOLVED.** Both SER and MCR now use the same 9 ft working eave height. This conflict is closed. The remaining SER/MCR gap (~93 SF) is attributable mainly to the side gable height difference (§2.9: MCR uses 8 ft above eave vs. SER's estimated 12 ft). |
 
 ### 2.9 Side Gable Height — SER vs. MCR
 
@@ -144,9 +144,9 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 | Gable area per side | (25 × 12) ÷ 2 = **150 SF** | (25 × 8) ÷ 2 = **100 SF** |
 | Total both gables | **300 SF** | **200 SF** |
 | Gap | **100 SF** | |
-| SER source | Derived: confirmed ridge 21 ft − confirmed eave 9 ft = 12 ft | |
+| SER source | Derived: estimated ridge 21 ft − estimated eave 9 ft = 12 ft | |
 | MCR source | Estimated at 8 ft above eave | |
-| Stronger conclusion | **SER 12 ft.** Both ridge height (21 ft) and eave height (9 ft) are confirmed. The gable height is a derived certainty, not an estimate. MCR's 8 ft gable underestimates the side gable triangles by 33%. This is the largest single driver of the SER/MCR gap. |
+| Stronger conclusion | **SER 12 ft working value.** Both ridge height (21 ft) and eave height (9 ft) are estimates, so the gable height remains estimated. MCR's 8 ft gable likely underestimates the side gable triangles by 33%. This is the largest single driver of the SER/MCR gap. |
 
 ### 2.10 Front Gable Treatment — SER vs. MCR
 
@@ -182,16 +182,16 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 | P3 | Front width ~40 ft (bounding box) | ⚠️ Overcount | Bounding box inflated. Confirmed front face = 27 ft. |
 | P4 | Two modest gable ends (assumed) | ✅ Gable count correct | PRR's assumption of 2 gables was right; base and height values differ. |
 | P5 | Gable base ~30 ft | ⚠️ Overcount | OSM-derived. Actual = 25 ft (building depth). |
-| P6 | Gable height ~6 ft | ⚠️ Undercount | Estimated. Actual = 12 ft (confirmed: 21 ft ridge − 9 ft eave). PRR underestimates gable area by 50%. |
+| P6 | Gable height ~6 ft | ⚠️ Undercount | Estimated. Working value = 12 ft (estimated 21 ft ridge − estimated 9 ft eave). PRR likely underestimates gable area by 50%. |
 | P7 | "No confirmed front upper area" | ⚠️ Incomplete | Front cross-gable face (~49 SF) confirmed in site photos — PRR lacked photo access, so omission is understandable. |
 
 ### SER Assumptions — Flagged (Amended)
 
 | # | Assumption | Flag | Reason |
 |---|---|---|---|
-| S1 | Building depth = 25 ft | ⚠️ Not annotated | Estimator estimate; not directly measured on satellite. ±2–3 ft possible. Each 1 ft = ~54 SF swing (two gable walls × 1 ft × 9 ft). |
+| S1 | Building depth = 25 ft | ✅ Measured | Estimator field measurement. Each 1 ft = ~54 SF swing (two gable walls × 1 ft × 9 ft), but the working value is high confidence. |
 | S2 | Bump-out depth = ~3 ft | ⚠️ Estimated | Estimator said "maybe 3 ft." Low impact on total (≤54 SF swing). |
-| S3 | Gable height = 12 ft | ✅ Confirmed | Derived from confirmed ridge height (21 ft) minus confirmed eave height (9 ft). No longer an estimate. |
+| S3 | Gable height = 12 ft | ⚠️ Estimated | Derived from estimated ridge height (21 ft) minus estimated eave height (9 ft). |
 | S4 | Front gable face: 14 ft base × 7 ft height | ⚠️ Estimated | Dimensions estimated from exterior-front.png proportions. Small impact — uncertainty ≤ ±15 SF. |
 | S5 | Window count: ~10 | ⚠️ Estimated from photos | ±2 windows = ±24 SF. |
 | S6 | Siding identified as horizontal lap + B&B | ⚠️ Substrate unconfirmed | Customer says aluminum but photos can't confirm. Aluminum prep approach must be confirmed in field. |
@@ -205,7 +205,7 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 
 | # | Missing Item | Impact | Why It Matters |
 |---|---|---|---|
-| M1 | **Building depth — field measurement** | High | 25 ft is estimator-stated, not annotated. Each 1 ft of error = ~54 SF swing on the two gable wall rectangles alone. |
+| M1 | **Eave/ridge height — field measurement** | High | Eave and ridge heights are estimated, not field-measured. These drive the side gable triangle area. |
 | M2 | **Siding material confirmation — aluminum** | High | Customer says aluminum on all surfaces. Are both horizontal lap and B&B sections aluminum? Affects primer, prep method, and labor rate. |
 | M3 | **Window sill deterioration scope** | High | Customer-flagged. Count and severity unknown. Bondo/repair labor is a significant wildcard. |
 
@@ -237,8 +237,8 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 **Q1 — Siding Material (High)**  
 Customer states "aluminum siding." Site photos are consistent with aluminum but don't confirm the substrate. Are BOTH the horizontal lap sections (front/rear) and the vertical B&B sections (gable ends) aluminum? Is the B&B section a different substrate? This changes primer selection, prep method, and wash chemistry for the entire job.
 
-**Q2 — Building Depth Field Measurement (High)**  
-The 25 ft building depth is an estimator estimate — not annotated on the satellite. Before finalizing the estimate, can a field tape or laser confirm the front-to-rear depth? Each foot of difference = ~54 SF swing on the gable wall areas.
+**Q2 — Bump-Out / Kickout Depth (Medium)**  
+The 25 ft main building depth is field-measured. The remaining footprint uncertainty is the additional ~3 ft bump-out/kickout depth. Confirm that kickout depth if higher precision is needed.
 
 **Q3 — Window Sill Deterioration (High)**  
 Customer flagged window sill/base deterioration requiring scraping, sanding, and possible bondo. How many windows are affected? Which elevations? What is the severity (cosmetic vs. structural)? This is a labor wildcard that needs its own scope line.
@@ -265,19 +265,19 @@ Is the brick chimney excluded from scope? SER confirmed masonry. Confirm exclusi
 |---|---|---|---|---|
 | **Building style** | Single 1.5-story craftsman bungalow | **Confirmed** | Estimator correction | No addition; no second structure |
 | **Front face width (N-S)** | 27 ft | **High** | Annotated satellite + estimator | |
-| **Building depth (E-W)** | 25 ft avg | **Medium** | Estimator estimate | ±2–3 ft; field verify |
+| **Building depth (E-W)** | 25 ft avg | **High** | Estimator field measurement | Main building depth measured |
 | **Bump-out width (N-S)** | 6 ft | **Medium** | Estimator-confirmed | At rear-left (NW) corner |
 | **Bump-out depth (E-W)** | ~3 ft | **Low** | Estimator estimate | Low area impact |
 | **Maximum building width** | 33 ft | **High** | Estimator-confirmed | At bump-out corner only |
 | **Perimeter** | ~122 lin. ft | **Medium** | Derived from above | |
-| **Eave height (all walls)** | 9 ft | **High** | Estimator-confirmed | Uniform across all segments |
-| **Gable height (eave to ridge)** | 12 ft | **High** | Derived: 21 ft ridge − 9 ft eave | Both left and right gable ends. Confirmed. |
-| **Ridge height** | 21 ft | **High** | Estimator-confirmed | Matches PRR OSM-mapped height of 21.7 ft within rounding |
+| **Eave height (all walls)** | 9 ft | **Medium** | Estimated; not field-measured | Uniform across all segments |
+| **Gable height (eave to ridge)** | 12 ft | **Medium** | Derived: estimated 21 ft ridge − estimated 9 ft eave | Both left and right gable ends. Estimated. |
+| **Ridge height** | 21 ft | **Medium** | Estimated | Matches PRR OSM-mapped height of 21.7 ft within rounding |
 | **Siding material** | Aluminum (customer-stated) — confirm all surfaces | **Unconfirmed** | Customer-stated | ⚠️ Affects primer, prep method. Do not finalize without field confirmation. |
 | **Body siding area — gross** | ~1,447 SF | **Medium** | SER formula | |
 | **Body siding area — net (likely)** | ~1,200 SF | **Medium** | SER after deductions | Use as working figure; range 1,100–1,325 SF |
-| **Left (north) gable** | 375 SF (225 rect + 150 triangle) | **High** | SER; visible in exterior-left photos | Full gable from grade to confirmed ridge (21 ft) |
-| **Right (south) gable** | 375 SF (225 rect + 150 triangle) | **High** | SER; confirmed exterior-right.JPEG | Full gable from grade to confirmed ridge (21 ft) |
+| **Left (north) gable** | 375 SF (225 rect + 150 triangle) | **Medium** | SER; visible in exterior-left photos | Full gable from grade to estimated ridge (21 ft) |
+| **Right (south) gable** | 375 SF (225 rect + 150 triangle) | **Medium** | SER; exterior-right.JPEG | Full gable from grade to estimated ridge (21 ft) |
 | **Front gable face** | ~49 SF (14 ft × 7 ft ÷ 2) | **Medium** | Confirmed in exterior-front.png | Single cross-gable face above porch; two small windows (~4 SF each) deducted separately |
 | **Windows — count** | ~10 | **Medium** | SER photo estimate | ±2 windows; field verify |
 | **Opening deductions** | ~227 SF | **Medium** | SER itemized | Range ±25–35 SF |
@@ -298,15 +298,15 @@ Is the brick chimney excluded from scope? SER confirmed masonry. Confirm exclusi
 
 ### Important Conclusions
 
-1. **Three sources; tight cluster.** PRR (1,285 SF), SER (1,200 SF), and MCR (1,107 SF) now all fall within a 178 SF range — a 14% spread. After updating MCR to the confirmed 9 ft eave height, all three sources are consistent. PRR and SER cluster within 7% and remain the most defensible because they use confirmed heights throughout. The MCR is a useful conservative floor.
+1. **Three sources; tight cluster.** PRR (1,285 SF), SER (1,200 SF), and MCR (1,107 SF) now all fall within a 178 SF range — a 14% spread. After updating MCR to the 9 ft working eave height, all three sources are consistent. PRR and SER cluster within 7%; the MCR is a useful conservative floor.
 
-2. **The remaining MCR gap is explained by gable height only.** All three sources use the same field-confirmed widths (27 ft front, 25 ft depth, 33 ft max) and now use the same confirmed 9 ft eave height. The MCR diverges from SER in one place: side gable height 8 ft vs. confirmed 12 ft above eave (−100 SF). That is the sole remaining driver of the ~93 SF SER/MCR gap.
+2. **The remaining MCR gap is explained by gable height only.** All three sources use the same field-confirmed/measured footprint inputs (27 ft front, 25 ft depth, 33 ft max) and now use the same 9 ft working eave height. The MCR diverges from SER in one place: side gable height 8 ft vs. estimated 12 ft above eave (−100 SF). That is the sole remaining driver of the ~93 SF SER/MCR gap.
 
 3. **The front gable is the one area where MCR may be more accurate than SER.** MCR uses the full 27 ft front width as the gable base (88 SF); SER uses 14 ft (49 SF). If the front face is a full-width gable end — which exterior-front.png suggests — the SER is under-counting ~39 SF on the front face. This is worth verifying in the field.
 
-4. **The SER is the primary area model** for all calculations. It is grounded in estimator-confirmed measurements, confirmed ridge height (21 ft), and direct photo analysis. The PRR is a useful cross-check. The MCR provides a conservative lower bound and confirms the footprint widths independently.
+4. **The SER is the primary area model** for all calculations. It is grounded in estimator-confirmed/measured footprint inputs, estimated height inputs, and direct photo analysis. The PRR is a useful cross-check. The MCR provides a conservative lower bound and confirms the footprint widths independently.
 
-5. **The PRR/SER gap is explained by OSM perimeter overcount.** The PRR uses an OSM polygon perimeter of 145 ft (vs. SER's 122 ft). The OSM perimeter is likely tracing roof overhangs or is mis-scaled. The SER's perimeter is derived from estimator-confirmed wall dimensions.
+5. **The PRR/SER gap is explained by OSM perimeter overcount.** The PRR uses an OSM polygon perimeter of 145 ft (vs. SER's 122 ft). The OSM perimeter is likely tracing roof overhangs or is mis-scaled. The SER's perimeter is derived from measured/confirmed footprint inputs plus the estimated 3 ft kickout.
 
 4. **Aluminum siding was not confirmed in either report.** Customer stated aluminum. Both reports identified siding type visually but did not confirm substrate. Aluminum siding changes the entire prep approach: adhesion/bonding primer required, no abrasive sanding, aluminum-compatible wash chemistry. This must be confirmed before specifying prep materials.
 
@@ -320,19 +320,21 @@ Is the brick chimney excluded from scope? SER confirmed masonry. Confirm exclusi
 |---|---|---|
 | UQ1 | Siding material — is all siding aluminum? B&B sections too? | **High** |
 | UQ2 | Window sill bondo/repair — how many, what severity? | **High** |
-| UQ3 | Building depth — confirm field measurement (25 ft assumed) | **Medium** |
-| UQ4 | Porch ceiling actual dimensions — field measure | **Medium** |
-| UQ5 | Rear trellis — in scope? Access feasibility? | **Medium** |
-| UQ6 | Front door — color change or same? | **Medium** |
-| UQ7 | Side deck — in scope? | **Low** |
-| UQ8 | Chimney — confirm exclusion from scope | **Low** |
+| UQ3 | Eave/ridge heights — field measure if higher precision is needed | **Medium** |
+| UQ4 | Bump-out/kickout depth — confirm estimated ~3 ft | **Medium** |
+| UQ5 | Porch ceiling actual dimensions — field measure | **Medium** |
+| UQ6 | Rear trellis — in scope? Access feasibility? | **Medium** |
+| UQ7 | Front door — color change or same? | **Medium** |
+| UQ8 | Side deck — in scope? | **Low** |
+| UQ9 | Chimney — confirm exclusion from scope | **Low** |
 
 ### Assumptions to Disclose in Final Report
 
-- Building depth: 25 ft (estimator estimate, not field-measured — primary remaining uncertainty)
-- Bump-out depth: ~3 ft (estimator estimate)
-- Gable height: 12 ft (confirmed — derived from confirmed ridge 21 ft and confirmed eave 9 ft)
-- Ridge height: 21 ft (estimator-confirmed; matches PRR OSM 21.7 ft)
+- Building depth: 25 ft (field-measured)
+- Bump-out/kickout depth: ~3 ft (estimator estimate)
+- Eave height: 9 ft (estimated; not field-measured)
+- Gable height: 12 ft (estimated — derived from estimated ridge 21 ft and estimated eave 9 ft)
+- Ridge height: 21 ft (estimated; matches PRR OSM 21.7 ft)
 - Window count: ~10 (estimated from photos)
 - Porch ceiling: ~108 SF (estimated; could be up to 162 SF)
 - Front gable face: 14 ft base × 7 ft height (estimated from exterior-front.png)
@@ -341,17 +343,17 @@ Is the brick chimney excluded from scope? SER confirmed masonry. Confirm exclusi
 
 | Scenario | Net Body Siding | Source / Key Drivers |
 |---|---|---|
-| **MCR floor** | **1,107 SF** | Manual calc; confirmed 9 ft eave + 8 ft gable (gable height remains under confirmed 12 ft). Conservative lower bound. |
-| SER low | ~1,100 SF | Ridge 21 ft / gable 12 ft (confirmed), depth 24 ft, maximum deductions |
-| **SER likely (recommend)** | **~1,200 SF** | Ridge 21 ft / gable 12 ft (confirmed), depth 25 ft, central deductions |
+| **MCR floor** | **1,107 SF** | Manual calc; 9 ft working eave + 8 ft gable (gable height remains under estimated 12 ft). Conservative lower bound. |
+| SER low | ~1,100 SF | Ridge 21 ft / gable 12 ft (estimated), depth 24 ft, maximum deductions |
+| **SER likely (recommend)** | **~1,200 SF** | Ridge 21 ft / gable 12 ft (estimated), depth 25 ft measured, central deductions |
 | PRR likely | ~1,285 SF | OSM perimeter method; perimeter likely overstated |
-| SER high | ~1,325 SF | Ridge 21 ft / gable 12 ft (confirmed), depth 26 ft, minimum deductions |
+| SER high | ~1,325 SF | Ridge 21 ft / gable 12 ft (estimated), depth 26 ft, minimum deductions |
 
-**Recommend using 1,200 SF as the working body siding figure.** The MCR (1,107 SF) is a conservative floor — eave height now matches confirmed 9 ft, but side gable height remains at 8 ft vs. the confirmed 12 ft; the PRR (1,285 SF) uses an inflated perimeter. The SER (1,200 SF) is anchored to the most confirmed inputs.
+**Recommend using 1,200 SF as the working body siding figure.** The MCR (1,107 SF) is a conservative floor — eave height now matches the 9 ft working assumption, but side gable height remains at 8 ft vs. the estimated 12 ft; the PRR (1,285 SF) uses an inflated perimeter. The SER (1,200 SF) is anchored to the most defensible measured/estimated inputs.
 
 One open item from MCR: if the front gable is full-width (27 ft base as MCR assumes), add ~39 SF to the SER figure → ~1,239 SF. This is within the SER range and does not change the working estimate. Field verify front gable width at site visit.
 
-If field measurement confirms depth outside 23–27 ft, recalculate using sensitivity: approximately 54 SF per foot of depth difference (two gable wall rectangles × 1 ft × 9 ft).
+If follow-up measurement changes the 25 ft building depth, recalculate using sensitivity: approximately 54 SF per foot of depth difference (two gable wall rectangles × 1 ft × 9 ft). The current 25 ft depth is field-measured; the ~3 ft kickout remains estimated.
 
 Trim scope (~145 LF fascia / ~54 SF soffit / ~108 SF porch ceiling) is a **separate scope line** from body siding. Do not combine.
 
@@ -362,10 +364,10 @@ Window sill repair should be treated as a **separate scope line** (TBD pending f
 ### What the Final Report Generator Should Do
 
 1. Use the SER area model (1,200 SF likely) as the base for body siding.
-2. Three independent methods were cross-checked: PRR (1,285 SF, OSM polygon), SER (1,200 SF, confirmed dimensions), MCR (1,107 SF, elevation-by-elevation). All three fall within a 178 SF range (14%). PRR and SER cluster within 7%; MCR is a conservative floor — eave height now matches confirmed 9 ft, with the remaining gap driven by conservative gable height (8 ft vs. confirmed 12 ft above eave). Report can state that three methods were used and the working figure represents the confirmed-dimension midpoint.
+2. Three independent methods were cross-checked: PRR (1,285 SF, OSM polygon), SER (1,200 SF, measured/estimated dimensions), MCR (1,107 SF, elevation-by-elevation). All three fall within a 178 SF range (14%). PRR and SER cluster within 7%; MCR is a conservative floor — eave height now matches the 9 ft working assumption, with the remaining gap driven by conservative gable height (8 ft vs. estimated 12 ft above eave). Report can state that three methods were used and the working figure represents the reconciled midpoint.
 3. Confirm aluminum siding before specifying prep materials.
 4. List porch ceiling and window sill repair as separate line items with explicit prep multipliers.
-5. Note UQ1–UQ8 as conditions on the estimate, so the customer understands what could change.
+5. Note UQ1–UQ9 as conditions on the estimate, so the customer understands what could change.
 6. Flag the front gable width as a field-verify item: MCR uses 27 ft (full-width), SER uses 14 ft (cross-gable). If the full front face is a gable, increase the working estimate by ~39 SF to ~1,239 SF.
 
 ---

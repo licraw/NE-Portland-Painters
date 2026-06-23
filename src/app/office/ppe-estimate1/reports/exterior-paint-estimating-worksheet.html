@@ -289,11 +289,11 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
 <table>
   <tr><th>Dimension</th><th>Value</th><th>Source</th><th>Confidence</th></tr>
   <tr><td>Front face width (N-S, parallel to street)</td><td>27 ft</td><td>Annotated satellite / estimator-confirmed</td><td><span class="conf-high">HIGH</span></td></tr>
-  <tr><td>Building depth (E-W, front to rear)</td><td>25 ft</td><td>Estimator-stated ("average of 25 ft")</td><td><span class="conf-med">MEDIUM</span></td></tr>
+  <tr><td>Building depth (E-W, front to rear)</td><td>25 ft</td><td>Estimator field measurement</td><td><span class="conf-high">HIGH</span></td></tr>
   <tr><td>Bump-out width addition (N-S)</td><td>6 ft</td><td>Estimator-confirmed; satellite annotation consistent</td><td><span class="conf-med">MEDIUM</span></td></tr>
   <tr><td>Bump-out depth addition (E-W)</td><td>~3 ft</td><td>Estimator estimate ("maybe 3 ft")</td><td><span class="conf-low">LOW-MED</span></td></tr>
   <tr><td>Maximum width (at bump-out)</td><td>33 ft</td><td>Estimator-confirmed; satellite annotation</td><td><span class="conf-high">HIGH</span></td></tr>
-  <tr><td>Eave height (all exterior walls)</td><td>~9 ft</td><td>Estimator-confirmed ("same wall height about 9")</td><td><span class="conf-high">HIGH</span></td></tr>
+  <tr><td>Eave height (all exterior walls)</td><td>~9 ft</td><td>Estimator estimate; not field-measured</td><td><span class="conf-med">MEDIUM</span></td></tr>
   <tr><td>Perimeter (derived)</td><td>~122 lin. ft</td><td>Calculated from above</td><td><span class="conf-med">MEDIUM</span></td></tr>
 </table>
 
@@ -330,8 +330,8 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
   <tr>
     <td>25 ft (building depth)</td>
     <td>25 ft</td>
-    <td>East-west depth of the main body. Estimator-stated ("depth is an average of 25 ft"). NOT directly annotated — derived from estimator field knowledge.</td>
-    <td><span class="conf-med">ESTIMATED</span></td>
+    <td>East-west depth of the main body. Estimator field-measured value.</td>
+    <td><span class="conf-high">MEASURED</span></td>
   </tr>
   <tr>
     <td>~3 ft (bump-out depth)</td>
@@ -347,7 +347,7 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
   </tr>
 </table>
 
-<p class="note">Primary uncertainty: The 25 ft depth is estimator-stated but not directly annotated on the satellite. The bump-out depth (~3 ft) has minimal impact on the total area estimate.</p>
+<p class="note">Primary measurement note: The 25 ft main building depth is field-measured. The bump-out/kickout depth (~3 ft) remains estimated and has limited impact on the total area estimate.</p>
 
 <!-- ============================================================ -->
 <h2>Phase 5 — Elevation Analysis</h2>
@@ -359,9 +359,9 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
     <th>Type</th>
     <th>Basis</th>
   </tr>
-  <tr><td>Eave height (all walls, grade to eave)</td><td>9 ft</td><td>Confirmed</td><td>Estimator confirmed: "same wall height about 9." Standard 1.5-story plate. Applies to all exterior wall segments including bump-out.</td></tr>
-  <tr><td>Gable height (eave to ridge peak)</td><td>12 ft</td><td>Confirmed</td><td>Derived from confirmed ridge height of 21 ft minus confirmed eave height of 9 ft (21 − 9 = 12 ft). Applies to both left (north) and right (south) gable ends.</td></tr>
-  <tr><td>Ridge height (grade to peak)</td><td>21 ft</td><td>Confirmed</td><td>Estimator-confirmed. Consistent with PRR OSM-mapped height of 21.7 ft.</td></tr>
+  <tr><td>Eave height (all walls, grade to eave)</td><td>9 ft</td><td>Estimated</td><td>Estimator estimate; not field-measured. Standard 1.5-story plate. Applies to all exterior wall segments including bump-out.</td></tr>
+  <tr><td>Gable height (eave to ridge peak)</td><td>12 ft</td><td>Estimated</td><td>Derived from estimated ridge height of 21 ft minus estimated eave height of 9 ft (21 − 9 = 12 ft). Applies to both left (north) and right (south) gable ends.</td></tr>
+  <tr><td>Ridge height (grade to peak)</td><td>21 ft</td><td>Estimated</td><td>Estimated value. Consistent with PRR OSM-mapped height of 21.7 ft.</td></tr>
   <tr><td>Left gable end (north) — full wall height</td><td>9 ft rect + 12 ft triangle</td><td>Confirmed</td><td>The tall B&amp;B wall visible in left-side photos. Grade to ridge. Estimator confirmed: "the tall walls are the left and right main sides of the bungalow."</td></tr>
   <tr><td>Right gable end (south) — full wall height</td><td>9 ft rect + 12 ft triangle</td><td>Confirmed</td><td>Same as left gable end. Visible in exterior-right.JPEG. Chimney at right-front corner.</td></tr>
   <tr><td>Front porch depth (roof overhang)</td><td>6 ft</td><td>Confirmed</td><td>Estimator confirmed: "the front is only roof extending 6 feet, not house and roof." The 6 ft is roof projection only — no enclosed porch structure.</td></tr>
@@ -695,8 +695,8 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
   <tr>
     <td>Building depth (E-W)</td>
     <td>25 ft</td>
-    <td><span class="conf-med">MEDIUM</span></td>
-    <td>Estimator estimate. Not directly annotated. ±2–3 ft possible. Each 1 ft = ~54 SF swing (two gable walls × 1 ft × 9 ft).</td>
+    <td><span class="conf-high">HIGH</span></td>
+    <td>Estimator field measurement. Each 1 ft = ~54 SF swing (two gable walls × 1 ft × 9 ft), but the working value is measured.</td>
   </tr>
   <tr>
     <td>Bump-out width (N-S)</td>
@@ -713,14 +713,14 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
   <tr>
     <td>Eave height</td>
     <td>9 ft</td>
-    <td><span class="conf-high">HIGH</span></td>
-    <td>Estimator-confirmed. Applies uniformly to all wall segments.</td>
+    <td><span class="conf-med">MEDIUM</span></td>
+    <td>Estimator estimate; not field-measured. Applies uniformly to all wall segments.</td>
   </tr>
   <tr>
     <td>Gable height (eave to ridge)</td>
     <td>12 ft</td>
-    <td><span class="conf-high">HIGH</span></td>
-    <td>Derived from confirmed ridge height (21 ft) minus confirmed eave height (9 ft = 21 − 9 = 12 ft).</td>
+    <td><span class="conf-med">MEDIUM</span></td>
+    <td>Derived from estimated ridge height (21 ft) minus estimated eave height (9 ft = 21 − 9 = 12 ft).</td>
   </tr>
   <tr>
     <td>Front gable face dimensions</td>
@@ -744,7 +744,7 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
     <td>Gross paintable area</td>
     <td>1,447 SF</td>
     <td><span class="conf-med">MEDIUM</span></td>
-    <td>Primarily driven by building depth (25 ft, estimator estimate) — the only remaining unconfirmed dimension.</td>
+    <td>Uses the measured 25 ft building depth plus estimated height and opening deductions.</td>
   </tr>
   <tr>
     <td>Net paintable body siding</td>
@@ -785,7 +785,7 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
 <table>
   <tr><th>Dimension</th><th>Value</th><th>Confidence</th></tr>
   <tr><td>Front face width (N-S)</td><td>27 ft</td><td>HIGH</td></tr>
-  <tr><td>Building depth (E-W)</td><td>25 ft avg</td><td>MEDIUM (estimator estimate)</td></tr>
+  <tr><td>Building depth (E-W)</td><td>25 ft avg</td><td>HIGH (field-measured)</td></tr>
   <tr><td>Bump-out: width × depth</td><td>6 ft × ~3 ft</td><td>MEDIUM / LOW</td></tr>
   <tr><td>Maximum width (at bump-out)</td><td>33 ft</td><td>HIGH</td></tr>
   <tr><td>Total perimeter</td><td>~122 lin. ft</td><td>MEDIUM</td></tr>
@@ -846,17 +846,17 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
   <tr><th>Scenario</th><th>Key Assumptions</th><th>Net Paintable Body SF</th></tr>
   <tr>
     <td><strong>LOW</strong></td>
-    <td>Gable height 12 ft / ridge 21 ft (confirmed), depth 24 ft, maximum deductions</td>
+    <td>Gable height 12 ft / ridge 21 ft (estimated), depth 24 ft, maximum deductions</td>
     <td class="num"><strong>~1,100 SF</strong></td>
   </tr>
   <tr>
     <td><strong>LIKELY</strong></td>
-    <td>Gable height 12 ft / ridge 21 ft (confirmed), depth 25 ft, central deductions</td>
+    <td>Gable height 12 ft / ridge 21 ft (estimated), depth 25 ft measured, central deductions</td>
     <td class="num"><strong>~1,200 SF</strong></td>
   </tr>
   <tr>
     <td><strong>HIGH</strong></td>
-    <td>Gable height 12 ft / ridge 21 ft (confirmed), depth 26 ft, minimum deductions</td>
+    <td>Gable height 12 ft / ridge 21 ft (estimated), depth 26 ft, minimum deductions</td>
     <td class="num"><strong>~1,325 SF</strong></td>
   </tr>
 </table>
@@ -870,7 +870,7 @@ ORIENTATION: Street (NE 58th Ave) is EAST — FRONT of house faces EAST (right i
   <div class="recommend">WORKING ESTIMATE: 1,200 SF PAINTABLE BODY SIDING</div>
   <p style="margin-top:10px; font-size:12px;">
     Use 1,200 SF for initial budget and material quantity calculations.<br>
-    Primary swing factor is the building depth (25 ft assumed, not annotated) and gable height (10 ft confirmed). Field-verify depth with tape or laser before finalizing.<br>
+    Primary swing factors are the estimated height assumptions and opening deductions. The main building depth is field-measured at 25 ft; the ~3 ft kickout remains estimated.<br>
     Trim is a SEPARATE scope (~145 LF fascia, ~54 SF soffit, ~108 SF porch ceiling). Do not combine with body siding total.<br>
     Porch ceiling prep is a significant labor adder — call out explicitly in any labor estimate.<br>
     Window sill repair is a SEPARATE scope line (TBD pending field survey).<br>
