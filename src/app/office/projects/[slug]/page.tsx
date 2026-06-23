@@ -267,27 +267,6 @@ export default async function OfficeProjectPage({
               if (assets.length === 0) {
                 return null;
               }
-
-              return (
-                <div
-                  key={category}
-                  className="rounded-lg border border-theme-border bg-theme-surface p-5"
-                >
-                  <h3 className="font-semibold text-theme-heading">
-                    {category}
-                  </h3>
-                  <ul className="mt-3 space-y-2 text-sm text-theme-text-muted">
-                    {assets.map((asset) => (
-                      <li key={asset.filename}>
-                        <span className="font-medium text-theme-heading">
-                          {asset.title}
-                        </span>
-                        <span className="block">{asset.description}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
             })}
           </div>
         </section>
