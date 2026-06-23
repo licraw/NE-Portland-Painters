@@ -143,7 +143,8 @@ export default async function OfficeProjectDocumentPage({
     notFound();
   }
 
-  const source = fs.readFileSync(filePath, "utf8");
+  const source =
+    document.type === "PDF" ? "" : fs.readFileSync(filePath, "utf8");
   const renderedMarkdown =
     document.type === "Markdown" ? await renderMarkdown(source) : "";
 
@@ -173,7 +174,13 @@ export default async function OfficeProjectDocumentPage({
         </div>
 
         <div className="pt-8">
-          {document.type === "HTML" ? (
+          {document.type === "PDF" ? (
+            <iframe
+              title={document.title}
+              src={`/office/projects/${project.slug}/documents/${document.id}/file`}
+              className="h-[80vh] w-full rounded-lg border border-theme-border bg-white"
+            />
+          ) : document.type === "HTML" ? (
             <iframe
               title={document.title}
               srcDoc={source}

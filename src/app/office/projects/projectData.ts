@@ -26,7 +26,7 @@ import soffit from "../ppe-estimate1/soffit.jpeg";
 export type OfficeProjectDocument = {
   id: string;
   title: string;
-  type: "Markdown" | "HTML";
+  type: "Markdown" | "HTML" | "PDF";
   audience: "Customer-facing" | "Internal" | "Research";
   filename: string;
   description: string;
@@ -104,6 +104,15 @@ export const officeProjects: OfficeProject[] = [
         filename: "manual-calc.md",
         description:
           "Elevation-by-elevation manual area calculation worksheet.",
+      },
+      {
+        id: "manual-geometry-worksheet",
+        title: "Manual Geometry Worksheet",
+        type: "PDF",
+        audience: "Research",
+        filename: "Exterior Paint Estimate Geometry Worksheet.pdf",
+        description:
+          "PDF geometry worksheet supporting the manual calculation report.",
       },
       {
         id: "qa-reconciliation-report",
