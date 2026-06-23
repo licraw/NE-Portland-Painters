@@ -43,6 +43,10 @@ function audienceClass(audience: string) {
   return "border-theme-border bg-theme-surface text-theme-text-muted";
 }
 
+function documentHref(projectSlug: string, documentId: string) {
+  return `/office/projects/${projectSlug}/documents/${documentId}`;
+}
+
 export default async function OfficeProjectPage({
   params,
 }: {
@@ -58,6 +62,23 @@ export default async function OfficeProjectPage({
   }
 
   const galleryImages = project.images.map((asset) => asset.image.src);
+  const customerEstimate = project.documents.find(
+    (document) => document.id === "customer-facing-estimate"
+  );
+  const internalRationale = project.documents.find(
+    (document) => document.id === "internal-estimating-rationale"
+  );
+  const qaReconciliation = project.documents.find(
+    (document) => document.id === "qa-reconciliation-report"
+  );
+  const researchDocuments = project.documents.filter(
+    (document) =>
+      ![
+        "customer-facing-estimate",
+        "internal-estimating-rationale",
+        "qa-reconciliation-report",
+      ].includes(document.id)
+  );
 
   return (
     <article className="px-6 py-12 lg:px-20 lg:py-16">
@@ -113,32 +134,119 @@ export default async function OfficeProjectPage({
           <h2 className="text-2xl font-semibold text-theme-heading">
             Documents
           </h2>
-          <div className="mt-5 grid gap-4 md:grid-cols-2">
-            {project.documents.map((document) => (
+          <div className="mt-5 space-y-6">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-theme-text-subtle">
+                Estimate deliverables
+              </p>
+              <div className="mt-3 grid gap-4 md:grid-cols-2">
+                {[customerEstimate, internalRationale].map((document) =>
+                  document ? (
+                    <Link
+                      key={document.id}
+                      href={documentHref(project.slug, document.id)}
+                      className={`block rounded-lg border p-6 shadow-sm transition hover:bg-theme-surface-subtle ${audienceClass(
+                        document.audience
+                      )}`}
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <span className="inline-flex rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
+                            {document.audience}
+                          </span>
+                          <h3 className="pt-4 text-xl font-semibold">
+                            {document.title}
+                          </h3>
+                          <p className="pt-3 text-sm leading-6">
+                            {document.description}
+                          </p>
+                        </div>
+                        <span className="shrink-0 rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
+                          {document.type}
+                        </span>
+                      </div>
+                      <div className="mt-6 text-sm font-semibold">Open</div>
+                    </Link>
+                  ) : null
+                )}
+              </div>
+            </div>
+
+            {qaReconciliation ? (
               <Link
-                key={document.id}
-                href={`/office/projects/${project.slug}/documents/${document.id}`}
-                className={`block rounded-lg border p-5 transition hover:bg-theme-surface-subtle ${audienceClass(
-                  document.audience
-                )}`}
+                href={documentHref(project.slug, qaReconciliation.id)}
+                className="block rounded-lg border border-theme-border-strong bg-theme-surface-subtle p-6 transition hover:bg-theme-primary-soft"
               >
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div>
-                    <h3 className="text-lg font-semibold">
-                      {document.title}
+                    <p className="text-sm font-semibold uppercase tracking-wide text-theme-primary-deep">
+                      QA reconciliation
+                    </p>
+                    <h3 className="pt-3 text-xl font-semibold text-theme-heading">
+                      {qaReconciliation.title}
                     </h3>
-                    <p className="pt-2 text-sm">{document.description}</p>
+                    <p className="pt-3 max-w-3xl text-sm leading-6 text-theme-text-muted">
+                      {qaReconciliation.description}
+                    </p>
                   </div>
-                  <span className="shrink-0 rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
-                    {document.type}
-                  </span>
-                </div>
-                <div className="mt-5 flex items-center justify-between gap-3 text-sm font-semibold">
-                  <span>{document.audience}</span>
-                  <span>Open</span>
+                  <div className="flex shrink-0 items-center gap-3 text-sm font-semibold text-theme-heading">
+                    <span className="rounded-full border border-theme-border-strong px-2.5 py-1">
+                      {qaReconciliation.type}
+                    </span>
+                    <span>Open</span>
+                  </div>
                 </div>
               </Link>
-            ))}
+            ) : null}
+
+            <details className="group rounded-lg border border-theme-border bg-theme-surface">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5">
+                <div>
+                  <h3 className="text-lg font-semibold text-theme-heading">
+                    Research and source worksheets
+                  </h3>
+                  <p className="pt-1 text-sm text-theme-text-muted">
+                    Public research, site evidence, and manual calculation
+                    support for the estimate.
+                  </p>
+                </div>
+                <span className="shrink-0 text-sm font-semibold text-theme-primary-deep group-open:hidden">
+                  Show
+                </span>
+                <span className="hidden shrink-0 text-sm font-semibold text-theme-primary-deep group-open:inline">
+                  Hide
+                </span>
+              </summary>
+              <div className="border-t border-theme-border p-5">
+                <div className="grid gap-4 md:grid-cols-2">
+                  {researchDocuments.map((document) => (
+                    <Link
+                      key={document.id}
+                      href={documentHref(project.slug, document.id)}
+                      className={`block rounded-lg border p-5 transition hover:bg-theme-surface-subtle ${audienceClass(
+                        document.audience
+                      )}`}
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h4 className="font-semibold">{document.title}</h4>
+                          <p className="pt-2 text-sm">
+                            {document.description}
+                          </p>
+                        </div>
+                        <span className="shrink-0 rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
+                          {document.type}
+                        </span>
+                      </div>
+                      <div className="mt-5 flex items-center justify-between gap-3 text-sm font-semibold">
+                        <span>{document.audience}</span>
+                        <span>Open</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </details>
           </div>
         </section>
 
