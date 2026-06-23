@@ -50,39 +50,15 @@ Major carpentry replacement is not included.
 - Hidden rot or moisture damage not visible during estimating.
 - Color changes requiring more than the specified two finish coats.
 
-## Material Allowance
+## Estimate by Scope Phase
 
-| Material | Quantity Allowance | Unit Cost | Amount |
-|---|---:|---:|---:|
-| Body paint | 7 gallons | $50 | $350 |
-| Trim/porch paint | 4 gallons | $50 | $200 |
-| Bonding/spot primer | 2 gallons | $50 | $100 |
-| Porch ceiling stain-block/spot primer | 1 gallon | $50 | $50 |
-| Caulk, repair materials, masking, plastic, tape, abrasives, sundries | Allowance | - | $325 |
-| **Material Total** |  |  | **$1,025** |
-
-## Labor
-
-| Scope Item | Labor Hours | Amount |
-|---|---:|---:|
-| Washing | 6 | $150 |
-| Masking and protection | 10 | $250 |
-| Scraping and localized surface prep | 14 | $350 |
-| Spot priming | 7 | $175 |
-| Minor repairs allowance | 12 | $300 |
-| Caulking | 8 | $200 |
-| Body siding painting, two coats | 24 | $600 |
-| Trim, fascia, soffit, porch, and door painting | 22 | $550 |
-| Cleanup and final walkthrough | 5 | $125 |
-| **Labor Total** | **108** | **$2,700** |
-
-## Itemized Price
-
-| Item | Amount |
+| Scope Phase | Amount |
 |---|---:|
-| Labor | $2,700 |
-| Materials | $1,025 |
-| Overhead and profit | $2,025 |
+| Surface preparation, masking, and minor repairs | $1,900 |
+| Body siding painting, two coats | $1,200 |
+| Trim, porch, fascia, soffit, and door painting | $1,500 |
+| Materials and supplies | $1,025 |
+| Cleanup and final walkthrough | $125 |
 | **Total Price** | **$5,750** |
 
 ## Total Estimate
