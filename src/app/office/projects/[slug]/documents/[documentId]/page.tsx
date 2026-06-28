@@ -93,6 +93,10 @@ function renderMarkdownTables(source: string) {
   return output.join("\n");
 }
 
+function pdfHref(projectSlug: string, documentId: string) {
+  return `/office/projects/${projectSlug}/documents/${documentId}/pdf`;
+}
+
 async function renderMarkdown(source: string) {
   const file = await unified()
     .use(remarkParse)
@@ -159,18 +163,31 @@ export default async function OfficeProjectDocumentPage({
         </Link>
 
         <div className="mt-6 border-b border-theme-border pb-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-theme-primary-deep">
-            {document.audience} document
-          </p>
-          <h1 className="pt-3 text-4xl font-semibold text-theme-heading lg:text-5xl">
-            {document.title}
-          </h1>
-          <p className="pt-4 max-w-3xl text-theme-text-muted">
-            {document.description}
-          </p>
-          <p className="pt-3 font-mono text-sm text-theme-text-subtle">
-            {document.filename}
-          </p>
+          <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-theme-primary-deep">
+                {document.audience} document
+              </p>
+              <h1 className="pt-3 text-4xl font-semibold text-theme-heading lg:text-5xl">
+                {document.title}
+              </h1>
+              <p className="pt-4 max-w-3xl text-theme-text-muted">
+                {document.description}
+              </p>
+              <p className="pt-3 font-mono text-sm text-theme-text-subtle">
+                {document.filename}
+              </p>
+            </div>
+
+            {document.type !== "PDF" ? (
+              <Link
+                href={pdfHref(project.slug, document.id)}
+                className="inline-flex w-fit shrink-0 items-center justify-center rounded-md bg-theme-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-theme-primary-hover"
+              >
+                Download PDF
+              </Link>
+            ) : null}
+          </div>
         </div>
 
         <div className="pt-8">
