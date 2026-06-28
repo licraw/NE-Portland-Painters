@@ -57,12 +57,12 @@ Major carpentry replacement is not included.
 | Surface preparation, masking, and minor repairs | $1,900 |
 | Body siding painting, two coats | $1,200 |
 | Trim, porch, fascia, soffit, and door painting | $1,500 |
-| Materials and supplies | $1,025 |
+| Materials and supplies | $1,305 |
 | Cleanup and final walkthrough | $125 |
-| **Total Price** | **$5,750** |
+| **Total Price** | **$6,175** |
 
 ## Total Estimate
 
-**Total exterior painting estimate: $5,750**
+**Total exterior painting estimate: $6,175**
 
 This price is based on visible conditions and the stated scope. Final pricing may change if field inspection finds additional rot, failing coatings, inaccessible areas, moisture damage, or customer-selected scope additions.

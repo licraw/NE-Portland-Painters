@@ -72,7 +72,7 @@ export const officeProjects: OfficeProject[] = [
     type: "Exterior painting estimate",
     siding: "Aluminum",
     workingPaintableBodyArea: "~1,150 sq ft",
-    paintCostAssumption: "$50/gallon",
+    paintCostAssumption: "$70/gallon",
     laborAssumption: "108 hrs at $25/hr/person equivalent",
     crewPlan: "3-person crew, ~4 days",
     summary:
@@ -300,7 +300,7 @@ export const officeProjects: OfficeProject[] = [
     ],
     notes: [
       "Working paintable body area is held at approximately 1,150 sq ft for the draft estimate.",
-      "Paint cost assumption is $50 per gallon.",
+      "Paint cost assumption is $70 per gallon.",
       "Labor assumption is 108 hours at a $25/hr/person equivalent.",
       "Crew plan assumes a 3-person crew for approximately 4 working days.",
       "Brick chimney is excluded from painted scope per the customer-facing estimate document.",
