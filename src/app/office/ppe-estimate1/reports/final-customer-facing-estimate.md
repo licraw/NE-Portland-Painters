@@ -1,4 +1,4 @@
-# Customer Facing Estimate
+# Exterior Painting Estimate
 
 **Project:** Exterior Painting  
 **Property:** 2201 NE 58th Ave, Portland, OR 97213  
@@ -50,19 +50,8 @@ Major carpentry replacement is not included.
 - Hidden rot or moisture damage not visible during estimating.
 - Color changes requiring more than the specified two finish coats.
 
-## Estimate by Scope Phase
-
-| Scope Phase | Amount |
-|---|---:|
-| Surface preparation, masking, and minor repairs | $1,900 |
-| Body siding painting, two coats | $1,200 |
-| Trim, porch, fascia, soffit, and door painting | $1,500 |
-| Materials and supplies | $1,025 |
-| Cleanup and final walkthrough | $125 |
-| **Total Price** | **$5,750** |
-
 ## Total Estimate
 
-**Total exterior painting estimate: $5,750**
+**Total exterior painting estimate: $6,175**
 
 This price is based on visible conditions and the stated scope. Final pricing may change if field inspection finds additional rot, failing coatings, inaccessible areas, moisture damage, or customer-selected scope additions.
