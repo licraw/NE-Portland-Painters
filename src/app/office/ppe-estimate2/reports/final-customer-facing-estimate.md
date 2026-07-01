@@ -32,7 +32,7 @@ The main wall siding/body fields will be painted **light blue**. The eaves, soff
 ### Electronic Lock Installation
 
 - Install customer-supplied electronic lock at the front door.
-- Includes up to 2 labor hours for standard installation.
+- Includes standard installation labor.
 
 ### Cleanup
 
@@ -55,29 +55,6 @@ The main wall siding/body fields will be painted **light blue**. The eaves, soff
 ## Schedule
 
 Expected project duration is approximately **2-3 working days**, depending on weather, drying conditions, and final field conditions.
-
-## Pricing Basis
-
-This estimate is calculated from the expected labor, paint/materials, sundries, electronic lock installation labor, and business markup for this shed/studio scope.
-
-```text
-Direct labor:
-  Painting labor: 46 hours
-  Electronic lock installation: 2 hours
-  Total labor: 48 labor hours x $25/hour = $1,200
-
-Materials and sundries:
-  Light-blue body paint: $140
-  Dark-blue trim/eave/fascia/door paint: $140
-  Primer for raw wood and spot priming: $70
-  Masking, tape, plastic, caulk, abrasives, rollers, brushes: $150
-Materials and sundries total: $500
-
-Direct project cost: $1,200 + $500 = $1,700
-Overhead / profit / business markup: $1,700 x 29.4% = $499.80
-Calculated estimate: $1,700 + $499.80 = $2,199.80
-Rounded customer price: $2,200
-```
 
 ## Total Estimate
 
