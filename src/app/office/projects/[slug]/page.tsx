@@ -14,6 +14,12 @@ const imageCategories = [
   "Condition / prep details",
 ] as const;
 
+const estimateDeliverableIds = [
+  "customer-facing-estimate",
+  "internal-estimating-rationale",
+  "geometry-worksheet",
+];
+
 export async function generateMetadata({
   params,
 }: {
@@ -62,18 +68,12 @@ export default async function OfficeProjectPage({
   }
 
   const galleryImages = project.images.map((asset) => asset.image.src);
-  const customerEstimate = project.documents.find(
-    (document) => document.id === "customer-facing-estimate"
-  );
-  const internalRationale = project.documents.find(
-    (document) => document.id === "internal-estimating-rationale"
-  );
+  const estimateDeliverables = estimateDeliverableIds.flatMap((documentId) => {
+    const document = project.documents.find((item) => item.id === documentId);
+    return document ? [document] : [];
+  });
   const researchDocuments = project.documents.filter(
-    (document) =>
-      ![
-        "customer-facing-estimate",
-        "internal-estimating-rationale",
-      ].includes(document.id)
+    (document) => !estimateDeliverableIds.includes(document.id)
   );
 
   return (
@@ -136,35 +136,33 @@ export default async function OfficeProjectPage({
                 Estimate deliverables
               </p>
               <div className="mt-3 grid gap-4 md:grid-cols-2">
-                {[customerEstimate, internalRationale].map((document) =>
-                  document ? (
-                    <Link
-                      key={document.id}
-                      href={documentHref(project.slug, document.id)}
-                      className={`block rounded-lg border p-6 shadow-sm transition hover:bg-theme-surface-subtle ${audienceClass(
-                        document.audience
-                      )}`}
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <span className="inline-flex rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
-                            {document.audience}
-                          </span>
-                          <h3 className="pt-4 text-xl font-semibold">
-                            {document.title}
-                          </h3>
-                          <p className="pt-3 text-sm leading-6">
-                            {document.description}
-                          </p>
-                        </div>
-                        <span className="shrink-0 rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
-                          {document.type}
+                {estimateDeliverables.map((document) => (
+                  <Link
+                    key={document.id}
+                    href={documentHref(project.slug, document.id)}
+                    className={`block rounded-lg border p-6 shadow-sm transition hover:bg-theme-surface-subtle ${audienceClass(
+                      document.audience
+                    )}`}
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <span className="inline-flex rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
+                          {document.audience}
                         </span>
+                        <h3 className="pt-4 text-xl font-semibold">
+                          {document.title}
+                        </h3>
+                        <p className="pt-3 text-sm leading-6">
+                          {document.description}
+                        </p>
                       </div>
-                      <div className="mt-6 text-sm font-semibold">Open</div>
-                    </Link>
-                  ) : null
-                )}
+                      <span className="shrink-0 rounded-full border border-current px-2.5 py-1 text-xs font-semibold">
+                        {document.type}
+                      </span>
+                    </div>
+                    <div className="mt-6 text-sm font-semibold">Open</div>
+                  </Link>
+                ))}
               </div>
             </div>
 

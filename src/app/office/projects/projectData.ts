@@ -22,6 +22,18 @@ import leftSideDoor from "../ppe-estimate1/left-side-door.JPEG";
 import satelliteOverviewWithMeasurements from "../ppe-estimate1/satellite-overview-with-reference-measurements.png";
 import satelliteOverview from "../ppe-estimate1/satellite-overview.png";
 import soffit from "../ppe-estimate1/soffit.jpeg";
+import ppe2ExtFront from "../ppe-estimate2/ext-front.JPEG";
+import ppe2ExtLeft from "../ppe-estimate2/ext-left.JPEG";
+import ppe2ExtLeft2 from "../ppe-estimate2/ext-left2.JPEG";
+import ppe2ExtRear from "../ppe-estimate2/ext-rear.JPEG";
+import ppe2ExtRight from "../ppe-estimate2/ext-right.JPEG";
+import ppe2FrontDoor from "../ppe-estimate2/front-door (1).JPEG";
+import ppe2FrontDoor2 from "../ppe-estimate2/front-door2.JPEG";
+import ppe2FrontSoffit from "../ppe-estimate2/front-soffit.JPEG";
+import ppe2LeftSoffit from "../ppe-estimate2/left-soffit.JPEG";
+import ppe2LockManual from "../ppe-estimate2/lock-manual.JPEG";
+import ppe2RearSoffit from "../ppe-estimate2/rear-soffit.JPEG";
+import ppe2RightSoffit from "../ppe-estimate2/right-soffit.JPEG";
 
 export type OfficeProjectDocument = {
   id: string;
@@ -51,6 +63,7 @@ export type OfficeProject = {
   title: string;
   status: string;
   address: string;
+  reportsFolder: string;
   type: string;
   siding: string;
   workingPaintableBodyArea: string;
@@ -69,6 +82,7 @@ export const officeProjects: OfficeProject[] = [
     title: "2201 NE 58th Ave Exterior Estimate",
     status: "Estimate Draft",
     address: "2201 NE 58th Ave, Portland, OR 97213",
+    reportsFolder: "ppe-estimate1",
     type: "Exterior painting estimate",
     siding: "Aluminum",
     workingPaintableBodyArea: "~1,150 sq ft",
@@ -304,6 +318,144 @@ export const officeProjects: OfficeProject[] = [
       "Labor assumption is 108 hours at a $25/hr/person equivalent.",
       "Crew plan assumes a 3-person crew for approximately 4 working days.",
       "Brick chimney is excluded from painted scope per the customer-facing estimate document.",
+    ],
+  },
+  {
+    slug: "7610-se-harrison",
+    title: "7610 SE Harrison St Shed/ADU Exterior Paint",
+    status: "Estimate Draft",
+    address: "7610 SE Harrison St, Portland, OR 97215",
+    reportsFolder: "ppe-estimate2",
+    type: "Shed/ADU exterior paint",
+    siding: "Front lap siding; side/rear rough vertical panel siding",
+    workingPaintableBodyArea: "~340 sq ft body; ~190 sq ft trim/eaves",
+    paintCostAssumption: "$70/gallon",
+    laborAssumption: "66 hrs at $25/hr/person equivalent",
+    crewPlan: "2-person crew, ~4 days",
+    summary:
+      "Internal project record for the Shed/ADU exterior paint estimate at 7610 SE Harrison St.",
+    documents: [
+      {
+        id: "geometry-worksheet",
+        title: "Geometry Worksheet",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "exterior-paint-estimate-geometry-worksheet.md",
+        description:
+          "Working exterior paint geometry worksheet for body siding, eaves, fascia, door, trim, prep assumptions, exclusions, and verification items.",
+      },
+      {
+        id: "customer-facing-estimate",
+        title: "Customer-Facing Estimate",
+        type: "Markdown",
+        audience: "Customer-facing",
+        filename: "final-customer-facing-estimate.md",
+        description:
+          "Customer-ready shed/ADU exterior painting scope and estimate document.",
+      },
+      {
+        id: "internal-estimating-rationale",
+        title: "Internal Estimating Rationale",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "final-internal-estimating-rationale.md",
+        description:
+          "Internal estimating rationale, measurements, material assumptions, labor model, pricing math, and risk notes.",
+      },
+    ],
+    images: [
+      {
+        title: "Front exterior",
+        filename: "ext-front.JPEG",
+        category: "Front",
+        description: "Front elevation reference.",
+        image: ppe2ExtFront,
+      },
+      {
+        title: "Front door",
+        filename: "front-door (1).JPEG",
+        category: "Front",
+        description: "Front door and adjacent trim reference.",
+        image: ppe2FrontDoor,
+      },
+      {
+        title: "Front door alternate",
+        filename: "front-door2.JPEG",
+        category: "Front",
+        description: "Additional front door reference.",
+        image: ppe2FrontDoor2,
+      },
+      {
+        title: "Front soffit",
+        filename: "front-soffit.JPEG",
+        category: "Condition / prep details",
+        description: "Front soffit condition reference.",
+        image: ppe2FrontSoffit,
+      },
+      {
+        title: "Right exterior",
+        filename: "ext-right.JPEG",
+        category: "Right side",
+        description: "Right side elevation reference.",
+        image: ppe2ExtRight,
+      },
+      {
+        title: "Right soffit",
+        filename: "right-soffit.JPEG",
+        category: "Condition / prep details",
+        description: "Right soffit condition reference.",
+        image: ppe2RightSoffit,
+      },
+      {
+        title: "Rear exterior",
+        filename: "ext-rear.JPEG",
+        category: "Rear",
+        description: "Rear elevation reference.",
+        image: ppe2ExtRear,
+      },
+      {
+        title: "Rear soffit",
+        filename: "rear-soffit.JPEG",
+        category: "Condition / prep details",
+        description: "Rear soffit condition reference.",
+        image: ppe2RearSoffit,
+      },
+      {
+        title: "Left exterior",
+        filename: "ext-left.JPEG",
+        category: "Left side",
+        description: "Left side elevation reference.",
+        image: ppe2ExtLeft,
+      },
+      {
+        title: "Left exterior alternate",
+        filename: "ext-left2.JPEG",
+        category: "Left side",
+        description: "Additional left side elevation reference.",
+        image: ppe2ExtLeft2,
+      },
+      {
+        title: "Left soffit",
+        filename: "left-soffit.JPEG",
+        category: "Condition / prep details",
+        description: "Left soffit condition reference.",
+        image: ppe2LeftSoffit,
+      },
+      {
+        title: "Lock manual",
+        filename: "lock-manual.JPEG",
+        category: "Condition / prep details",
+        description: "Lock manual reference photo.",
+        image: ppe2LockManual,
+      },
+    ],
+    notes: [
+      "Working light-blue body area is held at approximately 340 sq ft.",
+      "Dark-blue eaves/fascia/door/trim area is held at approximately 190 sq ft.",
+      "Paint cost assumption is $70 per gallon.",
+      "Labor assumption is 66 hours at a $25/hr/person equivalent.",
+      "Crew plan assumes a 2-person crew for approximately 4 working days.",
+      "Metal roof panels, drip edge, gutters, downspouts, glass, screens, deck/pavers, adjacent structures, and interiors are excluded unless added by scope change.",
     ],
   },
 ];
