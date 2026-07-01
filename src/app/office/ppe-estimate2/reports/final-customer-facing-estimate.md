@@ -6,7 +6,7 @@
 
 ## Project Summary
 
-This estimate covers preparation and exterior painting of the backyard shed/studio structure at 7610 SE Harrison St. The structure includes front horizontal lap siding, side and rear rough vertical panel siding, a front door, trim, soffits/eaves, fascia, corner boards, base/skirt trim, and exposed roof-edge details.
+This estimate covers preparation and exterior painting of the backyard shed/studio structure at 7610 SE Harrison St. The scope includes the front horizontal lap siding, side and rear rough vertical panel siding, front door, door trim, window trim, soffits/eaves, fascia, corner boards, base/skirt trim, and exposed roof-edge details.
 
 The main wall siding/body fields will be painted **light blue**. The eaves, soffits, fascia, roof-edge boards, exposed blocking, front door, door trim, window trim, corner boards, base/skirt trim, and other detail surfaces will be painted **dark blue**.
 
@@ -52,7 +52,6 @@ Expected project duration is approximately **2-3 working days**, depending on we
 
 ## Total Estimate
 
-**Total exterior painting estimate: $2,775**
+**Total exterior painting estimate: $2,000**
 
 This price is based on the visible conditions, project photos, measured shed/studio dimensions, and the scope described above. Final pricing may change if field inspection identifies hidden rot, moisture damage, failing substrate, inaccessible areas, raw wood beyond the visible fascia/eave scope, or customer-selected scope additions.
-

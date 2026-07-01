@@ -330,8 +330,8 @@ export const officeProjects: OfficeProject[] = [
     siding: "Front lap siding; side/rear rough vertical panel siding",
     workingPaintableBodyArea: "~340 sq ft body; ~190 sq ft trim/eaves",
     paintCostAssumption: "$70/gallon",
-    laborAssumption: "66 hrs at $25/hr/person equivalent",
-    crewPlan: "2-person crew, ~4 days",
+    laborAssumption: "40 hrs working model; 32-48 hr range at $25/hr/person equivalent",
+    crewPlan: "2-person crew, 2-3 days",
     summary:
       "Internal project record for the Shed/ADU exterior paint estimate at 7610 SE Harrison St.",
     documents: [
@@ -453,8 +453,8 @@ export const officeProjects: OfficeProject[] = [
       "Working light-blue body area is held at approximately 340 sq ft.",
       "Dark-blue eaves/fascia/door/trim area is held at approximately 190 sq ft.",
       "Paint cost assumption is $70 per gallon.",
-      "Labor assumption is 66 hours at a $25/hr/person equivalent.",
-      "Crew plan assumes a 2-person crew for approximately 4 working days.",
+      "Labor assumption is 40 hours at a $25/hr/person equivalent, with a 32-48 hour expected range.",
+      "Crew plan assumes a 2-person crew for approximately 2-3 working days.",
       "Metal roof panels, drip edge, gutters, downspouts, glass, screens, deck/pavers, adjacent structures, and interiors are excluded unless added by scope change.",
     ],
   },

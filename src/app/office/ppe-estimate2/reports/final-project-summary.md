@@ -3,7 +3,7 @@
 **Project:** Backyard Shed / Studio Lounge Exterior Painting  
 **Property:** 7610 SE Harrison St, Portland, OR 97215  
 **Prepared:** 2026-07-01  
-**Recommended price:** **$2,775**
+**Recommended price:** **$2,000**
 
 ## Overview
 
@@ -26,11 +26,16 @@ This is a compact one-story backyard shed/studio exterior repaint, not a full ho
 
 The rough side/rear siding should be washed and brushed where dirty or weathered. Raw fascia, eave boards, and exposed blocking should be primed before finish paint. Spot priming should be used for bare, stained, weathered, or compromised areas. Vented soffit areas should be painted carefully so vent openings are not clogged.
 
-## Schedule Expectation
+## Labor and Schedule
 
-Recommended production duration is **2-3 working days** for a two-person crew, subject to weather and dry times.
+Recommended production duration is **2-3 working days** for a two-person crew, subject to weather and dry times. The revised labor assumption is **32-48 total labor hours**, with **40 labor hours** used as the working model and **48 labor hours** treated as the ceiling.
+
+Practical sequence:
+
+- Day 1: wash, prep, masking/protection, localized scraping/sanding, caulking, and spot priming.
+- Day 2: light-blue body painting and dark-blue trim/eave/fascia/door painting.
+- Day 3, if needed: second-coat detail completion, touchups, cleanup, and walkthrough.
 
 ## Final Recommendation
 
-Use **$2,775** as the revised estimate. This is lower than the prior $3,875 because the project is much smaller and easier than the 1.5-story house in Estimate 1, while still protecting for proper prep, two colors, raw wood priming, materials, overhead, and margin.
-
+Use **$2,000 flat** as the revised estimate. This fits the smaller shed/studio scope: one-story structure, easy access, no meaningful ladder work, limited openings, limited trim quantity, two colors, raw wood/spot priming, and a 2-3 day production window.
