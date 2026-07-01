@@ -6,7 +6,7 @@
 
 ## Project Summary
 
-This estimate covers preparation and exterior painting of the backyard shed/studio structure at 7610 SE Harrison St. The scope includes the front horizontal lap siding, side and rear rough vertical panel siding, front door, door trim, window trim, soffits/eaves, fascia, corner boards, base/skirt trim, and exposed roof-edge details.
+This estimate covers preparation and exterior painting of the backyard shed/studio structure at 7610 SE Harrison St, plus installation labor for a customer-supplied electronic front-door lock. The painting scope includes the front horizontal lap siding, side and rear rough vertical panel siding, front door, door trim, window trim, soffits/eaves, fascia, corner boards, base/skirt trim, and exposed roof-edge details.
 
 The main wall siding/body fields will be painted **light blue**. The eaves, soffits, fascia, roof-edge boards, exposed blocking, front door, door trim, window trim, corner boards, base/skirt trim, and other detail surfaces will be painted **dark blue**.
 
@@ -29,6 +29,11 @@ The main wall siding/body fields will be painted **light blue**. The eaves, soff
 - Apply two finish coats to the dark-blue eaves, soffits, fascia, roof-edge boards, exposed blocking, front door, door trim, window trim, corner boards, and base/skirt trim.
 - Mask glass, screens, and window frame components unless those components are specifically added to the paint scope.
 
+### Electronic Lock Installation
+
+- Install customer-supplied electronic lock at the front door.
+- Includes up to 2 labor hours for standard installation.
+
 ### Cleanup
 
 - Remove masking and protection materials.
@@ -45,13 +50,37 @@ The main wall siding/body fields will be painted **light blue**. The eaves, soff
 - Lead paint remediation or hazardous-material abatement.
 - Hidden rot or moisture damage not visible during estimating.
 - Additional coats required by major color changes beyond the specified two finish coats.
+- Electronic lock hardware purchase, special wiring, smart-home setup, door modification beyond normal lock installation, or troubleshooting defective hardware.
 
 ## Schedule
 
 Expected project duration is approximately **2-3 working days**, depending on weather, drying conditions, and final field conditions.
 
+## Pricing Basis
+
+This estimate is calculated from the expected labor, paint/materials, sundries, electronic lock installation labor, and business markup for this shed/studio scope.
+
+```text
+Direct labor:
+  Painting labor: 46 hours
+  Electronic lock installation: 2 hours
+  Total labor: 48 labor hours x $25/hour = $1,200
+
+Materials and sundries:
+  Light-blue body paint: $140
+  Dark-blue trim/eave/fascia/door paint: $140
+  Primer for raw wood and spot priming: $70
+  Masking, tape, plastic, caulk, abrasives, rollers, brushes: $150
+Materials and sundries total: $500
+
+Direct project cost: $1,200 + $500 = $1,700
+Overhead / profit / business markup: $1,700 x 29.4% = $499.80
+Calculated estimate: $1,700 + $499.80 = $2,199.80
+Rounded customer price: $2,200
+```
+
 ## Total Estimate
 
-**Total exterior painting estimate: $2,000**
+**Total exterior painting and electronic lock installation estimate: $2,200**
 
 This price is based on the visible conditions, project photos, measured shed/studio dimensions, and the scope described above. Final pricing may change if field inspection identifies hidden rot, moisture damage, failing substrate, inaccessible areas, raw wood beyond the visible fascia/eave scope, or customer-selected scope additions.

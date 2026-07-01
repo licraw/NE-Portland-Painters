@@ -11,9 +11,9 @@ The current revised Estimate 2 price of roughly **$2,750** was still too high fo
 
 Estimate 1 can be used as the comparison point: that was a much larger **1.5-story full exterior house repaint** with ladder work, harder access, more surface area, more windows and trim, porch elements, and more prep complexity. Its final price was **$6,175**.
 
-Estimate 2 is a compact backyard shed/studio with approximately **340 SF of light-blue body siding** and **190 SF of dark-blue detail surfaces**, or about **530 SF one-coat paintable surface area** and **1,060 SF of two-coat finish coverage**. It has rough siding and raw/new fascia/eave wood that justify real prep, but it is not a full-house exterior repaint.
+Estimate 2 is a compact backyard shed/studio with approximately **340 SF of light-blue body siding** and **190 SF of dark-blue detail surfaces**, or about **530 SF one-coat paintable surface area** and **1,060 SF of two-coat finish coverage**. It has rough siding and raw/new fascia/eave wood that justify real prep, but it is not a full-house exterior repaint. This revision also includes a small electronic lock installation allowance.
 
-Revised recommended selling price: **$2,000 flat**.
+Revised recommended customer price: **$2,200**, calculated from labor, materials, sundries, and a business markup.
 
 ## Why the $2,750 / 66-Hour Version Was Inflated
 
@@ -64,58 +64,89 @@ Paint cost assumption remains **$70/gallon** for body paint, trim/detail paint, 
 
 This keeps enough material coverage for roughly **1,060 SF of two-coat finish coverage**, rough siding loss, raw wood priming, and normal consumables, without padding the job like a house exterior.
 
+Material notes:
+
+- **Light-blue body paint:** 340 SF x 2 coats = 680 SF of finish coverage. Two gallons allows roughly 340 SF/gallon across the full two-coat body scope, with reasonable loss for rough siding and back-brushing.
+- **Dark-blue detail paint:** 190 SF x 2 coats = 380 SF of finish coverage. Two gallons is appropriate because the dark-blue scope is brush-heavy and includes eaves, fascia, door, trim, base/skirt boards, and exposed blocking.
+- **Primer:** One gallon is carried for raw/new fascia, exposed eave blocking, and spot priming. This is not a full-body primer allowance.
+- **Sundries:** $150 covers tape, masking paper/plastic, caulk, abrasives, rollers, brushes, and small consumables at a shed scale.
+
 ## Revised Labor Model
 
-Crew assumption: **2-person residential paint crew**. Revised production assumption: **40 total labor hours**, with an expected range of **32-48 labor hours** depending on dry times and final field conditions.
+Crew assumption: **2-person residential paint crew**. Revised production assumption: **46 painting labor hours** plus **2 electronic lock installation labor hours**, for **48 total labor hours**. This keeps the project at the upper end of the 2-3 day range without returning to a four-day model.
 
 Practical schedule:
 
 - **Day 1:** wash, prep, masking/protection, localized scraping/sanding, caulking, spot priming.
 - **Day 2:** light-blue body painting and dark-blue trim/eave/fascia/door painting.
-- **Day 3, if needed:** second-coat detail completion, touchups, cleanup, and walkthrough.
+- **Day 3, if needed:** second-coat detail completion, electronic lock installation, touchups, cleanup, and walkthrough.
 
 | Task | Hours | Production Assumption | Labor Cost @ $25/hr |
 |---|---:|---|---:|
-| Washing / cleaning | 4 | Small one-story structure, rough siding, eaves, door, and trim | $100 |
-| Masking / protection | 4 | Door hardware, glass/screens, roof edge, pavers/deck, adjacent surfaces | $100 |
-| Scraping / sanding / localized prep | 6 | Weathered rough siding and minor loose/dirty areas | $150 |
-| Spot priming raw/failing areas | 4 | Raw fascia, exposed blocking, eaves, and bare/weathered spots | $100 |
-| Light-blue body painting | 8 | 340 SF x 2 coats; brush/roll/back-brush rough areas as needed | $200 |
-| Dark-blue eaves/fascia/door/trim | 10 | Door, trim, fascia, soffits, eaves, base/skirt boards, exposed blocking | $250 |
+| Washing / cleaning | 5 | Small one-story structure, rough siding, eaves, door, and trim | $125 |
+| Masking / protection | 5 | Door hardware, glass/screens, roof edge, pavers/deck, adjacent surfaces | $125 |
+| Scraping / sanding / localized prep | 7 | Weathered rough siding and minor loose/dirty areas | $175 |
+| Spot priming raw/failing areas | 5 | Raw fascia, exposed blocking, eaves, and bare/weathered spots | $125 |
+| Light-blue body painting | 9 | 340 SF x 2 coats; brush/roll/back-brush rough areas as needed | $225 |
+| Dark-blue eaves/fascia/door/trim | 11 | Door, trim, fascia, soffits, eaves, base/skirt boards, exposed blocking | $275 |
 | Touchups / cleanup / walkthrough | 4 | Demasking, final detail correction, site reset | $100 |
-| **Total** | **40** |  | **$1,000** |
+| Electronic lock installation | 2 | Install customer-supplied electronic lock at front door | $50 |
+| **Total** | **48** | 46 painting hours + 2 lock installation hours | **$1,200** |
 
 ```text
-40 labor hours x $25/hr = $1,000 labor cost
+48 labor hours x $25/hr = $1,200 labor cost
 ```
 
-This is a realistic 2-person, 2-3 day model. It preserves professional prep and two-color finish work while removing the house-style 66-hour labor model.
+This is a realistic 2-person, 2-3 day model at the top of the allowed labor range. It preserves professional prep and two-color finish work, adds a defined 2-hour electronic lock installation allowance, and still removes the house-style 66-hour labor model.
 
 ## Pricing Summary
 
 ```text
-Labor hours: 40
-Labor cost @ $25/hr: $1,000
-Material allowance: $500
-Total direct job cost: $1,500
-Selling price: $2,000 flat
-Implied gross margin: 25%
+Direct Labor Cost = Labor Hours x Labor Rate
+Direct Labor Cost = 48 hours x $25/hour
+Direct Labor Cost = $1,200
+
+Labor Hours =
+  Painting labor: 46 hours
++ Electronic lock installation: 2 hours
+Labor Hours = 48 hours
+
+Material Cost =
+  Light Blue Paint: $140
++ Dark Blue Paint: $140
++ Primer: $70
++ Sundries / masking / tape / plastic / caulk / abrasives / rollers / brushes: $150
+Material Cost = $500
+
+Direct Project Cost = Direct Labor Cost + Material Cost
+Direct Project Cost = $1,200 + $500
+Direct Project Cost = $1,700
+
+Overhead / Profit / Business Markup = Direct Project Cost x Markup Percentage
+Overhead / Profit / Business Markup = $1,700 x 29.4%
+Overhead / Profit / Business Markup = $499.80
+
+Calculated Estimate = Direct Project Cost + Overhead / Profit / Business Markup
+Calculated Estimate = $1,700 + $499.80
+Calculated Estimate = $2,199.80
+
+Final Customer Price = Rounded Final Estimate
+Final Customer Price = $2,200
 ```
 
-The **$2,000 flat** price fits the actual shed/studio scope: small footprint, easy access, no meaningful ladder work, limited openings, limited trim quantity, two colors, raw wood/spot priming, and a 2-3 day production window. It is materially lower than the full-house Estimate 1 price because the project is materially smaller and simpler.
+The **$2,200** customer price is not assigned arbitrarily. It is the rounded result of a realistic shed/studio model: 46 painting labor hours, 2 electronic lock installation labor hours, $500 in materials and sundries, and a 29.4% business markup on direct project cost. The result fits the actual scope: small footprint, easy access, no meaningful ladder work, limited openings, limited trim quantity, two colors, raw wood/spot priming, lock installation, and a 2-3 day production window.
 
 ## Labor-Hour Sensitivity
 
-Material allowance is held at **$500**.
+Material allowance is held at **$500**. Business markup is held at **29.4%**.
 
-| Labor Hours | Labor Cost @ $25/hr | Material Cost | Direct Job Cost | Notes |
-|---:|---:|---:|---:|---|
-| 32 | $800 | $500 | $1,300 | Efficient two-day production |
-| 40 | $1,000 | $500 | $1,500 | Recommended working model |
-| 46 | $1,150 | $500 | $1,650 | Upper practical case |
-| 48 | $1,200 | $500 | $1,700 | Absolute labor ceiling |
+| Labor Hours | Labor Cost @ $25/hr | Material Cost | Direct Job Cost | 29.4% Markup | Calculated Estimate | Notes |
+|---:|---:|---:|---:|---:|---:|---|
+| 40 | $1,000 | $500 | $1,500 | $441 | $1,941 | Lean painting-only model |
+| 46 | $1,150 | $500 | $1,650 | $485 | $2,135 | Painting labor only at revised level |
+| 48 | $1,200 | $500 | $1,700 | $500 | $2,200 | Recommended model: 46 painting hours + 2 lock hours |
 
-At the recommended **$2,000** selling price, the job remains practical and profitable without making a small shed exterior feel like a house repaint.
+The recommended 48-hour model naturally lands at **$2,199.80**, rounded to **$2,200**. This includes **46 hours for painting** and **2 hours for electronic lock installation**.
 
 ## Assumptions and Risks
 
@@ -127,6 +158,7 @@ At the recommended **$2,000** selling price, the job remains practical and profi
 - Raw/new fascia and exposed eave wood receive primer before finish paint.
 - Spot priming is included for bare, weathered, stained, or compromised areas.
 - Typical minor caulking is included at open trim joints and siding/trim transitions.
+- Two labor hours are included to install a customer-supplied electronic lock at the front door.
 - Metal roof panels, metal drip edge, gutters, downspouts, glass, screens, deck/pavers, adjacent structures, and interior studio surfaces are excluded unless added.
 - Project duration is expected to be **2-3 working days** for a two-person crew, subject to weather and dry times.
 
@@ -137,4 +169,5 @@ At the recommended **$2,000** selling price, the job remains practical and profi
 - Adding metal drip edge, gutters, downspouts, fencing, deck/pavers, or adjacent structures.
 - Hidden rot, moisture damage, failed substrate, or carpentry replacement.
 - Color selections that require more than two finish coats for coverage.
+- Electronic lock hardware purchase, special wiring, smart-home setup, door modification beyond normal lock installation, or troubleshooting defective hardware.
 - Access becoming more restricted than shown in the project photos.
