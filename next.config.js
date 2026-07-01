@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  outputFileTracingIncludes: {
+    "/office/projects/*/documents/**": [
+      "./src/app/office/ppe-estimate*/reports/**/*",
+    ],
+  },
   images: {
     domains: [],
   },
