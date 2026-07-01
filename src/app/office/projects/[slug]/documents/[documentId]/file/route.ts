@@ -4,14 +4,16 @@ import { notFound } from "next/navigation";
 import { requireOfficeAuth } from "../../../../../_lib/auth";
 import { getOfficeProject } from "../../../../projectData";
 
-const REPORTS_DIR = path.join(
-  process.cwd(),
-  "src",
-  "app",
-  "office",
-  "ppe-estimate1",
-  "reports"
-);
+function getReportsDir(reportsFolder: string) {
+  return path.join(
+    process.cwd(),
+    "src",
+    "app",
+    "office",
+    reportsFolder,
+    "reports"
+  );
+}
 
 export async function GET(
   _request: Request,
@@ -31,9 +33,10 @@ export async function GET(
     notFound();
   }
 
-  const filePath = path.join(REPORTS_DIR, document.filename);
+  const reportsDir = getReportsDir(project.reportsFolder);
+  const filePath = path.join(reportsDir, document.filename);
 
-  if (!filePath.startsWith(REPORTS_DIR) || !fs.existsSync(filePath)) {
+  if (!filePath.startsWith(reportsDir) || !fs.existsSync(filePath)) {
     notFound();
   }
 
