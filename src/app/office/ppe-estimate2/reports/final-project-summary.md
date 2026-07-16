@@ -2,26 +2,55 @@
 
 **Project:** Backyard Shed / Studio Lounge Exterior Painting  
 **Property:** 7610 SE Harrison St, Portland, OR 97215  
-**Completed summary date:** 2026-07-16  
-**Original quoted price:** $2,200  
-**Final approved price:** $2,270  
-**Revenue after direct labor and materials:** **$981.88**  
-**Revenue per owner:** **$327.29 average**
+**Completed summary date:** 2026-07-16
 
-## Price Summary
+## Financial Snapshot
 
-The original quoted price was **$2,200**. After paint consumption exceeded the estimate, we purchased one additional gallon on us first. The client then approved one more additional gallon, bringing the final approved price to **$2,270**.
+| Metric | Amount |
+| --- | ---: |
+| Original quoted price | $2,200.00 |
+| Final approved price | $2,270.00 |
+| Labor paid | $950.00 |
+| Materials | $338.12 |
+| **Direct job cost** | **$1,288.12** |
+| **Revenue after direct labor and materials** | **$981.88** |
+| **Average revenue per owner** | **$327.29** |
 
-## Labor Summary
+The job finished with **$981.88 remaining after direct labor and materials**. That revenue was split across the three owners, while each person was also paid for their labor time at **$25/hour**.
 
-Each crew member is paid at **$25/hour**.
+## What Changed From the Estimate
 
-| Crew member | Hours | Rate | Labor cost |
-| --- | ---: | ---: | ---: |
-| Tom | 5 | $25/hr | $125 |
-| Liam | 18 | $25/hr | $450 |
-| Dylan | 15 | $25/hr | $375 |
-| **Total** | **38** |  | **$950** |
+The original quote was **$2,200**. Paint consumption exceeded the estimate, so we covered the first additional gallon. The client approved one more additional gallon, which increased the final approved price to **$2,270**.
+
+The paint estimate was low for two main reasons:
+
+1. The rough T1-11 siding absorbed more paint than expected.
+2. The client wanted the corner posts and lower base panels painted the main body color. The estimate had assumed those elements would be trim color.
+
+The final leftover paint amounts were reasonable, so the issue was not overbuying. The main lesson is that rough siding and color-scope changes need more material allowance up front.
+
+## Payout Per Person
+
+Revenue after direct labor and materials is split equally across the three owners. The final rounding cent is assigned to Dylan so the payout total ties exactly to labor plus owner revenue.
+
+| Person | Hours | Labor pay | Owner revenue share | Total payout |
+| --- | ---: | ---: | ---: | ---: |
+| Tom | 5 | $125.00 | $327.29 | $452.29 |
+| Liam | 18 | $450.00 | $327.29 | $777.29 |
+| Dylan | 15 | $375.00 | $327.30 | $702.30 |
+| **Total** | **38** | **$950.00** | **$981.88** | **$1,931.88** |
+
+## Labor and Materials
+
+Each crew member was paid at **$25/hour**.
+
+| Cost category | Detail | Amount |
+| --- | --- | ---: |
+| Labor | 38 total crew hours at $25/hour | $950.00 |
+| Finish paint | 4 gal Bit of Heaven body paint; 2 gal Mountain Lake trim paint | $226.54 |
+| Primer | 1 gal Zinsser Cover Stain Primer | $30.17 |
+| Sundries, tools, containers, and fees | Screens, liners, pails, rags, caulk, painter's tool, roller covers, blades, PaintCare fees | $81.41 |
+| **Total direct cost** | Labor plus itemized materials | **$1,288.12** |
 
 ## Paint and Primer Used
 
@@ -31,55 +60,13 @@ Each crew member is paid at **$25/hour**.
 | Trim paint | 2 gallons | About 1.1 gallons |
 | Oil primer | 1 gallon | 0 gallons |
 
-## Material Cost Summary
+## Takeaway Lessons
 
-Material receipts total **$338.12** based on the itemized project materials below. The consolidated categories below are for the main financial summary; the full itemization is included at the bottom for reference.
-
-| Material category | Included items | Cost |
-| --- | --- | ---: |
-| Finish paint | 4 gal Bit of Heaven body paint; 2 gal Mountain Lake trim paint | $226.54 |
-| Primer | 1 gal Zinsser Cover Stain Primer | $30.17 |
-| Sundries, tools, containers, and fees | Screens, liners, pails, rags, caulk, painter's tool, roller covers, blades, PaintCare fees | $81.41 |
-| **Total materials** |  | **$338.12** |
-
-## Financial Summary
-
-| Category | Amount |
-| --- | ---: |
-| Final approved price | $2,270.00 |
-| Labor paid | $950.00 |
-| Materials | $338.12 |
-| **Direct job cost** | **$1,288.12** |
-| **Revenue after direct labor and materials** | **$981.88** |
-
-## Payout Per Person
-
-Revenue after direct labor and materials is split equally across the three owners. The final cent is assigned to Dylan so the payout total ties exactly to labor plus revenue.
-
-| Person | Labor pay | Owner revenue share | Total payout |
-| --- | ---: | ---: | ---: |
-| Tom | $125.00 | $327.29 | $452.29 |
-| Liam | $450.00 | $327.29 | $777.29 |
-| Dylan | $375.00 | $327.30 | $702.30 |
-| **Total** | **$950.00** | **$981.88** | **$1,931.88** |
-
-## Paint Estimate Reconciliation
-
-The paint estimate was low for two main reasons:
-
-1. The T1-11 siding sections soaked up paint at a much higher rate than expected.
-2. The client requested the upright posts on the four corners and the lower bottom panel on three sides to be painted the main body color. The original estimate assumed those elements would be trim color.
-
-The final leftover amounts were reasonable, but the siding absorption and color-scope change explain why the job required more main color than originally expected.
-
-After the first additional gallon was absorbed by us, the client approved the next additional gallon. The final approved price was **$2,270**.
-
-## Production Notes and Lessons Learned
-
-- We can tape less on similar projects. The door and glass cut lines still needed a second coat without tape to get a clean finish.
-- Removing tape from the door and from the metal drip edge on the soffits took a significant amount of time.
-- For future jobs with rough T1-11 siding, assume higher paint consumption and build in extra material allowance for the main body color.
-- Confirm whether posts, base panels, and other border elements are main body color or trim color before finalizing material quantities.
+- Build in extra paint allowance for rough T1-11 or similarly absorbent siding.
+- Confirm whether posts, base panels, and border elements are body color or trim color before finalizing material quantities.
+- Use less tape on similar projects where possible. Door and glass cut lines still needed a second coat without tape to get a clean finish.
+- Account for tape-removal time around doors, metal drip edge, soffits, and similar detail areas.
+- When a scope/color decision changes where the main body color goes, update the paint quantity assumption immediately.
 
 ## Full Material Itemization
 
