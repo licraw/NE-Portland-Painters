@@ -5,8 +5,8 @@
 **Completed summary date:** 2026-07-16  
 **Original quoted price:** $2,200  
 **Final approved price:** $2,270  
-**Revenue after direct labor and materials:** $981.88
-**Revenue per owner:** $327.29
+**Revenue after direct labor and materials:** **$981.88**  
+**Revenue per owner:** **$327.29 average**
 
 ## Price Summary
 
@@ -51,6 +51,17 @@ Material receipts total **$338.12** based on the itemized project materials belo
 | Materials | $338.12 |
 | **Direct job cost** | **$1,288.12** |
 | **Revenue after direct labor and materials** | **$981.88** |
+
+## Payout Per Person
+
+Revenue after direct labor and materials is split equally across the three owners. The final cent is assigned to Dylan so the payout total ties exactly to labor plus revenue.
+
+| Person | Labor pay | Owner revenue share | Total payout |
+| --- | ---: | ---: | ---: |
+| Tom | $125.00 | $327.29 | $452.29 |
+| Liam | $450.00 | $327.29 | $777.29 |
+| Dylan | $375.00 | $327.30 | $702.30 |
+| **Total** | **$950.00** | **$981.88** | **$1,931.88** |
 
 ## Paint Estimate Reconciliation
 
