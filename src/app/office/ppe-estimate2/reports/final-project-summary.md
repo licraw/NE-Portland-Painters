@@ -1,62 +1,90 @@
-# Project Summary
+# Completed Project Summary
 
 **Project:** Backyard Shed / Studio Lounge Exterior Painting  
 **Property:** 7610 SE Harrison St, Portland, OR 97215  
-**Prepared:** 2026-07-01  
-**Recommended price:** **$2,200**
+**Completed summary date:** 2026-07-16  
+**Original quoted price:** $2,200  
+**Final approved price:** $2,270  
+**Revenue after direct labor and materials:** **$981.88**
 
-## Overview
+## Price Summary
 
-This is a compact one-story backyard shed/studio exterior repaint, not a full house exterior. The working paintable area is approximately **530 SF for one coat** and **1,060 SF for two finish coats**. The revised scope also includes standard installation labor for a customer-supplied electronic front-door lock.
+The original quoted price was **$2,200**. After paint consumption exceeded the estimate, we purchased one additional gallon on us first. The client then approved one more additional gallon, bringing the final approved price to **$2,270**.
 
-## Surface Types
+## Labor Summary
 
-- Front horizontal lap siding.
-- Side and rear rough vertical panel siding.
-- Raw/new fascia and roof-edge wood.
-- Soffits/eaves and exposed blocking.
-- Front door, door trim, window trim, corner boards, and base/skirt trim.
+Each crew member is paid at **$25/hour**.
 
-## Color Split
+| Crew member | Hours | Rate | Labor cost |
+| --- | ---: | ---: | ---: |
+| Tom | 5 | $25/hr | $125 |
+| Liam | 18 | $25/hr | $450 |
+| Dylan | 15 | $25/hr | $375 |
+| **Total** | **38** |  | **$950** |
 
-- **Light blue:** main wall fields / siding, approximately **340 SF**.
-- **Dark blue:** eaves, soffits, fascia, exposed blocking, front door, door trim, window trim, corner boards, base/skirt trim, and other detail surfaces, approximately **190 SF**.
+## Paint and Primer Used
 
-## Prep Considerations
+| Material | Purchased / used on job | Leftover |
+| --- | ---: | ---: |
+| Main siding / base paint | 4 gallons | About 0.5 gallon |
+| Trim paint | 2 gallons | About 1.1 gallons |
+| Oil primer | 1 gallon | 0 gallons |
 
-The rough side/rear siding should be washed and brushed where dirty or weathered. Raw fascia, eave boards, and exposed blocking should be primed before finish paint. Spot priming should be used for bare, stained, weathered, or compromised areas. Vented soffit areas should be painted carefully so vent openings are not clogged.
+## Material Cost Summary
 
-## Labor and Schedule
+Material receipts total **$338.12** based on the itemized project materials below. The consolidated categories below are for the main financial summary; the full itemization is included at the bottom for reference.
 
-Recommended production duration is **2-3 working days** for a two-person crew, subject to weather and dry times. The revised labor assumption is **48 total labor hours**, consisting of **46 painting labor hours** and **2 electronic lock installation labor hours**.
+| Material category | Included items | Cost |
+| --- | --- | ---: |
+| Finish paint | 4 gal Bit of Heaven body paint; 2 gal Mountain Lake trim paint | $226.54 |
+| Primer | 1 gal Zinsser Cover Stain Primer | $30.17 |
+| Sundries, tools, containers, and fees | Screens, liners, pails, rags, caulk, painter's tool, roller covers, blades, PaintCare fees | $81.41 |
+| **Total materials** |  | **$338.12** |
 
-Practical sequence:
+## Financial Summary
 
-- Day 1: wash, prep, masking/protection, localized scraping/sanding, caulking, and spot priming.
-- Day 2: light-blue body painting and dark-blue trim/eave/fascia/door painting.
-- Day 3, if needed: second-coat detail completion, electronic lock installation, touchups, cleanup, and walkthrough.
+| Category | Amount |
+| --- | ---: |
+| Final approved price | $2,270.00 |
+| Labor paid | $950.00 |
+| Materials | $338.12 |
+| **Direct job cost** | **$1,288.12** |
+| **Revenue after direct labor and materials** | $981.88 |
 
-## Final Recommendation
+## Paint Estimate Reconciliation
 
-Use **$2,200** as the revised estimate. This is the rounded result of the pricing formula below.
+The paint estimate was low for two main reasons:
 
-```text
-Direct Labor Cost =
-  Painting labor: 46 hours
-+ Electronic lock installation: 2 hours
-Direct Labor Cost = 48 labor hours x $25/hour = $1,200
+1. The T1-11 siding sections soaked up paint at a much higher rate than expected.
+2. The client requested the upright posts on the four corners and the lower bottom panel on three sides to be painted the main body color. The original estimate assumed those elements would be trim color.
 
-Material Cost =
-  Light-blue body paint: $140
-+ Dark-blue trim/eave/fascia/door paint: $140
-+ Primer for raw wood and spot priming: $70
-+ Sundries / masking / tape / plastic / caulk / abrasives / rollers / brushes: $150
-Material Cost = $500
+The final leftover amounts were reasonable, but the siding absorption and color-scope change explain why the job required more main color than originally expected.
 
-Direct Project Cost = $1,200 + $500 = $1,700
-Overhead / Profit / Business Markup = $1,700 x 29.4% = $499.80
-Calculated Estimate = $1,700 + $499.80 = $2,199.80
-Final Customer Price = $2,200 rounded
-```
+After the first additional gallon was absorbed by us, the client approved the next additional gallon. The final approved price was **$2,270**.
 
-This fits the smaller shed/studio scope: one-story structure, easy access, no meaningful ladder work, limited openings, limited trim quantity, two colors, raw wood/spot priming, standard electronic lock installation labor, and a 2-3 day production window.
+## Production Notes and Lessons Learned
+
+- We can tape less on similar projects. The door and glass cut lines still needed a second coat without tape to get a clean finish.
+- Removing tape from the door and from the metal drip edge on the soffits took a significant amount of time.
+- For future jobs with rough T1-11 siding, assume higher paint consumption and build in extra material allowance for the main body color.
+- Confirm whether posts, base panels, and other border elements are main body color or trim color before finalizing material quantities.
+
+## Full Material Itemization
+
+| Item | Qty | Total Cost |
+| --- | ---: | ---: |
+| MPC Acrilite Satin White Paint - **Bit of Heaven** (1 gal) | 4 | **$151.03** |
+| MPC Acrilite Velvet NB Paint - **Mountain Lake** (1 gal) | 2 | **$75.51** |
+| Zinsser Cover Stain Primer (1 gal) | 1 | **$30.17** |
+| OLFA 9mm Snap-Off Blades (AB50B) | 1 | **$21.94** |
+| Encore 2-Gallon Pail Liners | 3 | **$10.56** |
+| Miller Plus 50-Year White Caulk | 3 | **$8.28** |
+| Bucket Screens (1 gal) | 2 | **$7.82** |
+| AllPro 4" Yellow Stripe Roller Covers (12-pack) | 1 | **$6.86** |
+| 5-Gallon Plastic Can (Yellow) | 1 | **$6.26** |
+| Hyde 5-in-1 Painter's Tool | 1 | **$5.79** |
+| White Rags (1 lb bag) | 1 | **$4.30** |
+| Plastic Tray Liners (1 gal) | 2 | **$4.06** |
+| 2-Gallon Plastic Can (White) | 1 | **$2.69** |
+| PaintCare Fees | 3 | **$2.85** |
+| **Total materials** |  | **$338.12** |

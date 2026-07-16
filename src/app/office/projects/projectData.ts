@@ -362,6 +362,15 @@ export const officeProjects: OfficeProject[] = [
         description:
           "Internal estimating rationale, measurements, material assumptions, labor model, pricing math, and risk notes.",
       },
+      {
+        id: "completed-project-summary",
+        title: "Completed Project Summary",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "final-project-summary.md",
+        description:
+          "Completed-job recap including labor pay, paint usage, material costs, estimate variance notes, and production lessons.",
+      },
     ],
     images: [
       {
