@@ -3,7 +3,9 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import {
+  getOfficeLoginPath,
   getOfficePassword,
+  getSafeOfficeNextPath,
   getOfficeToken,
   isOfficeAuthenticated,
   OFFICE_COOKIE_NAME,
@@ -26,10 +28,11 @@ async function logInToOffice(formData: FormData) {
 
   const honeypot = String(formData.get("website") ?? "").trim();
   const submittedPassword = String(formData.get("password") ?? "");
+  const nextPath = getSafeOfficeNextPath(String(formData.get("next") ?? ""));
   const officePassword = getOfficePassword();
 
   if (honeypot) {
-    redirect("/office");
+    redirect(getOfficeLoginPath(nextPath));
   }
 
   const passwordIsValid = officePassword
@@ -37,7 +40,10 @@ async function logInToOffice(formData: FormData) {
     : submittedPassword.trim().length > 0;
 
   if (!passwordIsValid) {
-    redirect("/office?error=1");
+    const loginPath = getOfficeLoginPath(nextPath);
+    const separator = loginPath.includes("?") ? "&" : "?";
+
+    redirect(`${loginPath}${separator}error=1`);
   }
 
   const cookieStore = await cookies();
@@ -49,10 +55,16 @@ async function logInToOffice(formData: FormData) {
     path: "/office",
   });
 
-  redirect("/office");
+  redirect(nextPath);
 }
 
-function OfficeLogin({ showError }: { showError: boolean }) {
+function OfficeLogin({
+  showError,
+  nextPath,
+}: {
+  showError: boolean;
+  nextPath: string;
+}) {
   return (
     <section className="px-6 py-16 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-md rounded-lg border border-theme-border bg-theme-surface p-8 shadow-sm">
@@ -69,6 +81,8 @@ function OfficeLogin({ showError }: { showError: boolean }) {
         </div>
 
         <form action={logInToOffice} className="mt-8 space-y-5">
+          <input type="hidden" name="next" value={nextPath} />
+
           <div
             aria-hidden="true"
             className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden"
@@ -174,14 +188,24 @@ function OfficeDashboard() {
 export default async function OfficePage({
   searchParams,
 }: {
-  searchParams?: Promise<{ error?: string }>;
+  searchParams?: Promise<{ error?: string; next?: string }>;
 }) {
   const resolvedSearchParams = await (searchParams ??
-    Promise.resolve<{ error?: string }>({}));
+    Promise.resolve<{ error?: string; next?: string }>({}));
   const authenticated = await isOfficeAuthenticated();
+  const nextPath = getSafeOfficeNextPath(resolvedSearchParams.next);
+
+  if (authenticated && nextPath !== "/office") {
+    redirect(nextPath);
+  }
 
   if (!authenticated) {
-    return <OfficeLogin showError={resolvedSearchParams.error === "1"} />;
+    return (
+      <OfficeLogin
+        showError={resolvedSearchParams.error === "1"}
+        nextPath={nextPath}
+      />
+    );
   }
 
   return <OfficeDashboard />;

@@ -58,9 +58,9 @@ export default async function OfficeProjectPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  await requireOfficeAuth();
-
   const { slug } = await params;
+  await requireOfficeAuth(`/office/projects/${slug}`);
+
   const project = getOfficeProject(slug);
 
   if (!project) {

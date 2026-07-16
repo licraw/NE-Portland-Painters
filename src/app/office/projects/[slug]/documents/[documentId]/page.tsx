@@ -133,9 +133,9 @@ export default async function OfficeProjectDocumentPage({
 }: {
   params: Promise<{ slug: string; documentId: string }>;
 }) {
-  await requireOfficeAuth();
-
   const { slug, documentId } = await params;
+  await requireOfficeAuth(`/office/projects/${slug}/documents/${documentId}`);
+
   const project = getOfficeProject(slug);
   const document = project?.documents.find((item) => item.id === documentId);
 

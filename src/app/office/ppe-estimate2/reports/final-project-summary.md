@@ -5,7 +5,8 @@
 **Completed summary date:** 2026-07-16  
 **Original quoted price:** $2,200  
 **Final approved price:** $2,270  
-**Revenue after direct labor and materials:** **$981.88**
+**Revenue after direct labor and materials:** $981.88
+**Revenue per owner:** $327.29
 
 ## Price Summary
 
@@ -49,7 +50,7 @@ Material receipts total **$338.12** based on the itemized project materials belo
 | Labor paid | $950.00 |
 | Materials | $338.12 |
 | **Direct job cost** | **$1,288.12** |
-| **Revenue after direct labor and materials** | $981.88 |
+| **Revenue after direct labor and materials** | **$981.88** |
 
 ## Paint Estimate Reconciliation
 

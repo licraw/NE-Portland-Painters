@@ -21,10 +21,33 @@ export async function isOfficeAuthenticated() {
   return cookieStore.get(OFFICE_COOKIE_NAME)?.value === getOfficeToken();
 }
 
-export async function requireOfficeAuth() {
+export function getSafeOfficeNextPath(value?: string | null) {
+  const isOfficePath =
+    value === "/office" ||
+    value?.startsWith("/office/") ||
+    value?.startsWith("/office?");
+
+  if (!value || !isOfficePath || value.startsWith("//")) {
+    return "/office";
+  }
+
+  return value;
+}
+
+export function getOfficeLoginPath(nextPath?: string | null) {
+  const safeNextPath = getSafeOfficeNextPath(nextPath);
+
+  if (safeNextPath === "/office") {
+    return "/office";
+  }
+
+  return `/office?next=${encodeURIComponent(safeNextPath)}`;
+}
+
+export async function requireOfficeAuth(nextPath?: string) {
   const authenticated = await isOfficeAuthenticated();
 
   if (!authenticated) {
-    redirect("/office");
+    redirect(getOfficeLoginPath(nextPath));
   }
 }

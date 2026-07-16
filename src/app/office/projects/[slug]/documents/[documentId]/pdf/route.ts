@@ -351,14 +351,15 @@ function pdfFilename(filename: string) {
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   {
     params,
   }: {
     params: Promise<{ slug: string; documentId: string }>;
   }
 ) {
-  await requireOfficeAuth();
+  const requestUrl = new URL(request.url);
+  await requireOfficeAuth(`${requestUrl.pathname}${requestUrl.search}`);
 
   const { slug, documentId } = await params;
   const project = getOfficeProject(slug);
