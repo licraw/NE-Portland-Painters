@@ -14,10 +14,10 @@ const imageCategories = [
   "Condition / prep details",
 ] as const;
 
-const estimateDeliverableIds = [
+const primaryDocumentIds = [
+  "completed-project-summary",
   "customer-facing-estimate",
   "internal-estimating-rationale",
-  "geometry-worksheet",
 ];
 
 export async function generateMetadata({
@@ -68,12 +68,12 @@ export default async function OfficeProjectPage({
   }
 
   const galleryImages = project.images.map((asset) => asset.image.src);
-  const estimateDeliverables = estimateDeliverableIds.flatMap((documentId) => {
+  const primaryDocuments = primaryDocumentIds.flatMap((documentId) => {
     const document = project.documents.find((item) => item.id === documentId);
     return document ? [document] : [];
   });
   const researchDocuments = project.documents.filter(
-    (document) => !estimateDeliverableIds.includes(document.id)
+    (document) => !primaryDocumentIds.includes(document.id)
   );
 
   return (
@@ -133,10 +133,10 @@ export default async function OfficeProjectPage({
           <div className="mt-5 space-y-6">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-theme-text-subtle">
-                Estimate deliverables
+                Estimate documents and completed summary
               </p>
               <div className="mt-3 grid gap-4 md:grid-cols-2">
-                {estimateDeliverables.map((document) => (
+                {primaryDocuments.map((document) => (
                   <Link
                     key={document.id}
                     href={documentHref(project.slug, document.id)}
