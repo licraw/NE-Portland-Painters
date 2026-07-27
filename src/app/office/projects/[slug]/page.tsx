@@ -11,6 +11,8 @@ const imageCategories = [
   "Right side",
   "Rear",
   "Left side",
+  "Interior",
+  "Inspiration / color reference",
   "Condition / prep details",
 ] as const;
 

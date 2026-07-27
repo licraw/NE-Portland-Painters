@@ -34,6 +34,13 @@ import ppe2LeftSoffit from "../ppe-estimate2/left-soffit.JPEG";
 import ppe2LockManual from "../ppe-estimate2/lock-manual.JPEG";
 import ppe2RearSoffit from "../ppe-estimate2/rear-soffit.JPEG";
 import ppe2RightSoffit from "../ppe-estimate2/right-soffit.JPEG";
+import ppe3AiVision from "../ppe-estimate3/AI-render-customer-vision.jpeg";
+import ppe3Bathroom1 from "../ppe-estimate3/bathroom1.jpeg";
+import ppe3Bathroom2 from "../ppe-estimate3/bathroom2.jpeg";
+import ppe3Bathroom3 from "../ppe-estimate3/bathroom3.jpeg";
+import ppe3Bathroom4 from "../ppe-estimate3/bathroom4.jpeg";
+import ppe3Bathroom5 from "../ppe-estimate3/bathroom5.jpeg";
+import ppe3ColorSummary from "../ppe-estimate3/color-summary.jpeg";
 
 export type OfficeProjectDocument = {
   id: string;
@@ -53,6 +60,8 @@ export type OfficeProjectImage = {
     | "Right side"
     | "Rear"
     | "Left side"
+    | "Interior"
+    | "Inspiration / color reference"
     | "Condition / prep details";
   description: string;
   image: StaticImageData;
@@ -467,6 +476,130 @@ export const officeProjects: OfficeProject[] = [
       "Crew plan assumes a 2-person crew for approximately 2-3 working days.",
       "Electronic lock hardware is assumed customer-supplied; estimate includes standard installation labor only.",
       "Metal roof panels, drip edge, gutters, downspouts, glass, screens, deck/pavers, adjacent structures, and interiors are excluded unless added by scope change.",
+    ],
+  },
+  {
+    slug: "1707-se-keanu",
+    title: "1707 SE Keanu Ct - Half Bath Repaint",
+    status: "Estimate Draft",
+    address: "1707 SE Keanu Ct, Portland, OR 97267",
+    reportsFolder: "ppe-estimate3",
+    type: "Interior half bath repaint",
+    siding: "Textured drywall and beadboard wainscoting",
+    workingPaintableBodyArea:
+      "~85 sq ft upper drywall; ~30 sq ft ceiling; ~64 sq ft wainscoting; ~63 LF trim; one six-panel door",
+    paintCostAssumption:
+      "$140 finish paint + $45 bonding primer; $190 total materials/sundries",
+    laborAssumption:
+      "8 labor hrs at $25/hr/person equivalent; one painter",
+    crewPlan: "1 painter, approximately 1 working day",
+    summary:
+      "Internal project record for the main-floor half bath repaint estimate at 1707 SE Keanu Ct.",
+    documents: [
+      {
+        id: "geometry-worksheet",
+        title: "Interior Geometry Worksheet",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "interior-paint-estimate-geometry-worksheet.md",
+        description:
+          "Photo-based room geometry, wall and ceiling takeoff, wainscoting and trim quantities, door area, coating coverage, and verification items.",
+      },
+      {
+        id: "property-photo-research",
+        title: "Property and Photo Research",
+        type: "Markdown",
+        audience: "Research",
+        filename: "property-and-photo-research.md",
+        description:
+          "Public property context and a complete image-by-image condition review supporting the estimate.",
+      },
+      {
+        id: "customer-facing-estimate",
+        title: "Customer-Facing Estimate",
+        type: "Markdown",
+        audience: "Customer-facing",
+        filename: "final-customer-facing-estimate.md",
+        description:
+          "Customer-ready half bath preparation, painting scope, paint system, schedule, price, exclusions, and warranty.",
+      },
+      {
+        id: "internal-estimating-rationale",
+        title: "Internal Estimating Rationale",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "final-internal-estimating-rationale.md",
+        description:
+          "Detailed measurements, photo observations, labor model, material purchasing plan, pricing math, production notes, and change-order risks.",
+      },
+    ],
+    images: [
+      {
+        title: "Bathroom overview - window and door",
+        filename: "bathroom1.jpeg",
+        category: "Interior",
+        description:
+          "Window, door, upper wall, beadboard, cap rail, baseboard, and floor condition.",
+        image: ppe3Bathroom1,
+      },
+      {
+        title: "Bathroom overview - principal wall",
+        filename: "bathroom2.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Glossy blue upper wall with former fastener/accessory holes, door, casing, and wainscoting.",
+        image: ppe3Bathroom2,
+      },
+      {
+        title: "Window and beadboard detail",
+        filename: "bathroom3.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Window casing, stool, apron, cap rail, beadboard grooves, fasteners, and privacy film.",
+        image: ppe3Bathroom3,
+      },
+      {
+        title: "Former vanity and sink wall",
+        filename: "bathroom4.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Removed fixtures, plumbing and electrical openings, former mirror areas, holes, and test-color patches.",
+        image: ppe3Bathroom4,
+      },
+      {
+        title: "Ceiling, vent, and light detail",
+        filename: "bathroom5.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Glossy blue ceiling, ventilation grille, light fixture, door opening, and wall repair points.",
+        image: ppe3Bathroom5,
+      },
+      {
+        title: "Customer vision rendering",
+        filename: "AI-render-customer-vision.jpeg",
+        category: "Inspiration / color reference",
+        description:
+          "Customer inspiration for warm cream upper surfaces and dark terracotta wainscoting, trim, and door.",
+        image: ppe3AiVision,
+      },
+      {
+        title: "Color reference summary",
+        filename: "color-summary.jpeg",
+        category: "Inspiration / color reference",
+        description:
+          "Inspiration references for Unity R129 and Sugar Dust 0011; final products and colors remain subject to matching and approval.",
+        image: ppe3ColorSummary,
+      },
+    ],
+    notes: [
+      "Dimensions are photo-based estimates: approximately 5 ft x 6 ft with an 8 ft ceiling and 42-44 in beadboard wainscoting.",
+      "Public listing context identifies a partial bathroom on the main level; public sources do not provide room dimensions.",
+      "Room is assumed empty with vanity, sink, and toilet removed for the duration of work.",
+      "Existing dark blue coating appears glossy/semi-gloss and requires cleaning, scuff sanding/deglossing, and bonding primer.",
+      "Labor model is 8 active hours for one painter in one working day, subject to drying conditions.",
+      "Price is calculated from $200 direct labor, $190 materials/sundries, and $210 business markup for a $600 customer estimate.",
+      "Unity R129 and Sugar Dust 0011 are inspiration references only; final colors will be matched with Glidden or Miller Paint after physical sample approval.",
+      "Major repairs, texture work, moisture remediation, carpentry, plumbing/electrical work, and fixture reinstallation are excluded.",
     ],
   },
 ];
