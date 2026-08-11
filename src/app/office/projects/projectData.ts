@@ -41,6 +41,10 @@ import ppe3Bathroom3 from "../ppe-estimate3/bathroom3.jpeg";
 import ppe3Bathroom4 from "../ppe-estimate3/bathroom4.jpeg";
 import ppe3Bathroom5 from "../ppe-estimate3/bathroom5.jpeg";
 import ppe3ColorSummary from "../ppe-estimate3/color-summary.jpeg";
+import ppe4PorchFront from "../ppe-estimate4/porch-front.jpeg";
+import ppe4PorchRight from "../ppe-estimate4/porch-right.jpeg";
+import ppe4PorchRoof from "../ppe-estimate4/porch-roof.jpeg";
+import ppe4PorchStairs from "../ppe-estimate4/porch-stairs.jpeg";
 
 export type OfficeProjectDocument = {
   id: string;
@@ -600,6 +604,106 @@ export const officeProjects: OfficeProject[] = [
       "Price is calculated from $200 direct labor, $190 materials/sundries, and $210 business markup for a $600 customer estimate.",
       "Unity R129 and Sugar Dust 0011 are inspiration references only; final colors will be matched with Glidden or Miller Paint after physical sample approval.",
       "Major repairs, texture work, moisture remediation, carpentry, plumbing/electrical work, and fixture reinstallation are excluded.",
+    ],
+  },
+  {
+    slug: "5933-ne-31st",
+    title: "5933 NE 31st Ave - Covered Porch / Enclosure Painting",
+    status: "Estimate Draft",
+    address: "5933 NE 31st Ave, Portland, OR",
+    reportsFolder: "ppe-estimate4",
+    type: "Exterior covered porch and enclosure painting",
+    siding: "New plywood enclosure and new/existing wood framing",
+    workingPaintableBodyArea:
+      "~150 sq ft enclosure; ~90 sq ft deck; 7 stairs; ~90-110 sq ft ceiling; ~220 sq ft converted framing/trim area",
+    paintCostAssumption:
+      "$490 coatings + $110 prep/protection sundries; $600 total materials/sundries",
+    laborAssumption:
+      "40 labor hrs at $25/hr/person equivalent; two painters",
+    crewPlan: "2 painters, approximately 2-3 working days",
+    summary:
+      "Internal project record for painting a newly constructed covered porch, lower enclosure, upper deck, stairs, ceiling, framing, fascia, and trim.",
+    documents: [
+      {
+        id: "geometry-worksheet",
+        title: "Exterior Porch Geometry Worksheet",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "exterior-porch-estimate-geometry-worksheet.md",
+        description:
+          "Photo-based porch geometry, coating quantities, purchase model, condition notes, and field-verification items.",
+      },
+      {
+        id: "property-photo-research",
+        title: "Property and Photo Research",
+        type: "Markdown",
+        audience: "Research",
+        filename: "property-and-photo-research.md",
+        description:
+          "Complete review of the four supplied porch photos and the scope conclusions supported by them.",
+      },
+      {
+        id: "customer-facing-estimate",
+        title: "Customer-Facing Estimate",
+        type: "Markdown",
+        audience: "Customer-facing",
+        filename: "final-customer-facing-estimate.md",
+        description:
+          "Customer-ready porch preparation, painting scope, assumptions, exclusions, and total price.",
+      },
+      {
+        id: "internal-estimating-rationale",
+        title: "Internal Estimating Rationale",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "final-internal-estimating-rationale.md",
+        description:
+          "Detailed labor, materials, overhead, margin, production assumptions, pricing math, and change-order risks.",
+      },
+    ],
+    images: [
+      {
+        title: "Porch and enclosure overview",
+        filename: "porch-front.jpeg",
+        category: "Front",
+        description:
+          "Overall view of the enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
+        image: ppe4PorchFront,
+      },
+      {
+        title: "Right enclosure and access opening",
+        filename: "porch-right.jpeg",
+        category: "Right side",
+        description:
+          "Right return, crawlspace access opening, new framing, existing siding, and constrained landscaping access.",
+        image: ppe4PorchRight,
+      },
+      {
+        title: "Porch ceiling and fascia",
+        filename: "porch-roof.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Ceiling, rafters, beam, posts, braces, and extensive peeling on the existing outer fascia.",
+        image: ppe4PorchRoof,
+      },
+      {
+        title: "Stairs, deck, and guard framing",
+        filename: "porch-stairs.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Seven visible stairs, upper deck edge, enclosure return, and new guard framing.",
+        image: ppe4PorchStairs,
+      },
+    ],
+    notes: [
+      "The upper deck is approximately 15 ft x 6 ft (90 sq ft); the ceiling is carried at approximately 90-110 sq ft. The separately supplied 8 ft dimension is ceiling surface width, not porch height.",
+      "Red floor scope includes the approximately 90 sq ft upper deck plus seven clearly visible stair treads and paintable risers; no additional landing is included.",
+      "Labor model is 40 total hours at $25/hr/person equivalent for a two-painter, approximately 2-3 day schedule.",
+      "Materials/sundries are carried at $600: 2 gallons primer, 2 gallons green finish, 2 gallons cream finish, 1 gallon red floor coating, and $110 sundries.",
+      "Price is $1,000 direct labor + $600 materials/sundries = $1,600 direct cost; 29.4% markup produces $2,070.40, rounded to $2,100.",
+      "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
+      "Existing peeling fascia preparation, carpentry, structural repair, and suspected pre-1978 coating disturbance are excluded pending separate evaluation.",
+      "Final customer-approved colors remain to be confirmed before materials are purchased.",
     ],
   },
 ];
