@@ -6,7 +6,7 @@
 
 ## Project Summary
 
-This estimate covers preparation and painting of the newly constructed covered porch and lower enclosure at 5933 NE 31st Ave. The upper deck is approximately **15 ft x 6 ft**, and the covered ceiling surface is estimated at approximately **90-110 sq ft**. The new lower enclosure will be green, the porch floor and visible stairs red, and the ceiling, posts, beams, braces, fascia, and trim cream.
+This estimate covers preparation and painting of the newly constructed covered porch and lower enclosure at 5933 NE 31st Ave. The red floor scope is approximately **15 ft x 6 ft**, or **90 sq ft total**, including the stairs and landing. The covered ceiling/roof underside is approximately **15 ft x 8 ft**, or **120 sq ft**. The new lower enclosure will be green, the floor red, and the ceiling, posts, beams, braces, fascia, and trim cream.
 
 Final colors will be confirmed by the customer before materials are purchased.
 
@@ -23,7 +23,7 @@ Final colors will be confirmed by the customer before materials are purchased.
 ### Painting
 
 - Apply two finish coats of green exterior paint to the visible exterior faces of the new porch base/enclosure.
-- Apply the appropriate red porch-and-floor coating to the approximately 90 sq ft upper deck, seven visible stair treads, and visible paintable stair risers.
+- Apply the appropriate red porch-and-floor coating to the approximately 90 sq ft total floor scope, including the stairs and landing without adding their area a second time.
 - Apply two finish coats of cream exterior paint to the porch ceiling, posts, beams, braces, new fascia, and associated trim.
 - Complete normal minor touch-ups at the junction between the new construction and the existing house.
 - Complete demasking, cleanup, and a final walkthrough.
@@ -34,7 +34,7 @@ Normal labor, paint, primer, sundries, masking, setup, and cleanup are included.
 
 - The plywood enclosure will remain the finished exterior surface.
 - Only visible exterior surfaces are included. The crawlspace and interior enclosure walls are excluded.
-- The red floor scope includes the upper porch deck and the seven clearly visible stairs; no additional landing is included.
+- The red floor scope is 90 sq ft total and already includes the visible stairs and landing.
 - New construction is complete, dry, secure, and ready for normal paint preparation before work begins.
 - Final colors and products will be approved before purchase.
 

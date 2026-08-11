@@ -16,24 +16,28 @@ The price supports a two-painter, approximately 2-3 day production model with se
 | Metric | 7610 SE Harrison | 1707 SE Keanu | 5933 NE 31st Porch |
 | --- | ---: | ---: | ---: |
 | Customer price | $2,200 quoted; $2,270 final approved | $600 | $2,100 |
-| Estimated labor hours | 48, including 2 lock-install hours | 8 | 40 |
-| Labor cost at $25/hr | $1,200 estimated | $200 | $1,000 |
+| Labor hours | 48 estimated, including 2 lock-install hours; 38 actual | 8 estimated; 16 actual | 40 estimated |
+| Labor cost at $25/hr | $1,200 estimated; $950 actual | $200 estimated; $400 actual | $1,000 estimated |
 | Material allowance | $500 estimated | $190 | $600 |
-| Estimated duration | 2 painters, 2-3 days | 1 painter, 1 day | 2 painters, 2-3 days |
+| Duration | 2 painters, 2-3 days estimated | 1 painter, 1 day estimated; 16 actual labor hours | 2 painters, 2-3 days estimated |
 | Markup on direct cost | 29.4% | 53.85% | 29.4% |
-| Gross contribution / margin | $500 / 22.7% of price | $210 / 35.0% of price | $500 / 23.8% of price |
-| Effective price per labor hour | $45.83 | $75.00 | $52.50 |
-| Price less materials per labor hour | $35.42 | $51.25 | $37.50 |
+| Gross contribution / margin | $500 / 22.7% estimated; $981.88 / 43.3% actual | $210 / 35.0% estimated; about $10 / 1.7% using the $190 material allowance and actual labor, before overhead | $500 / 23.8% estimated |
+| Effective price per labor hour | $45.83 estimated; $59.74 actual | $75.00 estimated; $37.50 actual | $52.50 estimated |
+| Price less materials per labor hour | $35.42 estimated; $50.84 actual | $51.25 estimated; $25.63 actual | $37.50 estimated |
 
-The shed estimate modeled approximately 530 sq ft of one-coat paintable area, 1,060 sq ft of two-coat coverage, two finish colors, rough/weathered siding, washing, localized scraping/sanding, raw-wood/spot primer, detailed eaves/trim, and a two-hour lock installation. Its completed summary recorded 38 actual labor hours, $950 labor, $338.12 materials, a $2,270 final approved price, and $981.88 remaining after direct costs (43.25% of final revenue). The actual result shows that the estimate's 48-hour/$500 model was conservative.
+The shed takeoff contains approximately **341 sq ft of broad wall fields**, approximately **61 sq ft of soffit/eave undersides**, and a **21 sq ft door**. Its fascia/roof-edge work (approximately 45-55 sq ft in that document) and trim/detail work (approximately 55-70 sq ft) are labor-intensive components that should be reviewed separately from the broad fields. The shed also included rough/weathered siding, washing, localized scraping/sanding, raw-wood/spot primer, two finish colors, and a two-hour lock installation. Its completed summary recorded 38 actual labor hours, $950 labor, $338.12 materials, a $2,270 final approved price, and $981.88 remaining after direct costs (43.25% of final revenue). The actual result shows that the estimate's 48-hour/$500 model was conservative.
 
-The half bath modeled approximately 241 sq ft of one-coat finish area, 8 labor hours, three coating purchases (primer plus two finish colors), glossy-surface deglossing/bonding primer, beadboard, detailed trim, and a six-panel door. Its 53.85% markup is a small-job premium for mobilization and multiple minimum-quantity purchases, not the normal larger-project percentage.
+The half bath modeled approximately 241 sq ft of one-coat finish area, 8 labor hours, three coating purchases (primer plus two finish colors), glossy-surface deglossing/bonding primer, beadboard, detailed trim, and a six-panel door. Actual production took **16 hours**, completed solo by the business's least-experienced painter as a learning project. At $25/hour, actual labor cost was $400; against the $600 customer price and $190 material allowance, only approximately **$10 remained before overhead**. The job was therefore not an overall profitable business project and its estimated 8-hour production rate should not be used as a normal benchmark. Its original 53.85% estimated markup reflects the intended small-job premium, not the actual result.
 
-The porch has approximately 90 sq ft of floor, approximately 90-110 sq ft of ceiling, approximately 150 sq ft of enclosure, seven stairs, and approximately 220 sq ft of converted framing/trim area. It has three finish systems and more bare-wood priming than the shed, but mostly new construction, limited repair, no full weathered-siding wash/scrape package, and no lock installation. The shed's 29.4% markup is therefore the better pricing convention, while the half bath supports retaining a reasonable minimum allowance for separate products and mobilization.
+The porch has **90 sq ft of total floor area** (including stairs and landing), **120 sq ft of ceiling/roof underside**, and approximately **65 sq ft of visible green enclosure panels**: approximately **275 sq ft of comparable broad surfaces**. This is materially smaller than the shed's approximately **423 sq ft of broad wall, soffit, and door surfaces**. Porch detail labor is carried separately for approximately 6-8 posts/vertical members, 30-40 linear ft of beams/headers, 55-70 linear ft of guard/stair rails, 6-8 braces, 25-35 linear ft of roof-edge fascia, and 35-45 linear ft of enclosure cap/corners/access trim. These quantities are not added together as square footage.
+
+The porch price remains close to the shed because it requires three finish colors/coating changes, widespread bare-material primer, overhead ceiling production, a walking-surface coating with cure sequencing, and many posts, beams, braces, rails, edges, and joints. It is **not** priced close to the shed because it has more paintable square footage. The porch is mostly new construction with limited repair, no full weathered-siding wash/scrape package, and no lock installation, which supports fewer labor hours than the shed estimate. The shed's 29.4% markup remains the better pricing convention, while the half bath supports retaining a reasonable allowance for separate products and mobilization.
 
 ## Scope Basis
 
-The working takeoff uses an approximately 15 ft x 6 ft upper deck, 90 sq ft deck area, approximately 90-110 sq ft of ceiling (105 sq ft pricing allowance), approximately 150 sq ft of visible enclosure, seven stairs, and approximately 220 sq ft of converted cream framing/trim area. The separately supplied 8 ft ceiling dimension is surface width, not porch height. Measurements are photo-based and rounded for production.
+Broad surfaces are held at 90 sq ft for the complete red floor scope, including stairs and landing; 120 sq ft for the cream ceiling/roof underside; and approximately 65 sq ft for visible green enclosure panels. The enclosure allowance uses an estimated 3.5 ft panel height over the 15 ft main face plus the net 6 ft return after its access opening. Field verification is required.
+
+Posts, beams, braces, fascia, rails, caps, corners, and access trim are maintained as component counts and linear-foot ranges in `exterior-porch-estimate-geometry-worksheet.md`. They are not converted into or added to the broad square-foot subtotal.
 
 The exterior enclosure is assumed complete and suitable to remain as the finished surface. Only visible exterior faces are included. Carpentry, enclosure interiors, crawlspace surfaces, structural repair, and deteriorated-fascia work are not carried.
 
@@ -47,9 +51,9 @@ Crew assumption: **two painters for approximately 2-3 working days**. Total acti
 | Cleaning, inspection, moisture/adhesion checks | 2 | Mostly new construction; limited existing surfaces | $50 |
 | Fastener filling, selective caulking, sanding, dust removal | 5 | New enclosure and normal joints only | $125 |
 | Prime plywood, bare lumber, and repaired areas | 5 | Detailed posts/rails and overhead work included | $125 |
-| Green enclosure, two finish coats | 5 | Approximately 150 sq ft plus edges/cuts | $125 |
-| Red upper deck and seven stairs, two finish coats | 6 | Approximately 135 sq ft combined; staged access | $150 |
-| Cream ceiling, two finish coats | 4 | Approximately 105 sq ft overhead | $100 |
+| Green enclosure, two finish coats | 4 | Approximately 65 sq ft plus panel edges/cuts | $100 |
+| Red floor, stairs, and landing, two finish coats | 6 | 90 sq ft total; staged access and cure time | $150 |
+| Cream ceiling, two finish coats | 5 | 120 sq ft overhead | $125 |
 | Cream posts, beams, braces, fascia, rails, and trim | 6 | Detailed profiles and multiple edges | $150 |
 | Touch-ups, demasking, cleanup, walkthrough | 3 | Final detail check and site reset | $75 |
 | **Total** | **40** | **Two painters, approximately 2-3 days** | **$1,000** |
@@ -61,12 +65,13 @@ The schedule assumes coating-compatible weather, dry new lumber, normal recoat t
 | Material | Purchase / Allowance | Estimated Cost | Notes |
 | --- | ---: | ---: | --- |
 | Exterior primer | 2 gallons | $140 | Bare plywood/lumber, repairs, normal absorption |
-| Green exterior finish | 2 gallons | $140 | Two coats on visible enclosure; rough-surface allowance |
+| Green exterior finish | 1 gallon | $70 | Approximately 130 sq ft of two-coat panel demand |
 | Cream exterior finish | 2 gallons | $140 | Ceiling and detailed framing/trim, two coats |
-| Red porch-and-floor coating | 1 gallon | $70 | Approximately 270 sq ft of two-coat demand; verify product coverage |
+| Red porch-and-floor coating | 1 gallon | $70 | 180 sq ft of two-coat demand; verify product coverage |
 | Patch, exterior caulk, abrasives, cleaner | Job allowance | $45 | Normal new-construction prep only |
 | Tape, paper/plastic, drop protection | Job allowance | $40 | House and landscape protection |
 | Roller covers, liners, brush wear, rags, disposal | Job allowance | $25 | Application and cleanup sundries |
+| Coating / coverage contingency | Job allowance | $70 | Product-price variance, porous edges, detailed-lumber loss |
 | **Total material and sundry allowance** |  | **$600** |  |
 
 ## Pricing Math
@@ -93,7 +98,7 @@ The rounded price leaves **$500 above estimated direct cost**, or approximately 
 6. Apply compatible paintable exterior caulk only at appropriate joints.
 7. Prime bare plywood, lumber, and repaired areas. Seal exposed plywood edges as the selected system permits.
 8. Apply two green exterior finish coats to visible enclosure faces.
-9. Apply two red porch-and-floor coats to the upper deck and seven stair treads/visible risers, respecting recoat and foot-traffic cure times.
+9. Apply two red porch-and-floor coats to the 90 sq ft total floor scope, including stairs and landing, respecting recoat and foot-traffic cure times.
 10. Apply two cream exterior finish coats to ceiling, posts, beams, braces, fascia, rails, and associated trim.
 11. Complete minor touch-ups at new-to-existing junctions without expanding into existing-house repainting.
 12. Demask, inspect, clean, label retained paint, and document final products/colors.
