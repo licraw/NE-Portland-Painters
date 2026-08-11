@@ -172,7 +172,7 @@ function OfficeDashboard() {
                       {project.summary}
                     </p>
                   </div>
-                  <span className="inline-flex w-fit rounded-full bg-theme-primary-soft px-3 py-1 text-sm font-semibold text-theme-primary-deep">
+                  <span className="inline-flex w-fit shrink-0 whitespace-nowrap rounded-full bg-theme-primary-soft px-3 py-1 text-sm font-semibold text-theme-primary-deep">
                     {project.status}
                   </span>
                 </div>
