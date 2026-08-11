@@ -601,6 +601,7 @@ export const officeProjects: OfficeProject[] = [
       "Room is assumed empty with vanity, sink, and toilet removed for the duration of work.",
       "Existing dark blue coating appears glossy/semi-gloss and requires cleaning, scuff sanding/deglossing, and bonding primer.",
       "Labor model is 8 active hours for one painter in one working day, subject to drying conditions.",
+      "Actual production took 16 hours, completed solo by the least-experienced painter as a learning project; it was not an overall profitable business job.",
       "Price is calculated from $200 direct labor, $190 materials/sundries, and $210 business markup for a $600 customer estimate.",
       "Unity R129 and Sugar Dust 0011 are inspiration references only; final colors will be matched with Glidden or Miller Paint after physical sample approval.",
       "Major repairs, texture work, moisture remediation, carpentry, plumbing/electrical work, and fixture reinstallation are excluded.",
@@ -615,9 +616,9 @@ export const officeProjects: OfficeProject[] = [
     type: "Exterior covered porch and enclosure painting",
     siding: "New plywood enclosure and new/existing wood framing",
     workingPaintableBodyArea:
-      "~150 sq ft enclosure; ~90 sq ft deck; 7 stairs; ~90-110 sq ft ceiling; ~220 sq ft converted framing/trim area",
+      "~65 sq ft visible enclosure panels; 90 sq ft total floor including stairs/landing; 120 sq ft ceiling; framing/trim tracked separately",
     paintCostAssumption:
-      "$490 coatings + $110 prep/protection sundries; $600 total materials/sundries",
+      "$420 planned coatings + $110 prep/protection sundries + $70 coverage contingency; $600 total materials/sundries",
     laborAssumption:
       "40 labor hrs at $25/hr/person equivalent; two painters",
     crewPlan: "2 painters, approximately 2-3 working days",
@@ -696,10 +697,10 @@ export const officeProjects: OfficeProject[] = [
       },
     ],
     notes: [
-      "The upper deck is approximately 15 ft x 6 ft (90 sq ft); the ceiling is carried at approximately 90-110 sq ft. The separately supplied 8 ft dimension is ceiling surface width, not porch height.",
-      "Red floor scope includes the approximately 90 sq ft upper deck plus seven clearly visible stair treads and paintable risers; no additional landing is included.",
+      "The complete red floor scope is 15 ft x 6 ft (90 sq ft), including stairs and landing; those components are not added again.",
+      "The ceiling/roof underside is 15 ft x 8 ft (120 sq ft). The 8 ft dimension is surface width, not porch height.",
       "Labor model is 40 total hours at $25/hr/person equivalent for a two-painter, approximately 2-3 day schedule.",
-      "Materials/sundries are carried at $600: 2 gallons primer, 2 gallons green finish, 2 gallons cream finish, 1 gallon red floor coating, and $110 sundries.",
+      "Materials/sundries are carried at $600: 2 gallons primer, 1 gallon green finish, 2 gallons cream finish, 1 gallon red floor coating, $110 sundries, and $70 coverage contingency.",
       "Price is $1,000 direct labor + $600 materials/sundries = $1,600 direct cost; 29.4% markup produces $2,070.40, rounded to $2,100.",
       "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
       "Existing peeling fascia preparation, carpentry, structural repair, and suspected pre-1978 coating disturbance are excluded pending separate evaluation.",

@@ -7,7 +7,7 @@
 
 ## Available Project Context
 
-The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate relies on the customer's approximately 15 ft x 6 ft upper-deck dimensions, clarified ceiling surface-width information, stated color plan, and four supplied photos. The ceiling is carried at approximately 90-110 sq ft, using 105 sq ft for pricing; the separately supplied 8 ft figure is not a height measurement. No additional public property research was required for this scope.
+The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate uses 15 ft x 6 ft, or 90 sq ft total, for the red floor scope including the stairs and landing. The ceiling/roof underside uses 15 ft x 8 ft, or 120 sq ft; the 8 ft figure is surface width, not a height measurement. No additional public property research was required for this scope.
 
 ## Review of Supplied Images
 
@@ -27,14 +27,14 @@ The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate relies o
 
 ### porch-roof.jpeg
 
-- Clearest view of the approximately 90-110 sq ft ceiling, rafters/beam relationships, braces, and fascia underside.
+- Clearest view of the approximately 120 sq ft ceiling, rafters/beam relationships, braces, and fascia underside.
 - Shows a mixture of new bare lumber and existing painted wood.
 - Existing fascia coating failure is visible across much of the roof edge and requires separate evaluation.
 - The person in the image provides useful scale but is not used as a precise measurement reference.
 
 ### porch-stairs.jpeg
 
-- Clearly establishes seven stair treads with visible plywood risers and no separate lower landing.
+- Clearly establishes seven stair treads and the landing; their paintable area is already included within the confirmed 90 sq ft floor total.
 - Shows the upper deck edge, new guard framing, and the transition to the existing house.
 - Supports inclusion of the visible stairs in the red porch-and-floor coating scope under the customer's conditional instruction.
 - Does not establish painting of the concrete approach or any additional landing.
@@ -44,9 +44,8 @@ The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate relies o
 | Item | Observation | Estimate Treatment |
 | --- | --- | --- |
 | Lower enclosure | New exterior enclosure with exposed fasteners | Fill appropriate holes/joints, prime, two green finish coats |
-| Upper deck | Approximately 15 ft x 6 ft | Appropriate red floor system, two finish coats |
-| Stairs | Seven treads and visible risers | Included with red floor system; no additional landing |
-| Ceiling | Approximately 90 sq ft, partly existing coated wood | Clean, prepare, prime bare/repaired areas, two cream coats |
+| Floor, stairs, and landing | 90 sq ft total | Appropriate red floor system, two finish coats; no added stair area |
+| Ceiling | 120 sq ft, partly existing coated wood | Clean, prepare, prime bare/repaired areas, two cream coats |
 | Framing and trim | New posts, beams, braces, rails, fascia/trim | Prime bare lumber, two cream finish coats |
 | Existing fascia | Extensive peeling and apparent deterioration | Excluded; separate evaluation required |
 | Existing house | Adjacent green siding, door, and window | Protect; minor junction touch-ups only |
