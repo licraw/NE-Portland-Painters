@@ -99,7 +99,7 @@ export const officeProjects: OfficeProject[] = [
     type: "Exterior painting estimate",
     siding: "Aluminum",
     workingPaintableBodyArea: "~1,150 sq ft",
-    paintCostAssumption: "$70/gallon",
+    paintCostAssumption: "$120/gallon for siding and trim finish paint; primer $70/gallon",
     laborAssumption: "108 hrs at $25/hr/person equivalent",
     crewPlan: "3-person crew, ~4 days",
     summary:

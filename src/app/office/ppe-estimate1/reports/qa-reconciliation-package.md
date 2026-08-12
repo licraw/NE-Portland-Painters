@@ -44,7 +44,7 @@ Elevation-by-elevation breakdown. All four faces calculated independently.
 - Scope: Exterior painting
 - Siding material: **Aluminum** (customer-stated)
 - Window sill / window base: deterioration present; may require scraping, sanding, spot bondo repair
-- Paint cost: $50/gallon (for final report)
+- Finish paint cost: $120/gallon for body/siding and trim paint; primer remains $70/gallon (for final report)
 - Building confirmed: single 1.5-story craftsman bungalow — no addition
 
 ---

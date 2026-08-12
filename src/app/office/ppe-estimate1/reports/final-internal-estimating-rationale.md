@@ -120,7 +120,7 @@ Final pricing input: 1,150 SF net paintable body siding
 
 ## Materials Analysis
 
-Paint cost assumption: **$70/gallon** for body paint and trim paint.
+Finish paint cost assumption: **$120/gallon** for body/siding paint and trim paint. Primer remains **$70/gallon**.
 
 ### Body Paint
 
@@ -132,7 +132,7 @@ Working area: 1,150 SF
 Coats: 2
 Paint needed: 1,150 x 2 / 350 = 6.57 gallons
 Rounded allowance: 7 gallons
-Material cost: 7 x $70 = $490
+Material cost: 7 x $120 = $840
 ```
 
 ### Trim Paint
@@ -145,7 +145,7 @@ Trim area: 336 SF
 Coats: 2
 Paint needed: 336 x 2 / 300 = 2.24 gallons
 Rounded allowance: 4 gallons
-Material cost: 4 x $70 = $280
+Material cost: 4 x $120 = $480
 ```
 
 The 4-gallon trim allowance is intentionally above the raw math because porch ceiling boards, fascia edges, columns, and spot color changes reduce real coverage.
@@ -177,11 +177,11 @@ Allowance: $325
 Material total used in estimate:
 
 ```text
-Body paint: $490
-Trim paint: $280
+Body/siding paint: $840
+Trim paint: $480
 Primer: $210
 Caulk/repairs/consumables: $325
-Total materials: $1,305
+Total materials: $1,855
 ```
 
 ## Labor Analysis
@@ -222,24 +222,24 @@ Target gross margin: **35%**
 ```text
 Labor hours: 108
 Labor cost @ $25/hr: $2,700
-Material cost: $1,305
-Total direct job cost: $4,005
+Material cost: $1,855
+Total direct job cost: $4,555
 Gross margin: 35%
-Final selling price: $4,005 / (1 - 0.35) = $6,162
-Rounded final selling price: $6,175
+Final selling price: $4,555 / (1 - 0.35) = $7,008
+Rounded final selling price: $7,025
 ```
 
 The material allowance already includes caulk, repair materials, masking, plastic, tape, abrasives, sundries, and normal small consumables. No lift rental is included.
 
 ### Labor-Hour Sensitivity
 
-Material cost is held constant at **$1,305**. Gross margin is held constant at **35%**.
+Material cost is held constant at **$1,855**. Gross margin is held constant at **35%**.
 
 | Labor Hours | Labor Cost @ $25/hr | Material Cost | Total Direct Job Cost | Gross Margin % | Final Selling Price |
 |---:|---:|---:|---:|---:|---:|
-| 96 | $2,400 | $1,305 | $3,705 | 35% | $5,700 |
-| 108 | $2,700 | $1,305 | $4,005 | 35% | $6,162 |
-| 120 | $3,000 | $1,305 | $4,305 | 35% | $6,623 |
+| 96 | $2,400 | $1,855 | $4,255 | 35% | $6,546 |
+| 108 | $2,700 | $1,855 | $4,555 | 35% | $7,008 |
+| 120 | $3,000 | $1,855 | $4,855 | 35% | $7,469 |
 
 ## Confidence Assessment
 

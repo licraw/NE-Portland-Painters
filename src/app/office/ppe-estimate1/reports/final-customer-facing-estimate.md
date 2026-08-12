@@ -52,6 +52,6 @@ Major carpentry replacement is not included.
 
 ## Total Estimate
 
-**Total exterior painting estimate: $6,175**
+**Total exterior painting estimate: $7,025**
 
 This price is based on visible conditions and the stated scope. Final pricing may change if field inspection finds additional rot, failing coatings, inaccessible areas, moisture damage, or customer-selected scope additions.
