@@ -3,10 +3,11 @@
 **Project:** 5933 NE 31st Ave - Covered Porch / Enclosure Painting  
 **Property:** 5933 NE 31st Ave, Portland, OR  
 **Prepared:** 2026-08-11
+**Updated:** 2026-08-12 to reflect the completed primed cedar shake enclosure
 
 ## Project Summary
 
-This estimate covers preparation and painting of the newly constructed covered porch and lower enclosure at 5933 NE 31st Ave. The red floor scope is approximately **15 ft x 6 ft**, or **90 sq ft total**, including the stairs and landing. The covered ceiling/roof underside is approximately **15 ft x 8 ft**, or **120 sq ft**. The new lower enclosure will be green, the floor red, and the ceiling, posts, beams, braces, fascia, and trim cream.
+This estimate covers preparation and painting of the newly constructed covered porch and lower enclosure at 5933 NE 31st Ave. The lower deck enclosure is finished with primed cedar shakes. The red floor scope is approximately **15 ft x 6 ft**, or **90 sq ft total**, including the stairs and landing. The covered ceiling/roof underside is approximately **15 ft x 8 ft**, or **120 sq ft**. The cedar shake enclosure will be green, the floor red, and the ceiling, posts, beams, braces, fascia, and trim cream.
 
 Final colors will be confirmed by the customer before materials are purchased.
 
@@ -16,13 +17,13 @@ Final colors will be confirmed by the customer before materials are purchased.
 
 - Protect the house, landscaping, door, window, and adjacent surfaces.
 - Clean and prepare all included surfaces for coating.
-- Fill exposed fastener holes and caulk appropriate joints in the new plywood enclosure.
-- Prime bare plywood, new lumber, and repaired areas with compatible exterior primer.
+- Inspect the primed cedar shakes and spot-prime exposed cuts, fasteners, or damaged primer as required by the selected coating system. Do not caulk shake laps or drainage paths.
+- Prime bare new lumber, exposed stair plywood, and repaired areas with compatible exterior primer; caulk only appropriate trim and construction joints.
 - Mask and maintain clean transitions where the new construction meets the existing house.
 
 ### Painting
 
-- Apply two finish coats of green exterior paint to the visible exterior faces of the new porch base/enclosure.
+- Apply two finish coats of green exterior paint to the visible exterior faces of the primed cedar shake porch enclosure.
 - Apply the appropriate red porch-and-floor coating to the approximately 90 sq ft total floor scope, including the stairs and landing without adding their area a second time.
 - Apply two finish coats of cream exterior paint to the porch ceiling, posts, beams, braces, new fascia, and associated trim.
 - Complete normal minor touch-ups at the junction between the new construction and the existing house.
@@ -32,7 +33,7 @@ Normal labor, paint, primer, sundries, masking, setup, and cleanup are included.
 
 ## Assumptions
 
-- The plywood enclosure will remain the finished exterior surface.
+- The installed, primed cedar shakes will remain the finished exterior siding and will be complete, dry, secure, and coating-ready before painting begins.
 - Only visible exterior surfaces are included. The crawlspace and interior enclosure walls are excluded.
 - The red floor scope is 90 sq ft total and already includes the visible stairs and landing.
 - New construction is complete, dry, secure, and ready for normal paint preparation before work begins.
