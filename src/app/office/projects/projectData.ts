@@ -614,9 +614,9 @@ export const officeProjects: OfficeProject[] = [
     address: "5933 NE 31st Ave, Portland, OR",
     reportsFolder: "ppe-estimate4",
     type: "Exterior covered porch and enclosure painting",
-    siding: "New plywood enclosure and new/existing wood framing",
+    siding: "Primed cedar shake enclosure and new/existing wood framing",
     workingPaintableBodyArea:
-      "~65 sq ft visible enclosure panels; 90 sq ft total floor including stairs/landing; 120 sq ft ceiling; framing/trim tracked separately",
+      "~65 sq ft visible primed cedar shake enclosure; 90 sq ft total floor including stairs/landing; 120 sq ft ceiling; framing/trim tracked separately",
     paintCostAssumption:
       "$420 planned coatings + $110 prep/protection sundries + $70 coverage contingency; $600 total materials/sundries",
     laborAssumption:
@@ -668,7 +668,7 @@ export const officeProjects: OfficeProject[] = [
         filename: "porch-front.jpeg",
         category: "Front",
         description:
-          "Overall view of the enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
+          "Overall view of the primed cedar shake enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
         image: ppe4PorchFront,
       },
       {
@@ -676,7 +676,7 @@ export const officeProjects: OfficeProject[] = [
         filename: "porch-right.jpeg",
         category: "Right side",
         description:
-          "Right return, crawlspace access opening, new framing, existing siding, and constrained landscaping access.",
+          "Primed cedar shake right return, crawlspace access opening, new framing, existing house siding, and constrained landscaping access.",
         image: ppe4PorchRight,
       },
       {
@@ -703,6 +703,7 @@ export const officeProjects: OfficeProject[] = [
       "Materials/sundries are carried at $600: 2 gallons primer, 1 gallon green finish, 2 gallons cream finish, 1 gallon red floor coating, $110 sundries, and $70 coverage contingency.",
       "Price is $1,000 direct labor + $600 materials/sundries = $1,600 direct cost; 29.4% markup produces $2,070.40, rounded to $2,100.",
       "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
+      "The lower deck enclosure is completed with primed cedar shakes; spot-prime exposed cuts, fasteners, or damaged primer as needed before two green finish coats.",
       "Existing peeling fascia preparation, carpentry, structural repair, and suspected pre-1978 coating disturbance are excluded pending separate evaluation.",
       "Final customer-approved colors remain to be confirmed before materials are purchased.",
     ],
