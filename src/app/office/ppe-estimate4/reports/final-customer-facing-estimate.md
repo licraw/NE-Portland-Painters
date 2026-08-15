@@ -1,10 +1,9 @@
 # Exterior Porch Painting Estimate
 
-**Project:** Back Porch Painting + Front Porch Floor
-**Property:** 5933 NE 31st Ave, Portland, OR
-**Customer:** Camille Omey
-
-**Prepared:** 2026-08-15
+**Project:** Back Porch Painting + Front Porch Floor    
+**Property:** 5933 NE 31st Ave, Portland, OR    
+**Customer:** Camille Omey   
+**Prepared:** 2026-08-15    
 
 ## Project Summary
 
