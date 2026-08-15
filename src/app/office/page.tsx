@@ -168,6 +168,11 @@ function OfficeDashboard() {
                     <p className="pt-2 text-theme-text-muted">
                       {project.address}
                     </p>
+                    {project.customer ? (
+                      <p className="pt-1 text-sm font-medium text-theme-text-subtle">
+                        Customer: {project.customer}
+                      </p>
+                    ) : null}
                     <p className="pt-3 text-sm text-theme-text-subtle">
                       {project.summary}
                     </p>

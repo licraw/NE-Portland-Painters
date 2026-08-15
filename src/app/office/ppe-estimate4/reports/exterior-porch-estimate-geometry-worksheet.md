@@ -1,13 +1,17 @@
 # Exterior Porch Estimate Geometry Worksheet
 
-**Project:** 5933 NE 31st Ave - Back Porch Painting + Front Porch Floor
+**Project:** Back Porch Painting + Front Porch Floor
 **Property:** 5933 NE 31st Ave, Portland, OR  
+**Customer:** Camille Omey
+
 **Prepared:** 2026-08-11  
 **Status:** Photo-based estimating worksheet; dimensions and quantities require field verification.
 
 ## Porch Model
 
-The working model uses **15 ft x 6 ft = 90 sq ft** for the complete back porch red floor scope. The back stairs and landing are included within that 90 sq ft and are not added again. The back porch ceiling/roof underside uses **15 ft x 8 ft = 120 sq ft**; the 8 ft dimension is surface width, not porch height. Photos establish a newly enclosed lower base, an existing covered roof, and numerous new posts, rails, beams, and braces. Painting the front porch floor is a separate add-on, carried as one additional gallon of red coating and two labor hours.
+The working model uses **15 ft x 6 ft = 90 sq ft** for the complete back porch red floor scope. The back stairs and landing are included within that 90 sq ft and are not added again. The back porch ceiling/roof underside uses **15 ft x 8 ft = 120 sq ft**; the 8 ft dimension is surface width, not porch height. Photos establish a newly enclosed lower base, an existing covered roof, and numerous new posts, rails, beams, and braces.
+
+The existing front porch floor is a separate preparation-and-painting add-on. Its visible coating is peeling and bare wood is exposed. The allowance therefore includes cleaning, scraping loose/flaking paint, feather-sanding appropriate coating edges, dust removal, spot primer on exposed wood, and two red floor finish coats—not a simple recoat.
 
 | Dimension | Working Value | Confidence | Basis |
 | --- | ---: | --- | --- |
@@ -48,7 +52,8 @@ These ranges support labor planning for multiple faces, edges, joints, overhead 
 - Exterior primer: approximately 2 gallons for bare plywood, new lumber, repaired areas, and normal absorption/loss.
 - Green exterior finish: approximately 1 gallon for two coats on the visible enclosure panels.
 - Cream exterior finish: approximately 2 gallons for two coats on the ceiling and detailed framing/trim.
-- Red porch-and-floor coating: approximately 2 gallons total—1 gallon for the two-coat back porch floor scope and 1 additional gallon for the front porch floor add-on, subject to selected-product coverage.
+- Red porch-and-floor coating: approximately 2 gallons total—1 gallon for the two-coat back porch floor scope and 1 gallon for the prepared front porch floor, subject to selected-product coverage.
+- Front porch spot primer and preparation sundries: job allowance for exposed bare wood, scraping, sanding, and dust removal.
 
 Actual product coverage, surface porosity, application method, and approved colors determine final use. Retain and label usable remainder for customer touch-ups.
 
@@ -60,6 +65,8 @@ Actual product coverage, surface porosity, application method, and approved colo
 - The porch ceiling and some supporting members are existing coated wood; normal cleaning and compatible spot priming are carried.
 - Existing outer fascia has extensive peeling and deterioration. Extensive preparation or replacement is not carried and requires separate evaluation.
 - Trees and landscaping are close to the work and require normal protection and access care.
+- The front porch floor has visible peeling/flaking coating and exposed wood. Preparation is limited to the floor and any floor edge expressly visible and intended for red paint; railings, columns, siding, trim, and carpentry are excluded.
+- Front porch floor preparation is included, but repair/replacement of split, loose, rotten, or structurally deteriorated boards and all deteriorated fascia work are excluded.
 
 ## Field Verification Items
 

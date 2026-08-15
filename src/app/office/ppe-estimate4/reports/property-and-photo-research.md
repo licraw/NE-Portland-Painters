@@ -1,13 +1,15 @@
 # Property and Photo Research
 
-**Project:** 5933 NE 31st Ave - Back Porch Painting + Front Porch Floor
+**Project:** Back Porch Painting + Front Porch Floor
 **Property:** 5933 NE 31st Ave, Portland, OR  
+**Customer:** Camille Omey
+
 **Prepared:** 2026-08-11  
 **Purpose:** Supporting estimate research based on supplied project photos and customer scope information.
 
 ## Available Project Context
 
-The project address is 5933 NE 31st Ave, Portland, Oregon. The main project is the back porch. Its estimate uses 15 ft x 6 ft, or 90 sq ft total, for the red floor scope including the stairs and landing. The back porch ceiling/roof underside uses 15 ft x 8 ft, or 120 sq ft; the 8 ft figure is surface width, not a height measurement. The front porch floor is a separate painting add-on with one additional gallon of red coating and two labor hours. No additional public property research was required for this scope.
+The project address is 5933 NE 31st Ave, Portland, Oregon, for customer Camille Omey. The main project is the back porch. Its estimate uses 15 ft x 6 ft, or 90 sq ft total, for the red floor scope including the stairs and landing. The back porch ceiling/roof underside uses 15 ft x 8 ft, or 120 sq ft; the 8 ft figure is surface width, not a height measurement. The front porch floor is a separate preparation-and-painting add-on. No additional public property research was required for this scope.
 
 ## Review of Supplied Images
 
@@ -39,6 +41,12 @@ The project address is 5933 NE 31st Ave, Portland, Oregon. The main project is t
 - Supports inclusion of the visible stairs in the red porch-and-floor coating scope under the customer's conditional instruction.
 - Does not establish painting of the concrete approach or any additional landing.
 
+### Front porch floor reference
+
+- The supplied front porch photograph shows visibly peeling and flaking floor coating with exposed wood.
+- The condition supports cleaning, scraping, feather-sanding, dust removal, and spot priming before two finish coats rather than a simple recoat allowance.
+- The observed floor condition does not add railings, columns, siding, trim, fascia, or carpentry to the front porch scope.
+
 ## Consolidated Scope Assessment
 
 | Item | Observation | Estimate Treatment |
@@ -50,8 +58,10 @@ The project address is 5933 NE 31st Ave, Portland, Oregon. The main project is t
 | Existing fascia | Extensive peeling and apparent deterioration | Excluded; separate evaluation required |
 | Existing house | Adjacent green siding, door, and window | Protect; minor junction touch-ups only |
 | Crawlspace/interior | Visible access opening | Excluded |
-| Front porch floor | Separate customer-requested add-on | One additional gallon of red floor coating and two labor hours |
+| Front porch floor | Existing coating has visible peeling/flaking and exposed wood | Clean; scrape loose/flaking paint; feather-sand appropriate coating edges; remove dust; spot-prime bare wood; apply two red floor finish coats |
+| Front porch non-floor elements | Railings, columns, siding, trim, and carpentry | Excluded unless expressly included elsewhere |
+| Front porch boards | Split, loose, rotten, or structurally deteriorated boards | Repair or replacement excluded |
 
 ## Estimating Conclusion
 
-The compact footprint is offset by detailed brush work, overhead ceiling production, multiple coating systems/colors, new-lumber priming, access around landscaping, and stair work. A two-painter, approximately 2-3 day model is appropriate if construction is complete and dry, preparation remains within the stated new-work allowance, and the existing peeling fascia is not disturbed.
+The compact back porch footprint is offset by detailed brush work, overhead ceiling production, multiple coating systems/colors, new-lumber priming, access around landscaping, and stair work. The front porch requires a preparation cycle for peeling floor coating and exposed wood rather than a simple recoat. A two-painter, approximately 2-3 day model remains appropriate if front porch work proceeds concurrently with back porch drying/recoating and the separately excluded deteriorated fascia is not disturbed.

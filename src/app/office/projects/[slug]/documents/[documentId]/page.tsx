@@ -120,7 +120,11 @@ export async function generateMetadata({
   const document = project?.documents.find((item) => item.id === documentId);
 
   return {
-    title: document ? `${document.title} | ${project?.title}` : "Office Document",
+    title: document
+      ? `${document.title} | ${project?.title}${
+          project?.customer ? ` | ${project.customer}` : ""
+        }`
+      : "Office Document",
     robots: {
       index: false,
       follow: false,

@@ -31,7 +31,9 @@ export async function generateMetadata({
   const project = getOfficeProject(slug);
 
   return {
-    title: project?.title ?? "Office Project",
+    title: project?.customer
+      ? `${project.title} | ${project.customer}`
+      : project?.title ?? "Office Project",
     robots: {
       index: false,
       follow: false,
@@ -110,6 +112,7 @@ export default async function OfficeProjectPage({
           </h2>
           <div className="mt-5 grid gap-4 rounded-lg border border-theme-border bg-theme-surface p-6 md:grid-cols-2 lg:grid-cols-3">
             {[
+              ...(project.customer ? [["Customer", project.customer]] : []),
               ["Address", project.address],
               ["Type", project.type],
               ["Siding", project.siding],

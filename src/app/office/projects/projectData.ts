@@ -76,6 +76,7 @@ export type OfficeProject = {
   title: string;
   status: string;
   address: string;
+  customer?: string;
   reportsFolder: string;
   type: string;
   siding: string;
@@ -612,15 +613,16 @@ export const officeProjects: OfficeProject[] = [
     title: "5933 NE 31st Ave - Back Porch Painting + Front Porch Floor",
     status: "Estimate Draft",
     address: "5933 NE 31st Ave, Portland, OR",
+    customer: "Camille Omey",
     reportsFolder: "ppe-estimate4",
     type: "Exterior back porch painting with front porch floor add-on",
     siding: "New plywood enclosure and new/existing wood framing",
     workingPaintableBodyArea:
       "Back porch: ~65 sq ft visible enclosure panels, 90 sq ft total floor including stairs/landing, and 120 sq ft ceiling; front porch floor is a separate add-on",
     paintCostAssumption:
-      "$490 planned coatings + $110 prep/protection sundries + $70 coverage contingency; $670 total materials/sundries",
+      "$600 back porch materials/sundries + $100 front porch primer, floor paint, and prep sundries; $700 total",
     laborAssumption:
-      "42 labor hrs at $25/hr/person equivalent; two painters; includes 2 hours for the front porch floor add-on",
+      "48 labor hrs at $25/hr/person equivalent; two painters; includes 8 hours for front porch floor preparation and painting",
     crewPlan: "2 painters, approximately 2-3 working days",
     summary:
       "Internal project record for the main back porch painting project, plus a separate front porch floor painting add-on.",
@@ -699,11 +701,11 @@ export const officeProjects: OfficeProject[] = [
     notes: [
       "The complete back porch red floor scope is 15 ft x 6 ft (90 sq ft), including stairs and landing; the front porch floor is a separate add-on.",
       "The ceiling/roof underside is 15 ft x 8 ft (120 sq ft). The 8 ft dimension is surface width, not porch height.",
-      "Labor model is 42 total hours at $25/hr/person equivalent, including 2 hours for the front porch floor, for a two-painter, approximately 2-3 day schedule.",
-      "Materials/sundries are carried at $670: 2 gallons primer, 1 gallon green finish, 2 gallons cream finish, 2 gallons red floor coating, $110 sundries, and $70 coverage contingency.",
-      "Price is $1,050 direct labor + $670 materials/sundries = $1,720 direct cost; 29.4% markup produces $2,225.68, rounded to $2,250.",
+      "Labor model is 48 total hours at $25/hr/person equivalent: 40 hours for the back porch and 8 hours for front porch floor preparation and painting.",
+      "Materials/sundries are carried at $700: $600 for the back porch plus $100 for front porch primer, red floor paint, and preparation sundries.",
+      "Price is itemized at $2,100 for the back porch and $400 for the front porch floor, for a $2,500 total estimate.",
       "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
-      "Existing peeling fascia preparation, carpentry, structural repair, and suspected pre-1978 coating disturbance are excluded pending separate evaluation.",
+      "Front porch floor preparation is included; deteriorated fascia work and porch-board carpentry or replacement are excluded.",
       "Final customer-approved colors remain to be confirmed before materials are purchased.",
     ],
   },
