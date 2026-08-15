@@ -99,7 +99,7 @@ export const officeProjects: OfficeProject[] = [
     type: "Exterior painting estimate",
     siding: "Aluminum",
     workingPaintableBodyArea: "~1,150 sq ft",
-    paintCostAssumption: "$120/gallon for siding and trim finish paint; primer $70/gallon",
+    paintCostAssumption: "$70/gallon",
     laborAssumption: "108 hrs at $25/hr/person equivalent",
     crewPlan: "3-person crew, ~4 days",
     summary:
@@ -609,21 +609,21 @@ export const officeProjects: OfficeProject[] = [
   },
   {
     slug: "5933-ne-31st",
-    title: "5933 NE 31st Ave - Covered Porch / Enclosure Painting",
+    title: "5933 NE 31st Ave - Back Porch Painting + Front Porch Floor",
     status: "Estimate Draft",
     address: "5933 NE 31st Ave, Portland, OR",
     reportsFolder: "ppe-estimate4",
-    type: "Exterior covered porch and enclosure painting",
-    siding: "Primed cedar shake enclosure and new/existing wood framing",
+    type: "Exterior back porch painting with front porch floor add-on",
+    siding: "New plywood enclosure and new/existing wood framing",
     workingPaintableBodyArea:
-      "~65 sq ft visible primed cedar shake enclosure; 90 sq ft total floor including stairs/landing; 120 sq ft ceiling; framing/trim tracked separately",
+      "Back porch: ~65 sq ft visible enclosure panels, 90 sq ft total floor including stairs/landing, and 120 sq ft ceiling; front porch floor is a separate add-on",
     paintCostAssumption:
-      "$420 planned coatings + $110 prep/protection sundries + $70 coverage contingency; $600 total materials/sundries",
+      "$490 planned coatings + $110 prep/protection sundries + $70 coverage contingency; $670 total materials/sundries",
     laborAssumption:
-      "40 labor hrs at $25/hr/person equivalent; two painters",
+      "42 labor hrs at $25/hr/person equivalent; two painters; includes 2 hours for the front porch floor add-on",
     crewPlan: "2 painters, approximately 2-3 working days",
     summary:
-      "Internal project record for painting a newly constructed covered porch, lower enclosure, upper deck, stairs, ceiling, framing, fascia, and trim.",
+      "Internal project record for the main back porch painting project, plus a separate front porch floor painting add-on.",
     documents: [
       {
         id: "geometry-worksheet",
@@ -668,7 +668,7 @@ export const officeProjects: OfficeProject[] = [
         filename: "porch-front.jpeg",
         category: "Front",
         description:
-          "Overall view of the primed cedar shake enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
+          "Overall view of the enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
         image: ppe4PorchFront,
       },
       {
@@ -676,7 +676,7 @@ export const officeProjects: OfficeProject[] = [
         filename: "porch-right.jpeg",
         category: "Right side",
         description:
-          "Primed cedar shake right return, crawlspace access opening, new framing, existing house siding, and constrained landscaping access.",
+          "Right return, crawlspace access opening, new framing, existing siding, and constrained landscaping access.",
         image: ppe4PorchRight,
       },
       {
@@ -697,13 +697,12 @@ export const officeProjects: OfficeProject[] = [
       },
     ],
     notes: [
-      "The complete red floor scope is 15 ft x 6 ft (90 sq ft), including stairs and landing; those components are not added again.",
+      "The complete back porch red floor scope is 15 ft x 6 ft (90 sq ft), including stairs and landing; the front porch floor is a separate add-on.",
       "The ceiling/roof underside is 15 ft x 8 ft (120 sq ft). The 8 ft dimension is surface width, not porch height.",
-      "Labor model is 40 total hours at $25/hr/person equivalent for a two-painter, approximately 2-3 day schedule.",
-      "Materials/sundries are carried at $600: 2 gallons primer, 1 gallon green finish, 2 gallons cream finish, 1 gallon red floor coating, $110 sundries, and $70 coverage contingency.",
-      "Price is $1,000 direct labor + $600 materials/sundries = $1,600 direct cost; 29.4% markup produces $2,070.40, rounded to $2,100.",
+      "Labor model is 42 total hours at $25/hr/person equivalent, including 2 hours for the front porch floor, for a two-painter, approximately 2-3 day schedule.",
+      "Materials/sundries are carried at $670: 2 gallons primer, 1 gallon green finish, 2 gallons cream finish, 2 gallons red floor coating, $110 sundries, and $70 coverage contingency.",
+      "Price is $1,050 direct labor + $670 materials/sundries = $1,720 direct cost; 29.4% markup produces $2,225.68, rounded to $2,250.",
       "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
-      "The lower deck enclosure is completed with primed cedar shakes; spot-prime exposed cuts, fasteners, or damaged primer as needed before two green finish coats.",
       "Existing peeling fascia preparation, carpentry, structural repair, and suspected pre-1978 coating disturbance are excluded pending separate evaluation.",
       "Final customer-approved colors remain to be confirmed before materials are purchased.",
     ],

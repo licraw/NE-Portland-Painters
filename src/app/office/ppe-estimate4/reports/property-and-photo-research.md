@@ -1,27 +1,26 @@
 # Property and Photo Research
 
-**Project:** 5933 NE 31st Ave - Covered Porch / Enclosure Painting  
+**Project:** 5933 NE 31st Ave - Back Porch Painting + Front Porch Floor
 **Property:** 5933 NE 31st Ave, Portland, OR  
 **Prepared:** 2026-08-11  
-**Updated:** 2026-08-12 after review of current photos showing the primed cedar shake enclosure
 **Purpose:** Supporting estimate research based on supplied project photos and customer scope information.
 
 ## Available Project Context
 
-The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate uses 15 ft x 6 ft, or 90 sq ft total, for the red floor scope including the stairs and landing. The ceiling/roof underside uses 15 ft x 8 ft, or 120 sq ft; the 8 ft figure is surface width, not a height measurement. No additional public property research was required for this scope.
+The project address is 5933 NE 31st Ave, Portland, Oregon. The main project is the back porch. Its estimate uses 15 ft x 6 ft, or 90 sq ft total, for the red floor scope including the stairs and landing. The back porch ceiling/roof underside uses 15 ft x 8 ft, or 120 sq ft; the 8 ft figure is surface width, not a height measurement. The front porch floor is a separate painting add-on with one additional gallon of red coating and two labor hours. No additional public property research was required for this scope.
 
 ## Review of Supplied Images
 
 ### porch-front.jpeg
 
 - Clearest overall view of the long enclosure face, new guard framing, posts, and relationship to the existing house.
-- Shows the lower base as a completed enclosure clad in lapped, primed cedar shakes with visible fasteners.
+- Shows the lower base as a completed exterior enclosure with repeated horizontal courses and exposed fasteners.
 - Confirms close landscaping and the need to protect plants, irrigation, and adjacent ground.
 - Shows extensive peeling/coating failure on the existing outer fascia; this is not normal new-construction preparation.
 
 ### porch-right.jpeg
 
-- Shows the primed cedar shake right return of the enclosure and an open crawlspace/access doorway.
+- Shows the right return of the enclosure and an open crawlspace/access doorway.
 - Confirms that only visible exterior faces should be coated; the dark interior is outside scope.
 - Trees restrict access and reinforce the need for careful protection.
 - Shows new posts, rails, braces, and trim meeting the existing green house siding.
@@ -36,8 +35,7 @@ The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate uses 15 
 ### porch-stairs.jpeg
 
 - Clearly establishes seven stair treads and the landing; their paintable area is already included within the confirmed 90 sq ft floor total.
-- Shows the upper deck edge, primed cedar shake enclosure return, new guard framing, and the transition to the existing house.
-- Shows plywood at the stair risers; this is distinct from the cedar shake deck enclosure siding.
+- Shows the upper deck edge, new guard framing, and the transition to the existing house.
 - Supports inclusion of the visible stairs in the red porch-and-floor coating scope under the customer's conditional instruction.
 - Does not establish painting of the concrete approach or any additional landing.
 
@@ -45,13 +43,14 @@ The project address is 5933 NE 31st Ave, Portland, Oregon. The estimate uses 15 
 
 | Item | Observation | Estimate Treatment |
 | --- | --- | --- |
-| Lower enclosure | New lapped cedar shake siding with a visible primer coat and exposed fasteners | Verify primer compatibility; spot-prime cuts/fasteners or damaged primer as needed; two green finish coats; do not caulk shake laps |
+| Lower enclosure | New exterior enclosure with exposed fasteners | Fill appropriate holes/joints, prime, two green finish coats |
 | Floor, stairs, and landing | 90 sq ft total | Appropriate red floor system, two finish coats; no added stair area |
 | Ceiling | 120 sq ft, partly existing coated wood | Clean, prepare, prime bare/repaired areas, two cream coats |
 | Framing and trim | New posts, beams, braces, rails, fascia/trim | Prime bare lumber, two cream finish coats |
 | Existing fascia | Extensive peeling and apparent deterioration | Excluded; separate evaluation required |
 | Existing house | Adjacent green siding, door, and window | Protect; minor junction touch-ups only |
 | Crawlspace/interior | Visible access opening | Excluded |
+| Front porch floor | Separate customer-requested add-on | One additional gallon of red floor coating and two labor hours |
 
 ## Estimating Conclusion
 
