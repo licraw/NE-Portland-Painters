@@ -20,14 +20,14 @@ Final colors will be confirmed by the customer before materials are purchased.
 - Protect the house, landscaping, door, window, and adjacent surfaces.
 - Clean and prepare all included surfaces for coating.
 - Inspect the primed cedar shakes and spot-prime exposed cuts, fasteners, or damaged primer as required by the selected coating system. Do not caulk shake laps or drainage paths.
-- Prime bare new lumber, exposed stair plywood, and repaired areas with compatible exterior primer; caulk only appropriate trim and construction joints.
+- Prime bare new lumber, exposed stair plywood, and other bare areas with compatible exterior primer; caulk only appropriate trim and construction joints.
 - Mask and maintain clean transitions where the new construction meets the existing house.
 
 ### Back Porch Painting
 
 - Apply two finish coats of green exterior paint to the visible exterior faces of the cedar-shake enclosure.
 - Apply two finish coats of approved red porch-and-floor coating to the approximately 90 sq ft back porch floor, including the landing and stairs.
-- Apply two finish coats of cream exterior paint to the porch ceiling, posts, beams, braces, new fascia, and associated trim.
+- Apply two finish coats of cream exterior paint to the porch ceiling, posts, beams, braces, new porch fascia, and associated trim.
 
 ### Front Porch Floor
 
@@ -35,8 +35,7 @@ Final colors will be confirmed by the customer before materials are purchased.
 - Scrape loose and flaking paint.
 - Feather-sand coating edges and remove dust.
 - Spot-prime exposed bare wood.
-- Apply two finish coats of approved red porch-and-floor coating to the floor and exposed front edge of the porch floor.
-- Front porch work is limited to the floor and exposed front edge of the porch floor.
+- Apply two finish coats of approved red porch-and-floor coating to the floor and exposed front edge.
 
 ### Completion
 
@@ -48,18 +47,17 @@ Normal labor, paint, primer, sundries, masking, setup, and cleanup are included.
 ## Assumptions
 
 - The cedar shakes and new construction will be complete, dry, secure, and coating-ready before painting begins.
-- The front porch floor is a separate included scope item.
 - Final colors and products will be approved before purchase.
 
 ## Exclusions
 
 - Extensive preparation or painting of the existing house fascia. Its visible coating failure requires separate on-site evaluation. This exclusion does not apply to the new porch fascia included in the cream painting scope.
 - Repair or replacement of split, loose, rotten, or structurally deteriorated front porch boards.
-- Front porch railings, columns, siding, trim, and carpentry.
+- Painting front porch railings, columns, siding, or trim.
 - Carpentry, siding installation, structural repair, or replacement of deteriorated materials.
 - Painting crawlspace surfaces, interior enclosure walls, existing house siding, roofing, gutters, glass, screens, door hardware, or landscaping.
 - Repair of hidden damage, moisture problems, failed substrates, or construction defects.
-- Additional coating caused by customer color changes after material purchase or by conditions outside normal product coverage.
+- Additional coats required because of customer-approved color or product changes after materials are purchased.
 
 ## Schedule
 
