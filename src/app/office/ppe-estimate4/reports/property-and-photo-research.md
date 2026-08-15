@@ -16,13 +16,13 @@ The project address is 5933 NE 31st Ave, Portland, Oregon, for customer Camille 
 ### porch-front.jpeg
 
 - Clearest overall view of the long enclosure face, new guard framing, posts, and relationship to the existing house.
-- Shows the lower base as a completed exterior enclosure with repeated horizontal courses and exposed fasteners.
+- Shows installed lapped cedar shakes with a visible primer coat and exposed fasteners on the lower enclosure.
 - Confirms close landscaping and the need to protect plants, irrigation, and adjacent ground.
 - Shows extensive peeling/coating failure on the existing outer fascia; this is not normal new-construction preparation.
 
 ### porch-right.jpeg
 
-- Shows the right return of the enclosure and an open crawlspace/access doorway.
+- Shows the primed cedar shake right return of the enclosure and an open crawlspace/access doorway.
 - Confirms that only visible exterior faces should be coated; the dark interior is outside scope.
 - Trees restrict access and reinforce the need for careful protection.
 - Shows new posts, rails, braces, and trim meeting the existing green house siding.
@@ -37,7 +37,7 @@ The project address is 5933 NE 31st Ave, Portland, Oregon, for customer Camille 
 ### porch-stairs.jpeg
 
 - Clearly establishes seven stair treads and the landing; their paintable area is already included within the confirmed 90 sq ft floor total.
-- Shows the upper deck edge, new guard framing, and the transition to the existing house.
+- Shows the upper deck edge, primed cedar shake enclosure return, new guard framing, and the transition to the existing house.
 - Supports inclusion of the visible stairs in the red porch-and-floor coating scope under the customer's conditional instruction.
 - Does not establish painting of the concrete approach or any additional landing.
 
@@ -51,7 +51,7 @@ The project address is 5933 NE 31st Ave, Portland, Oregon, for customer Camille 
 
 | Item | Observation | Estimate Treatment |
 | --- | --- | --- |
-| Lower enclosure | New exterior enclosure with exposed fasteners | Fill appropriate holes/joints, prime, two green finish coats |
+| Lower enclosure | Installed lapped cedar shake siding with a visible primer coat and exposed fasteners | Verify primer compatibility; spot-prime cuts/fasteners or damaged primer as needed; apply two green finish coats; do not caulk shake laps |
 | Floor, stairs, and landing | 90 sq ft total | Appropriate red floor system, two finish coats; no added stair area |
 | Ceiling | 120 sq ft, partly existing coated wood | Clean, prepare, prime bare/repaired areas, two cream coats |
 | Framing and trim | New posts, beams, braces, rails, fascia/trim | Prime bare lumber, two cream finish coats |

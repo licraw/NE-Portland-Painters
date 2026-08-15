@@ -616,9 +616,9 @@ export const officeProjects: OfficeProject[] = [
     customer: "Camille Omey",
     reportsFolder: "ppe-estimate4",
     type: "Exterior back porch painting with front porch floor add-on",
-    siding: "New plywood enclosure and new/existing wood framing",
+    siding: "Installed primed cedar shake enclosure and new/existing wood framing",
     workingPaintableBodyArea:
-      "Back porch: ~65 sq ft visible enclosure panels, 90 sq ft total floor including stairs/landing, and 120 sq ft ceiling; front porch floor is a separate add-on",
+      "Back porch: ~65 sq ft visible primed cedar shake enclosure, 90 sq ft total floor including stairs/landing, and 120 sq ft ceiling; front porch floor is a separate add-on",
     paintCostAssumption:
       "$600 back porch materials/sundries + $100 front porch primer, floor paint, and prep sundries; $700 total",
     laborAssumption:
@@ -670,7 +670,7 @@ export const officeProjects: OfficeProject[] = [
         filename: "porch-front.jpeg",
         category: "Front",
         description:
-          "Overall view of the enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
+          "Overall view of the installed primed cedar shake enclosure, new guard framing, posts, house junction, landscaping, and existing fascia.",
         image: ppe4PorchFront,
       },
       {
@@ -678,7 +678,7 @@ export const officeProjects: OfficeProject[] = [
         filename: "porch-right.jpeg",
         category: "Right side",
         description:
-          "Right return, crawlspace access opening, new framing, existing siding, and constrained landscaping access.",
+          "Primed cedar shake right return, crawlspace access opening, new framing, existing house siding, and constrained landscaping access.",
         image: ppe4PorchRight,
       },
       {
@@ -702,7 +702,7 @@ export const officeProjects: OfficeProject[] = [
       "The complete back porch red floor scope is 15 ft x 6 ft (90 sq ft), including stairs and landing; the front porch floor is a separate add-on.",
       "The ceiling/roof underside is 15 ft x 8 ft (120 sq ft). The 8 ft dimension is surface width, not porch height.",
       "Labor model is 48 total hours at $25/hr/person equivalent: 40 hours for the back porch and 8 hours for front porch floor preparation and painting.",
-      "Materials/sundries are carried at $700: $600 for the back porch plus $100 for front porch primer, red floor paint, and preparation sundries.",
+      "Materials/sundries are carried at $700: $600 for the back porch plus $70 red floor paint, $10 spot primer, and $20 preparation sundries for the front porch.",
       "Price is itemized at $2,100 for the back porch and $400 for the front porch floor, for a $2,500 total estimate.",
       "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
       "Front porch floor preparation is included; deteriorated fascia work and porch-board carpentry or replacement are excluded.",

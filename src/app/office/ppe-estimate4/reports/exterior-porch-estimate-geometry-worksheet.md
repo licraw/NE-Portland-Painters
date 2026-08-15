@@ -26,11 +26,11 @@ The existing front porch floor is a separate preparation-and-painting add-on. It
 
 | Coating Group | One-Coat Working Quantity | Planned System | Coverage Demand |
 | --- | ---: | --- | ---: |
-| Green enclosure panels | Approximately 65 sq ft | Primer + 2 finish coats | Approximately 130 sq ft finish |
+| Green primed cedar shake enclosure | Approximately 65 sq ft | Spot primer as required + 2 finish coats | Approximately 130 sq ft finish |
 | Red floor, including stairs and landing | 90 sq ft total | Primer as required + 2 floor coats | 180 sq ft finish |
 | Cream porch ceiling / roof underside | 120 sq ft | Primer + 2 finish coats | 240 sq ft finish |
 
-The approximately 65 sq ft enclosure allowance is based on the visible panel faces below the porch floor: roughly 52.5 sq ft for the 15 ft main face at an estimated 3.5 ft panel height, plus approximately 13 sq ft net for the 6 ft return after the visible access opening. Panel height and opening dimensions must be field verified.
+The approximately 65 sq ft enclosure allowance is based on the visible lapped cedar shake faces below the porch floor: roughly 52.5 sq ft for the 15 ft main face at an estimated 3.5 ft siding height, plus approximately 13 sq ft net for the 6 ft return after the visible access opening. Siding height and opening dimensions must be field verified.
 
 ## Detailed Framing and Trim Takeoff
 
@@ -49,8 +49,8 @@ These ranges support labor planning for multiple faces, edges, joints, overhead 
 
 ## Coating Purchase Model
 
-- Exterior primer: approximately 2 gallons for bare plywood, new lumber, repaired areas, and normal absorption/loss.
-- Green exterior finish: approximately 1 gallon for two coats on the visible enclosure panels.
+- Exterior primer: approximately 2 gallons for bare new lumber, exposed stair plywood, repaired areas, cedar shake cut edges/fastener touch-ups, and normal absorption/loss. The broad cedar shake faces are already primed.
+- Green exterior finish: approximately 1 gallon for two coats on the visible primed cedar shake enclosure.
 - Cream exterior finish: approximately 2 gallons for two coats on the ceiling and detailed framing/trim.
 - Red porch-and-floor coating: approximately 2 gallons total—1 gallon for the two-coat back porch floor scope and 1 gallon for the prepared front porch floor, subject to selected-product coverage.
 - Front porch spot primer and preparation sundries: job allowance for exposed bare wood, scraping, sanding, and dust removal.
@@ -59,7 +59,7 @@ Actual product coverage, surface porosity, application method, and approved colo
 
 ## Photo-Based Condition Notes
 
-- The porch base is visibly enclosed, with an access opening on the right; the interior/crawlspace is outside scope.
+- The porch base is visibly enclosed with installed, primed cedar shakes and an access opening on the right; the interior/crawlspace is outside scope.
 - Photos show a clearly defined seven-step stair run and landing, both already included in the confirmed 90 sq ft floor total.
 - New posts, rails, braces, and trim create substantial edge and joint work despite the compact footprint.
 - The porch ceiling and some supporting members are existing coated wood; normal cleaning and compatible spot priming are carried.
@@ -75,5 +75,5 @@ Actual product coverage, surface porosity, application method, and approved colo
 - Confirm the complete red floor scope remains 90 sq ft total, including stairs and landing.
 - Verify the front porch floor condition and boundaries before painting the included add-on.
 - Confirm lumber moisture is within coating-manufacturer requirements.
-- Confirm new plywood is the final exterior finish and is suitable for the specified coating system.
+- Confirm the installed cedar shakes and their existing primer are dry, secure, coating-ready, and compatible with the selected finish; do not caulk shake laps or drainage paths.
 - Evaluate existing peeling fascia separately before authorizing disturbance, especially if the home may predate 1978.
