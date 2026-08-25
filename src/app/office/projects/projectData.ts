@@ -45,6 +45,16 @@ import ppe4PorchFront from "../ppe-estimate4/porch-front.jpeg";
 import ppe4PorchRight from "../ppe-estimate4/porch-right.jpeg";
 import ppe4PorchRoof from "../ppe-estimate4/porch-roof.jpeg";
 import ppe4PorchStairs from "../ppe-estimate4/porch-stairs.jpeg";
+import ppe5PorchFloor1 from "../ppe-estimate5/porch-floor1.jpeg";
+import ppe5PorchFloor2 from "../ppe-estimate5/porch-floor2.jpeg";
+import ppe5PorchFloor3 from "../ppe-estimate5/porch-floor3.jpeg";
+import ppe5PorchRailingRight from "../ppe-estimate5/porch-railing-right.jpeg";
+import ppe5PorchStairsFull2 from "../ppe-estimate5/porch-stairs-full2.jpeg";
+import ppe5PorchStairsFullView1 from "../ppe-estimate5/porch-stairs-full-view1.jpeg";
+import ppe5PorchStairsLower from "../ppe-estimate5/porch-stairs-lower.jpeg";
+import ppe5PorchStairsMidDetail from "../ppe-estimate5/porch-stairs-mid-detail.jpeg";
+import ppe5PorchWithFrontHouseView from "../ppe-estimate5/porch-with-front-house-view.png";
+import ppe5UpperPorchRailing from "../ppe-estimate5/upper-porch-railing.jpeg";
 
 export type OfficeProjectDocument = {
   id: string;
@@ -707,6 +717,188 @@ export const officeProjects: OfficeProject[] = [
       "Only visible exterior enclosure faces are included; crawlspace/interior walls are excluded.",
       "Front porch floor preparation is included; deteriorated fascia work and porch-board carpentry or replacement are excluded.",
       "Final customer-approved colors remain to be confirmed before materials are purchased.",
+    ],
+  },
+  {
+    slug: "10375-sw-dunlin",
+    title: "10375 SW Dunlin Pl - Front Porch and Front Stairs Painting",
+    status: "Estimate Draft",
+    address: "10375 SW Dunlin Pl, Beaverton, OR 97007",
+    reportsFolder: "ppe-estimate5",
+    type: "Targeted exterior porch and stair maintenance repaint",
+    siding:
+      "Painted wood deck boards, dimensional rail stock, 2x2 balusters, and 4x4 newel posts; stringer/skirt faces, rim band, lattice, and house siding excluded",
+    workingPaintableBodyArea:
+      "371.12 sq ft included one-coat physical area: 112.97 sq ft gray and 258.15 sq ft white; 511.59 sq ft total liquid-coating demand including primer",
+    paintCostAssumption:
+      "$225 materials/sundries using contractor pricing: 1 gal tinted gray primer, 1 gal gray porch-and-floor finish, 1 gal white finish, and 1 qt white spot primer plus normal sundries",
+    laborAssumption:
+      "24 crew hours at $25/hr/person equivalent; two painters; localized preparation, one gray primer coat, white spot primer, and one complete finish coat per color",
+    crewPlan: "2 painters, approximately 2 working days",
+    summary:
+      "Internal project record for the $1,450 pre-listing porch and entry-stair maintenance repaint.",
+    documents: [
+      {
+        id: "geometry-worksheet",
+        title: "Porch and Stairs Geometry Worksheet",
+        type: "Markdown",
+        audience: "Internal",
+        filename:
+          "exterior-porch-and-stairs-estimate-geometry-worksheet.md",
+        description:
+          "Audited physical geometry, confirmed scope boundaries, separate primer/finish demand, purchase quantities, and field-verification items.",
+      },
+      {
+        id: "estimating-worksheet-formatted",
+        title: "Estimating Worksheet (Formatted)",
+        type: "HTML",
+        audience: "Internal",
+        filename: "exterior-porch-and-stairs-estimating-worksheet.html",
+        description:
+          "Formatted estimator worksheet with confidence flags, girth model tables, and calculation blocks.",
+      },
+      {
+        id: "geometry-worksheet-pdf",
+        title: "Geometry Worksheet PDF",
+        type: "PDF",
+        audience: "Internal",
+        filename:
+          "Exterior Porch and Stairs Estimate Geometry Worksheet.pdf",
+        description:
+          "Print-ready PDF of the formatted estimating worksheet.",
+      },
+      {
+        id: "property-photo-research",
+        title: "Property and Photo Research",
+        type: "Markdown",
+        audience: "Research",
+        filename: "property-and-photo-research.md",
+        description:
+          "Verified public property record, a record of the retrieval attempts that failed, and an image-by-image review of all ten supplied photos.",
+      },
+      {
+        id: "customer-facing-estimate",
+        title: "Customer-Facing Estimate",
+        type: "Markdown",
+        audience: "Customer-facing",
+        filename: "final-customer-facing-estimate.md",
+        description:
+          "Customer-ready scope, preparation, painting process, materials, exclusions, customer responsibilities, schedule, price, payment terms, and warranty.",
+      },
+      {
+        id: "customer-facing-estimate-pdf",
+        title: "Customer Estimate PDF",
+        type: "PDF",
+        audience: "Customer-facing",
+        filename: "Exterior Porch and Stairs Painting Estimate.pdf",
+        description:
+          "Print-ready proposal PDF for delivery to the customer.",
+      },
+      {
+        id: "internal-estimating-rationale",
+        title: "Internal Estimating Rationale",
+        type: "Markdown",
+        audience: "Internal",
+        filename: "final-internal-estimating-rationale.md",
+        description:
+          "Prior-project benchmark, 24-hour labor model, $225 material allowance, $1,350 internal floor, $1,450 recommendation, production sequence, warranty position, and change-order risks.",
+      },
+    ],
+    images: [
+      {
+        title: "Entry in context",
+        filename: "porch-with-front-house-view.png",
+        category: "Front",
+        description:
+          "Wide street-level view of the raised covered porch, the wood stair run, the concrete steps and pad at grade, and the lattice skirt. Used for overall proportion, porch length, and total rise only; coatings read fresher than current so it is not used for condition assessment.",
+        image: ppe5PorchWithFrontHouseView,
+      },
+      {
+        title: "Front stairs - full run",
+        filename: "porch-stairs-full-view1.jpeg",
+        category: "Front",
+        description:
+          "Primary geometry photograph. Full stair run head-on from the walkway showing every tread and riser, both guard rails, top and bottom newels, deck rim band, lattice skirt, and the crowding hedge, arborvitae, and Japanese maple.",
+        image: ppe5PorchStairsFullView1,
+      },
+      {
+        title: "Front stairs - oblique run",
+        filename: "porch-stairs-full2.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Treads and risers edge-on. Corroborates the nine-tread count, isolates the single raw replacement riser, and confirms balusters on both stair rails.",
+        image: ppe5PorchStairsFull2,
+      },
+      {
+        title: "Stair treads - lower run detail",
+        filename: "porch-stairs-lower.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Primary condition source. Two boards per tread with an open gap; tread tops are bare, gray, weathered, checked, and splintering with only remnant paint; nosing edges remain painted; risers painted and sound.",
+        image: ppe5PorchStairsLower,
+      },
+      {
+        title: "Stair tread and stringer junction",
+        filename: "porch-stairs-mid-detail.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Raw replacement riser end grain confirming new unprimed stock, plus cracking, open joints, and coating separation where the treads meet the stringer.",
+        image: ppe5PorchStairsMidDetail,
+      },
+      {
+        title: "Right stair guard rail",
+        filename: "porch-railing-right.jpeg",
+        category: "Right side",
+        description:
+          "Rail assembly composition and the worst coating failure in the project: blistered, peeling paint with exposed bare wood at the lower rail termination.",
+        image: ppe5PorchRailingRight,
+      },
+      {
+        title: "Newel post and deck guard rail",
+        filename: "upper-porch-railing.jpeg",
+        category: "Condition / prep details",
+        description:
+          "4x4 newel with a two-piece cap whose top plate is split, lifted, and losing material. Confirms deck guard composition and that the deck sits well above grade.",
+        image: ppe5UpperPorchRailing,
+      },
+      {
+        title: "Porch deck - along the run",
+        filename: "porch-floor1.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Primary source for deck depth. Deck boards run lengthwise parallel to the house; coating worn but adhered; guard rail is cap, sub-rail, square balusters, and bottom rail; chair and crate are customer-removal items.",
+        image: ppe5PorchFloor1,
+      },
+      {
+        title: "Porch deck - stair opening",
+        filename: "porch-floor2.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Stair opening cut into the guard-rail line close to the front door, with guard posts and a rail return to the house. Deck board width and gap corroborated.",
+        image: ppe5PorchFloor2,
+      },
+      {
+        title: "Porch deck - door end",
+        filename: "porch-floor3.jpeg",
+        category: "Condition / prep details",
+        description:
+          "Deck terminates a short distance past the front door on that side. Door threshold, metal sill, and white casing are masking points rather than scope items.",
+        image: ppe5PorchFloor3,
+      },
+    ],
+    notes: [
+      "Public records confirm the property only: built 1999, 2,192 sq ft, 3 bed / 2.5 bath, sold $524,900 on 2020-10-16, MLS 20317563. No public record supplied any porch or stair dimension.",
+      "Every porch and stair dimension is photo-inferred. Working model is an 18 ft x 5 ft deck less a 10.5 sq ft stair head opening, with a 3.5 ft wide stair, 9 treads, 10 risers, and 6.04 ft of total rise.",
+      "Full observed geometry is 413.19 sq ft; confirmed included scope is 371.12 sq ft after excluding 18.75 sq ft of stringer/skirt faces and 23.32 sq ft of rim band.",
+      "Coating demand is 112.97 sq ft of full gray primer, 112.97 sq ft of gray finish, approximately 27.5 sq ft of white spot primer, and 258.15 sq ft of white finish.",
+      "Preparation is localized to actual failures, rough/splintered tread areas, the raw riser, rail ends, and minor paintable repairs; sound coatings are retained.",
+      "Labor is 24 crew hours ($600 at $25/hour), materials/sundries are $225, direct cost is $825, and the customer price is $1,450 with a $1,350 internal floor.",
+      "The $1,450 price leaves $625 contribution (43.1% margin) and remains $1,050 below the harder $2,500 front-and-back porch benchmark.",
+      "Deck length remains the largest measurement uncertainty; field verification is required before scheduling.",
+      "Built 1999, so EPA RRP lead-safe work practices are not triggered by the age of the structure.",
+      "Carpentry is excluded throughout: tread replacement, handrail-end repair, post-cap replacement, and any board or rail component replacement.",
+      "Lattice skirt panels, porch ceiling/soffit, house siding, front door and casing, and all concrete are excluded and quotable separately.",
+      "Payment terms are $500 deposit, $950 balance on completion, and 30-day validity.",
     ],
   },
 ];
