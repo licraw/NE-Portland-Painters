@@ -729,11 +729,11 @@ export const officeProjects: OfficeProject[] = [
     siding:
       "Painted wood deck boards, dimensional rail stock, 2x2 balusters, and 4x4 newel posts; stringer/skirt faces, rim band, lattice, and house siding excluded",
     workingPaintableBodyArea:
-      "371.12 sq ft included one-coat physical area: 112.97 sq ft gray and 258.15 sq ft white; 511.59 sq ft total liquid-coating demand including primer",
+      "256.73 sq ft included one-coat physical area: 75.97 sq ft gray and 180.76 sq ft white; 352.40 sq ft total liquid-coating demand including primer",
     paintCostAssumption:
       "$225 materials/sundries using contractor pricing: 1 gal tinted gray primer, 1 gal gray porch-and-floor finish, 1 gal white finish, and 1 qt white spot primer plus normal sundries",
     laborAssumption:
-      "24 crew hours at $25/hr/person equivalent; two painters; localized preparation, one gray primer coat, white spot primer, and one complete finish coat per color",
+      "20 crew hours at $25/hr/person equivalent; two painters; fixed travel/setup plus localized preparation, gray primer, white spot primer, and one complete finish coat per color",
     crewPlan: "2 painters, approximately 2 working days",
     summary:
       "Internal project record for the $1,450 pre-listing porch and entry-stair maintenance repaint.",
@@ -801,7 +801,7 @@ export const officeProjects: OfficeProject[] = [
         audience: "Internal",
         filename: "final-internal-estimating-rationale.md",
         description:
-          "Prior-project benchmark, 24-hour labor model, $225 material allowance, $1,350 internal floor, $1,450 recommendation, production sequence, warranty position, and change-order risks.",
+          "Corrected geometry basis, 20-hour labor model, $225 material allowance, transparent margin, $1,450 approved price, production sequence, and field risks.",
       },
     ],
     images: [
@@ -888,17 +888,17 @@ export const officeProjects: OfficeProject[] = [
     ],
     notes: [
       "Public records confirm the property only: built 1999, 2,192 sq ft, 3 bed / 2.5 bath, sold $524,900 on 2020-10-16, MLS 20317563. No public record supplied any porch or stair dimension.",
-      "Every porch and stair dimension is photo-inferred. Working model is an 18 ft x 5 ft deck less a 10.5 sq ft stair head opening, with a 3.5 ft wide stair, 9 treads, 10 risers, and 6.04 ft of total rise.",
-      "Full observed geometry is 413.19 sq ft; confirmed included scope is 371.12 sq ft after excluding 18.75 sq ft of stringer/skirt faces and 23.32 sq ft of rim band.",
-      "Coating demand is 112.97 sq ft of full gray primer, 112.97 sq ft of gray finish, approximately 27.5 sq ft of white spot primer, and 258.15 sq ft of white finish.",
+      "Photo-based working model is a 10 ft x 4.25 ft porch with no stair-head deduction, a 3.5 ft wide stair, 9 tread tops, 10 risers, 33 linear ft of combined railing, 56 balusters, and 6 posts.",
+      "Included physical geometry is 256.73 sq ft: 75.97 sq ft gray and 180.76 sq ft white. Stringer faces, rim, lattice, ceiling, house, door, concrete, undersides, and framing are excluded.",
+      "Coating demand is 75.97 sq ft of full gray primer, 75.97 sq ft of gray finish, approximately 19.7 sq ft of white spot primer, and 180.76 sq ft of white finish.",
       "Preparation is localized to actual failures, rough/splintered tread areas, the raw riser, rail ends, and minor paintable repairs; sound coatings are retained.",
-      "Labor is 24 crew hours ($600 at $25/hour), materials/sundries are $225, direct cost is $825, and the customer price is $1,450 with a $1,350 internal floor.",
-      "The $1,450 price leaves $625 contribution (43.1% margin) and remains $1,050 below the harder $2,500 front-and-back porch benchmark.",
-      "Deck length remains the largest measurement uncertainty; field verification is required before scheduling.",
+      "Labor is 20 crew hours ($500 at $25/hour), materials/sundries are $225, direct cost is $725, and the approved customer price remains $1,450.",
+      "The corrected geometry produces $725 contribution (50.0% margin); the price reflects fixed Beaverton travel/setup, multiple stages/products, detailed rails, return visits, repair uncertainty, overhead, and margin.",
+      "Porch length, depth, guardrail sections, concealed balusters, and posts require field verification before scheduling.",
       "Built 1999, so EPA RRP lead-safe work practices are not triggered by the age of the structure.",
       "Carpentry is excluded throughout: tread replacement, handrail-end repair, post-cap replacement, and any board or rail component replacement.",
       "Lattice skirt panels, porch ceiling/soffit, house siding, front door and casing, and all concrete are excluded and quotable separately.",
-      "Payment terms are $500 deposit, $950 balance on completion, and 30-day validity.",
+      "The customer proposal is valid for 30 days; additional repairs or requested work are discussed and priced separately.",
     ],
   },
 ];
