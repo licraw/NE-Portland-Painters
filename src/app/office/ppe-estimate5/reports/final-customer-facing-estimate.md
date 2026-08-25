@@ -1,27 +1,24 @@
 # Exterior Porch and Stairs Painting Estimate
 
-**Property:** 10375 SW Dunlin Pl, Beaverton, OR 97007  
+**NE Portland Painters**
+**Email:** [info@neportlandpainters.com](mailto:info@neportlandpainters.com)
+**Property:** 10375 SW Dunlin Pl, Beaverton, OR 97007
 **Prepared:** 2026-08-24
-
-## Project Summary
-
-This estimate covers preparation and repainting of the front porch and entry stairs. The goal is to give the entry a clean, refreshed appearance before the property is listed.
-
-The porch floor, stair treads, and nosings will be gray. The stair risers, stair railings, porch guardrail, balusters, posts, and caps will be white. Final colors will be confirmed before paint is purchased.
 
 ## Preparation
 
-- Protect the house, landscaping, concrete, and nearby surfaces.
-- Wash the porch and stairs and allow them to dry.
-- Scrape and sand loose or failing paint where needed.
-- Complete minor surface repairs and spot-prime bare or repaired white areas.
+* Protect the house, landscaping, concrete, and nearby surfaces.
+* Wash the porch and stairs and allow them to dry.
+* Scrape and sand loose or failing paint where needed.
+* Complete minor preparation repairs needed for painting.
 
 Preparation is limited to areas that need attention. Sound existing paint will remain in place.
 
 ## Painting
 
-- Apply one tinted primer coat and one gray porch-and-floor finish coat to the porch floor, stair treads, and nosings.
-- Apply one complete white finish coat to the stair risers, stair railings, porch guardrail, balusters, posts, and caps.
+* Apply primer to bare wood and repaired areas as needed.
+* Apply gray porch-and-floor finish paint to the porch floor, stair treads, and nosings.
+* Apply white exterior finish paint to the stair risers, stair railings, porch guardrail, balusters, posts, and caps.
 
 ## Cleanup
 
